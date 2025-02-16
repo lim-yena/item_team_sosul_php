@@ -118,7 +118,7 @@
             }
         }
 
-        .swiper-pagination {
+        .same-pagination {
             position: relative;
             bottom:0;
             height:30px;
@@ -135,8 +135,8 @@
             }
         }
     
-        .now-button-next,
-        .now-button-prev {
+        .same-button-next,
+        .same-button-prev {
             width: 3.75rem;
             height: 3.75rem;
             border-radius: 0.625rem;
@@ -147,14 +147,14 @@
             }
         }
     
-        .now-button-next {
+        .same-button-next {
             background: url("https://item-team-sosul.vercel.app/img/icon/arrow_right.svg") no-repeat;
             background-position: center;
             background-size: cover;
             right: 0;
         }
     
-        .now-button-prev {
+        .same-button-prev {
             background: url("https://item-team-sosul.vercel.app/img/icon/arrow_left.svg") no-repeat;
             background-position: center;
             background-size: cover;
@@ -162,8 +162,8 @@
             left: 0;
         }
     
-        .now-button-next::after,
-        .now-button-prev::after {
+        .same-button-next::after,
+        .same-button-prev::after {
             display: none;
         }
     
@@ -173,6 +173,13 @@
             border-radius: 10px;
             @media (max-width:991px) {
                 max-height: 300px;
+            }
+        }
+
+        .con_tabBox {
+            display:none;
+            &:first-of-type {
+                display:block;
             }
         }
     }

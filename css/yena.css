@@ -19,6 +19,11 @@
   letter-spacing: -1px;
 }
 
+/* 소슬 탭 */
+.con_tab .con_tab {
+  display: block;
+}
+
 /* 소슬 띠배너 관련 스타일 */
 .sosul_banner {
   padding: 40px 0;
@@ -204,12 +209,12 @@
   position: static;
 }
 .hotspot .hotspot-button-next {
-  background: url("https://item-team-sosul.vercel.app/vide/icon/arrow_right.svg") no-repeat;
+  background: url("https://item-team-sosul.vercel.app/img/icon/arrow_right.svg") no-repeat;
   background-position: center;
   background-size: cover;
 }
 .hotspot .hotspot-button-prev {
-  background: url("https://item-team-sosul.vercel.app/vide/icon/arrow_left.svg") no-repeat;
+  background: url("https://item-team-sosul.vercel.app/img/icon/arrow_left.svg") no-repeat;
   background-position: center;
   background-size: cover;
   margin-right: 0.313rem;
@@ -299,12 +304,12 @@
   position: static;
 }
 .magazin .magazin-button-next {
-  background: url("https://item-team-sosul.vercel.app/vide/icon/arrow_right.svg") no-repeat;
+  background: url("https://item-team-sosul.vercel.app/img/icon/arrow_right.svg") no-repeat;
   background-position: center;
   background-size: cover;
 }
 .magazin .magazin-button-prev {
-  background: url("https://item-team-sosul.vercel.app/vide/icon/arrow_left.svg") no-repeat;
+  background: url("https://item-team-sosul.vercel.app/img/icon/arrow_left.svg") no-repeat;
   background-position: center;
   background-size: cover;
   margin-right: 0.313rem;
@@ -399,13 +404,13 @@
   top: 50%;
 }
 .youtube .youtube_btns .youtube-button-next {
-  background: url("https://item-team-sosul.vercel.app/vide/icon/arrow_right.svg") no-repeat;
+  background: url("https://item-team-sosul.vercel.app/img/icon/arrow_right.svg") no-repeat;
   background-position: center;
   background-size: cover;
   right: 0;
 }
 .youtube .youtube_btns .youtube-button-prev {
-  background: url("https://item-team-sosul.vercel.app/vide/icon/arrow_left.svg") no-repeat;
+  background: url("https://item-team-sosul.vercel.app/img/icon/arrow_left.svg") no-repeat;
   background-position: center;
   background-size: cover;
   margin-right: 0.313rem;

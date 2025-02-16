@@ -1,4 +1,5 @@
-  //지금여기
+
+//지금여기
   const nowswiper = new Swiper('.nowSwiper', {
     slidesPerView: 2,
     slidesPerGroup: 1,
@@ -35,6 +36,107 @@
 
             // 모든 페이지네이션 bullet 가져오기
             const bullets = document.querySelectorAll('.swiper-pagination .swiper-pagination-bullet');
+
+            // 각 bullet에 대해 활성화 상태 적용
+            bullets.forEach((bullet, index) => {
+                if (index <= activeIndex) {
+                    bullet.classList.add('swiper-pagination-bullet-active'); // 활성화 클래스 추가
+                } else {
+                    bullet.classList.remove('swiper-pagination-bullet-active'); // 비활성화 클래스 제거
+                }
+            });
+        },
+    },
+});
+
+//지금여기 2
+const nowswiper2 = new Swiper('.nowSwiper2', {
+    slidesPerView: 2,
+    slidesPerGroup: 1,
+    grid: {
+        rows: 2,
+        fill: 'row',
+    },
+    pagination: {
+        el: '.swiper-pagination2',
+        clickable: true,
+    },
+    controller: {
+        control: null // 다른 슬라이더와 연동
+    },
+    freeMode: false,
+    navigation: {
+        nextEl: '.now-button-next2',
+        prevEl: '.now-button-prev2',
+    },
+    breakpoints: {
+        991: {
+            slidesPerView: 4,
+            slidesPerGroup: 1,
+            grid: {
+                rows: 1,
+                fill: 'row',
+            },
+        },
+    },
+    on: {
+        slideChange: function () {
+            // 현재 활성화된 슬라이드 인덱스
+            const activeIndex = this.activeIndex;
+
+            // 모든 페이지네이션 bullet 가져오기
+            const bullets = document.querySelectorAll('.swiper-pagination2 .swiper-pagination-bullet');
+
+            // 각 bullet에 대해 활성화 상태 적용
+            bullets.forEach((bullet, index) => {
+                if (index <= activeIndex) {
+                    bullet.classList.add('swiper-pagination-bullet-active'); // 활성화 클래스 추가
+                } else {
+                    bullet.classList.remove('swiper-pagination-bullet-active'); // 비활성화 클래스 제거
+                }
+            });
+        },
+    },
+});
+
+
+//지금여기 3
+const nowswiper3 = new Swiper('.nowSwiper3', {
+    slidesPerView: 2,
+    slidesPerGroup: 1,
+    grid: {
+        rows: 2,
+        fill: 'row',
+    },
+    pagination: {
+        el: '.swiper-pagination3',
+        clickable: true,
+    },
+    controller: {
+        control: null // 다른 슬라이더와 연동
+    },
+    freeMode: false,
+    navigation: {
+        nextEl: '.now-button-next3',
+        prevEl: '.now-button-prev3',
+    },
+    breakpoints: {
+        991: {
+            slidesPerView: 4,
+            slidesPerGroup: 1,
+            grid: {
+                rows: 1,
+                fill: 'row',
+            },
+        },
+    },
+    on: {
+        slideChange: function () {
+            // 현재 활성화된 슬라이드 인덱스
+            const activeIndex = this.activeIndex;
+
+            // 모든 페이지네이션 bullet 가져오기
+            const bullets = document.querySelectorAll('.swiper-pagination3 .swiper-pagination-bullet');
 
             // 각 bullet에 대해 활성화 상태 적용
             bullets.forEach((bullet, index) => {

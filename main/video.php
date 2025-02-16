@@ -1,6 +1,6 @@
 <div class="video-container">
     <div class="video-bg"> 
-        <video autoplay muted loop>
+        <video muted loop autoplay playsinline>
             <source src="//item-team-sosul.vercel.app/video/main_video.mp4" type="video/mp4">
             <!-- Your browser does not support the video tag. -->
         </video>

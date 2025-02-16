@@ -110,24 +110,24 @@
     padding: 0 5px 40px;
   }
 }
-.main_con_four .swiper-pagination {
+.main_con_four .same-pagination {
   position: relative;
   bottom: 0;
   height: 30px;
   display: flex;
 }
-.main_con_four .swiper-pagination .swiper-pagination-bullet {
+.main_con_four .same-pagination .swiper-pagination-bullet {
   width: 100%;
   border-radius: 0;
   margin: 0;
   height: 5px;
   background: #aaa;
 }
-.main_con_four .swiper-pagination .swiper-pagination-bullet-active {
+.main_con_four .same-pagination .swiper-pagination-bullet-active {
   background: #6c7734;
 }
-.main_con_four .now-button-next,
-.main_con_four .now-button-prev {
+.main_con_four .same-button-next,
+.main_con_four .same-button-prev {
   width: 3.75rem;
   height: 3.75rem;
   border-radius: 0.625rem;
@@ -135,26 +135,26 @@
   top: 50%;
 }
 @media (max-width: 991px) {
-  .main_con_four .now-button-next,
-  .main_con_four .now-button-prev {
+  .main_con_four .same-button-next,
+  .main_con_four .same-button-prev {
     display: none;
   }
 }
-.main_con_four .now-button-next {
+.main_con_four .same-button-next {
   background: url("https://item-team-sosul.vercel.app/img/icon/arrow_right.svg") no-repeat;
   background-position: center;
   background-size: cover;
   right: 0;
 }
-.main_con_four .now-button-prev {
+.main_con_four .same-button-prev {
   background: url("https://item-team-sosul.vercel.app/img/icon/arrow_left.svg") no-repeat;
   background-position: center;
   background-size: cover;
   margin-right: -0.313rem;
   left: 0;
 }
-.main_con_four .now-button-next::after,
-.main_con_four .now-button-prev::after {
+.main_con_four .same-button-next::after,
+.main_con_four .same-button-prev::after {
   display: none;
 }
 .main_con_four .con_img_box {
@@ -166,6 +166,12 @@
   .main_con_four .con_img_box {
     max-height: 300px;
   }
+}
+.main_con_four .con_tabBox {
+  display: none;
+}
+.main_con_four .con_tabBox:first-of-type {
+  display: block;
 }
 
 .main_con_three {
