@@ -13,3 +13,32 @@
 
 // window.addEventListener('resize', updateVideoSource);
 // window.addEventListener('load', updateVideoSource);
+
+/*
+window.addEventListener("DOMContentLoaded", () => {
+    const topHeight = document.querySelector("#hd").offsetHeight; 
+    const targetDom = document.querySelector(".ej_content");
+
+    if (targetDom) {
+        targetDom.style.paddingTop = `${topHeight}px`;
+    }
+});
+*/
+
+// 픽스상단 높이만큼 아래 컨텐츠 상단여백주기
+const updatePadding = () => {
+    const topHeight = document.querySelector("#hd")?.offsetHeight || 0; 
+    const targetDom = document.querySelector(".ej_content");
+
+    if (targetDom) {
+        targetDom.style.paddingTop = `${topHeight}px`;
+    }
+};
+
+// Run once on DOM load
+window.addEventListener("DOMContentLoaded", updatePadding);
+
+// Run on window resize to adjust dynamically
+window.addEventListener("resize", updatePadding);
+
+

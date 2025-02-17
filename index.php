@@ -1,5 +1,6 @@
 <?php 
-define('_INDEX_', true);
+define('_INDEX_', true); 
+include_once("./config.php");
 include_once("./layout/top.php");
 ?>
 
@@ -52,7 +53,7 @@ include_once("./layout/top.php");
         <div class="container ">
             <div class="point_txt organic d-lg-none">BEST SPOT</div>
             <div class="main_tit">요즘 주목받는<br class="d-lg-none"> 베스트스팟</div>
-            <?php include_once("./main/best_sopt.php"); ?>
+            <?php include_once("./main/best_spot.php"); ?>
         </div>
     </div>
     <!--// yena hotspot -->

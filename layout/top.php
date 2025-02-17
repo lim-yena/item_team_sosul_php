@@ -68,6 +68,8 @@
     <link rel="stylesheet" href="/css/eunjeong.min.css">
     <link rel="stylesheet" href="/css/chaeun.css">
 
+    <script src="/js/ej.js"></script>
+
 
 </head>
 <body> 
@@ -118,16 +120,11 @@
                 </li>
             </ul>
         </div>
+        <?php 
+        if(defined('_INDEX_')) include_once(ROOT_DIR."/main/search.php");
+         ?>
     </header>
-    <div class="mo-search container_full d-lg-none d-flex jcb aic white_bg">
-        <button class="mo-search-btn container_full white_bg point_txt">
-            <svg xmlns="//www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                <path d="M15.4667 9.5625C15.4667 12.858 12.8077 15.525 9.53333 15.525C6.25896 15.525 3.6 12.858 3.6 9.5625C3.6 6.26698 6.25896 3.6 9.53333 3.6C12.8077 3.6 15.4667 6.26698 15.4667 9.5625Z" stroke="#3F422F" stroke-width="1.2"/>
-                <line y1="-0.6" x2="5.29153" y2="-0.6" transform="matrix(0.70553 0.70868 -0.70553 0.70868 13.2667 14.25)" stroke="#3F422F" stroke-width="1.2"/>
-            </svg>
-            어디로 떠나볼까요?
-        </button>
-    </div>    
+   
     <!--// eunjeong header -->
 
     <!-- eunjeong  mob-menu -->
@@ -258,3 +255,4 @@
 
 
     <!--// eunjeong  mob-menu -->
+    <div class='ej_content'>
