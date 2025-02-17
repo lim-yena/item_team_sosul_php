@@ -46,6 +46,7 @@
 .tab_btn li a {
   display: block;
   padding: 5px 25px;
+  font-size: 14px;
 }
 
 /* 소슬 띠배너 관련 스타일 */

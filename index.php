@@ -30,6 +30,34 @@ include_once("./layout/top.php");
     </div>            
     <!--// jeaeun four -->
 
+    <!-- yena four add -->
+    <div class="main_con main_con_four gray5_bg p100">
+        <div class="container">
+            <div class="tit">
+                <div class="point_txt organic d-lg-none">NOW HERE</div>
+                <div class="main_tit panBlack">당신을 위한 추천,<br class="d-lg-none"> 지금 여기2</div>
+                <button class="all-btn point_txt gray3">전체보기</button>
+            </div>
+            <?php include_once("./main/slide_four2.php"); ?>
+            <button class="mo-all-btn point_txt gray3 d-lg-none">전체보기</button>
+        </div>
+    </div>            
+    <!--// yena four add -->
+
+    <!-- yena four add -->
+    <div class="main_con main_con_four p100">
+        <div class="container">
+            <div class="tit">
+                <div class="point_txt organic d-lg-none">NOW HERE</div>
+                <div class="main_tit panBlack">당신을 위한 추천,<br class="d-lg-none"> 지금 여기3</div>
+                <button class="all-btn point_txt gray3">전체보기</button>
+            </div>
+            <?php include_once("./main/slide_four3.php"); ?>
+            <button class="mo-all-btn point_txt gray3 d-lg-none">전체보기</button>
+        </div>
+    </div>            
+    <!--// yena four add -->
+
     <!-- jeaeun three -->
     <div class="main_con main_con_three p100">
         <div class="container">
