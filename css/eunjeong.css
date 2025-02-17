@@ -20,14 +20,18 @@
 }
 
 #hd {
-  max-width: 120rem;
   height: 4.5rem;
   position: relative;
   z-index: 10;
 }
-#hd .container {
+
+#hd .container_full {
   margin: 0 auto;
   padding: 1.25rem 0;
+}
+
+#gnb {
+  width: 0;
 }
 
 #gnb a {
@@ -36,6 +40,7 @@
   font-weight: 700;
   padding: 0.625rem;
 }
+
 #gnb a:hover {
   color: #D68B30;
 }
@@ -56,12 +61,18 @@
   font-weight: 600;
   gap: 0.3125rem;
   justify-content: flex-end;
-  padding: 0.3125rem 0.625rem;
+  width: 0;
 }
+
+.util a {
+  display: flex;
+  padding: 10px 5px;
+  align-items: center;
+}
+
 .util svg {
-  width: 1.25rem;
-  height: 1.25rem;
-  margin-right: 0.3125rem;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 a {
@@ -72,7 +83,6 @@ a {
 
 .mo-search {
   display: flex;
-  width: 100%;
   height: 3rem;
   border-radius: 100px;
   padding: 5px 10px;
@@ -117,14 +127,37 @@ a {
 .list-group-text {
   align-items: flex-start;
   gap: 10px;
-  padding: 20px 5px;
+  padding: 0;
 }
 
 a.list-group-reserve {
   width: calc(50% - 5px);
   align-items: flex-start;
   text-align: center;
-  padding: 20px 5px;
+}
+
+.mob-top-text {
+  position: relative;
+}
+
+.mob_menu_text {
+  position: absolute;
+  font-weight: 800;
+  margin-top: 40px;
+}
+
+.mob_menu {
+  font-weight: 700;
+}
+
+.mob_container {
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-top: 20px;
+}
+
+.mob_notice {
+  gap: 5px;
 }
 
 .video-container {
@@ -147,11 +180,10 @@ a.list-group-reserve {
   left: 0;
   right: 0;
   margin: auto;
-  width: calc(100% - 30px);
   border-radius: 0.625rem;
   z-index: -1;
   -webkit-clip-path: inset(0 round 0.625rem);
-          clip-path: inset(0 round 0.625rem);
+  clip-path: inset(0 round 0.625rem);
 }
 
 .video-icon {
@@ -213,6 +245,7 @@ a.list-group-reserve {
   font-weight: 600;
   color: #777;
 }
+
 .search-container button svg {
   width: 1.4375rem;
   height: 1.4375rem;
@@ -263,13 +296,16 @@ a.list-group-reserve {
   border-top: none;
   justify-content: center;
 }
+
 .quick-btn:first-child {
   border-top: 0.0625rem solid #DDD;
 }
+
 .quick-btn svg {
   width: 1.5rem;
   height: 1.5rem;
 }
+
 .quick-btn span {
   display: block;
 }
@@ -286,6 +322,10 @@ a.list-group-reserve {
 
 .btn-top {
   border-radius: 0 0 10% 10%;
+}
+
+h1 {
+  font-size: small;
 }
 
 h1 a img {

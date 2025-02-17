@@ -1,53 +1,118 @@
 
 //지금여기
-  const nowswiper = new Swiper('.nowSwiper', {
-    slidesPerView: 2,
-    slidesPerGroup: 1,
-    grid: {
-        rows: 2,
-        fill: 'row',
-    },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-    controller: {
-        control: null // 다른 슬라이더와 연동
-    },
-    freeMode: false,
-    navigation: {
-        nextEl: '.now-button-next',
-        prevEl: '.now-button-prev',
-    },
-    breakpoints: {
-        991: {
-            slidesPerView: 4,
-            slidesPerGroup: 1,
-            grid: {
-                rows: 1,
-                fill: 'row',
-            },
-        },
-    },
-    on: {
-        slideChange: function () {
-            // 현재 활성화된 슬라이드 인덱스
-            const activeIndex = this.activeIndex;
-
-            // 모든 페이지네이션 bullet 가져오기
-            const bullets = document.querySelectorAll('.swiper-pagination .swiper-pagination-bullet');
-
-            // 각 bullet에 대해 활성화 상태 적용
-            bullets.forEach((bullet, index) => {
-                if (index <= activeIndex) {
-                    bullet.classList.add('swiper-pagination-bullet-active'); // 활성화 클래스 추가
-                } else {
-                    bullet.classList.remove('swiper-pagination-bullet-active'); // 비활성화 클래스 제거
-                }
-            });
-        },
-    },
+document.addEventListener("DOMContentLoaded", function () {
+    tab();
 });
+
+function tab() {
+    // 탭메뉴 실행 함수
+    function activateTab(tabId) {
+        // 초기화
+        document.querySelectorAll(".tab_wrap .tit_list > li").forEach(function (li) {
+            li.classList.remove("active");
+        });
+        document.querySelectorAll(".tab_wrap .tab_list").forEach(function (tab) {
+            tab.style.display = "none";
+        });
+
+        // 실행
+        const activeTab = document.querySelector(`.tab_wrap .tit_list > li a[href*="${tabId}"]`);
+        if (activeTab) {
+            activeTab.parentElement.classList.add("active");
+            document.querySelector(tabId).style.display = "block";
+        }
+    }
+
+    // 탭메뉴 클릭할 때 실행
+    document.querySelectorAll(".tab_wrap .tit_list > li a").forEach(function (anchor) {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            let tabId = anchor.getAttribute("href");
+            activateTab(tabId);
+        });
+    });
+
+    // 페이지 로드했을 때 탭메뉴 선택
+    let firstTabId = document.querySelector('.tab_wrap .tit_list > li:first-child a').getAttribute('href');
+    activateTab(firstTabId);
+
+    slider(); // 슬라이드 실행
+}
+
+function slider() {
+    document.querySelectorAll(".slider").forEach(function (slider, index) {
+        let swiper = undefined;
+        let slideNum = slider.querySelectorAll('.swiper-slide').length; // 슬라이드 총 개수
+        let slideInx = 0; // 현재 슬라이드 index
+
+        // 디바이스 체크
+        let oldWChk = window.innerWidth > 768 ? 'pc' : 'mo';
+        sliderAct();
+
+        window.addEventListener("resize", function () {
+            let newWChk = window.innerWidth > 768 ? 'pc' : 'mo';
+            if (newWChk !== oldWChk) {
+                oldWChk = newWChk;
+                sliderAct();
+            }
+        });
+
+        function sliderAct() {
+            // 슬라이드 인덱스 클래스 추가
+            slider.classList.add(`slider${index}`);
+
+            // 슬라이드 초기화
+            if (swiper !== undefined) {
+                swiper.destroy();
+                swiper = undefined;
+            }
+
+            // slidesPerView 옵션 설정
+            let viewNum = oldWChk === 'pc' ? 4 : 2;
+            // loop 옵션 체크
+            let loopChk = slideNum > viewNum;
+
+            swiper = new Swiper(`.slider${index} .inner`, {
+                slidesPerView: 2,
+                slidesPerGroup: 1,
+                grid: {
+                    rows: 2,
+                    fill: 'row',
+                },
+                pagination: {
+                    el: document.querySelector(`.slider${index} .swiper-pagination`),
+                    clickable: true,
+                },
+                controller: {
+                    control: null // 다른 슬라이더와 연동
+                },
+                freeMode: false,
+                breakpoints: {
+                    991: {
+                        slidesPerView: 4,
+                        slidesPerGroup: 1,
+                        grid: {
+                            rows: 1,
+                            fill: 'row',
+                        },
+                    },
+                },
+                loop: loopChk,
+                navigation: {
+                    prevEl: document.querySelector(`.slider${index} .btn_prev`),
+                    nextEl: document.querySelector(`.slider${index} .btn_next`),
+                },
+                on: {
+                    activeIndexChange: function () {
+                        if (getComputedStyle(document.querySelector(`.slider${index}`).parentElement).display !== 'none') {
+                            slideInx = this.realIndex; // 현재 슬라이드 index 갱신
+                        }
+                    },
+                },
+            });
+        }
+    });
+}
 
 //지금여기 2
 const nowswiper2 = new Swiper('.nowSwiper2', {
