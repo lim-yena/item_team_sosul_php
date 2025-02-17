@@ -16,11 +16,34 @@
     letter-spacing: -1px;
 }
 
-/* 소슬 탭 */
-.con_tab {
-    .con_tab {
-        display:block;
+/* 소슬 지금여기 추가 */
+.slider {
+    overflow: hidden;
+}
+
+.tab_btn {
+    margin-bottom:20px;
+    overflow-x: auto;
+    white-space: nowrap;
+    li {
+        border-radius:30px;
+        overflow:hidden;
+        border:1px solid #ddd;
+        display: inline-block;
+        margin-right:5px;
+        &.active {
+            background:rgba(63, 66, 47, 1);
+            border:1px solid;
+            a {
+                color:#fff;
+            }
+        }
+        a {
+            display: block;
+            padding: 5px 25px;
+        }
     }
+    
 }
 
 

@@ -1,4 +1,5 @@
 
+
 //지금여기
 document.addEventListener("DOMContentLoaded", function () {
     tab();
@@ -8,7 +9,7 @@ function tab() {
     // 탭메뉴 실행 함수
     function activateTab(tabId) {
         // 초기화
-        document.querySelectorAll(".tab_wrap .tit_list > li").forEach(function (li) {
+        document.querySelectorAll(".tab_wrap .tab_btn > li").forEach(function (li) {
             li.classList.remove("active");
         });
         document.querySelectorAll(".tab_wrap .tab_list").forEach(function (tab) {
@@ -16,7 +17,7 @@ function tab() {
         });
 
         // 실행
-        const activeTab = document.querySelector(`.tab_wrap .tit_list > li a[href*="${tabId}"]`);
+        const activeTab = document.querySelector(`.tab_wrap .tab_btn > li a[href*="${tabId}"]`);
         if (activeTab) {
             activeTab.parentElement.classList.add("active");
             document.querySelector(tabId).style.display = "block";
@@ -24,7 +25,7 @@ function tab() {
     }
 
     // 탭메뉴 클릭할 때 실행
-    document.querySelectorAll(".tab_wrap .tit_list > li a").forEach(function (anchor) {
+    document.querySelectorAll(".tab_wrap .tab_btn > li a").forEach(function (anchor) {
         anchor.addEventListener("click", function (e) {
             e.preventDefault();
             let tabId = anchor.getAttribute("href");
@@ -33,7 +34,7 @@ function tab() {
     });
 
     // 페이지 로드했을 때 탭메뉴 선택
-    let firstTabId = document.querySelector('.tab_wrap .tit_list > li:first-child a').getAttribute('href');
+    let firstTabId = document.querySelector('.tab_wrap .tab_btn > li:first-child a').getAttribute('href');
     activateTab(firstTabId);
 
     slider(); // 슬라이드 실행
@@ -46,11 +47,11 @@ function slider() {
         let slideInx = 0; // 현재 슬라이드 index
 
         // 디바이스 체크
-        let oldWChk = window.innerWidth > 768 ? 'pc' : 'mo';
+        let oldWChk = window.innerWidth > 991 ? 'pc' : 'mo';
         sliderAct();
 
         window.addEventListener("resize", function () {
-            let newWChk = window.innerWidth > 768 ? 'pc' : 'mo';
+            let newWChk = window.innerWidth > 991 ? 'pc' : 'mo';
             if (newWChk !== oldWChk) {
                 oldWChk = newWChk;
                 sliderAct();
@@ -97,7 +98,6 @@ function slider() {
                         },
                     },
                 },
-                loop: loopChk,
                 navigation: {
                     prevEl: document.querySelector(`.slider${index} .btn_prev`),
                     nextEl: document.querySelector(`.slider${index} .btn_next`),
