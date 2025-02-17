@@ -25,20 +25,47 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 */
 
-// 픽스상단 높이만큼 아래 컨텐츠 상단여백주기
-const updatePadding = () => {
-    const topHeight = document.querySelector("#hd")?.offsetHeight || 0; 
-    const targetDom = document.querySelector(".ej_content");
+window.addEventListener("DOMContentLoaded", () => {
+    // 픽스상단 높이만큼 아래 컨텐츠 상단여백 적용
+    const updatePadding = () => {
+        const topHeight = document.querySelector("#hd")?.offsetHeight || 0; 
+        const targetDom = document.querySelector(".ej_content");
 
-    if (targetDom) {
-        targetDom.style.paddingTop = `${topHeight}px`;
-    }
-};
+        if (targetDom) {
+            targetDom.style.paddingTop = `${topHeight}px`;
+        }
+    };
 
-// Run once on DOM load
-window.addEventListener("DOMContentLoaded", updatePadding);
+    // 실행: DOM 로드 후 & 윈도우 리사이즈 시
+    updatePadding();
+    window.addEventListener("resize", updatePadding);
 
-// Run on window resize to adjust dynamically
-window.addEventListener("resize", updatePadding);
+    // 📌 스크롤 방향 감지 후 body에 'down' 클래스 추가/제거
+    let lastScrollY = window.scrollY; // 이전 스크롤 위치 저장
+
+    const handleScroll = () => {
+        const currentScrollY = window.scrollY;
+        
+        if (currentScrollY > lastScrollY) {
+            // 아래로 스크롤 시 'down' 클래스 추가
+            document.body.classList.add("down");
+        } else {
+            // 위로 스크롤 시 'down' 클래스 제거
+            document.body.classList.remove("down");
+        }
+
+        lastScrollY = currentScrollY; // 현재 스크롤 값을 저장
+    };
+
+    window.addEventListener("scroll", handleScroll);
+});
+
+
+
+
+
+
+
+
 
 

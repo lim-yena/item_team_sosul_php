@@ -75,8 +75,8 @@
 <body> 
 
     <!-- eunjeong header -->
-    <header id="hd" class="d-flex white">
-        <div class="container_full d-flex jcb aic">
+    <header id="hd" class="d-flex white flex-wrap">
+        <div class="container_full d-flex jcb aic ej_innertop">
             <h1 class="order-1"><a href="/"><img src="//item-team-sosul.vercel.app/img/logo/logo.svg" alt=""></a></h1>
 
             <button class="Category-btn d-lg-none white bg-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#categoryMenu" aria-controls="categoryMenu">

@@ -1,4 +1,4 @@
-<div class="search-box d-flex aic jcc d-none d-lg-flex ">
+<div class="search-box d-flex  jcc d-none d-lg-flex ">
     <!-- 배경처리 -->
     
     <div class="search-container d-none d-lg-flex aic basic_txt white"> 
@@ -32,11 +32,12 @@
         <button class="search-btn d-flex jic aic basic_txt white">
             <span>검색</span>
         </button>
-    </div>  
+    </div> 
+     <!-- 배경처리 --> 
 </div>
 
-<!--
-<div class="mo-search container_full d-lg-none d-flex jcb aic white_bg position-absolute ">
+
+<div class="mo-search container_full d-lg-none d-flex jcb aic white_bg  ">
         <button class="mo-search-btn container_full white_bg point_txt">
             <svg xmlns="//www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                 <path d="M15.4667 9.5625C15.4667 12.858 12.8077 15.525 9.53333 15.525C6.25896 15.525 3.6 12.858 3.6 9.5625C3.6 6.26698 6.25896 3.6 9.53333 3.6C12.8077 3.6 15.4667 6.26698 15.4667 9.5625Z" stroke="#3F422F" stroke-width="1.2"/>
@@ -45,4 +46,4 @@
             어디로 떠나볼까요?
         </button>
 </div> 
--->
+
