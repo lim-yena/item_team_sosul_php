@@ -35,7 +35,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- 텍스트 폰트 -->
-    <link href="//fonts.googleapis.com/css2?family=Suit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT.css" rel="stylesheet">
 
     <!-- font icon -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
