@@ -12,6 +12,10 @@ include_once("./layout/top.php");
     <?php include_once("./main/search.php"); ?>
     <!--// eunjeong search -->
 
+    <!-- soyoung popup -->
+    <?php include_once("./main/popup_top.php"); ?>
+    <!--// soyoung popup -->
+
     <!-- eunjeong quick -->
     <?php include_once("./main/quick.php"); ?>
     <!--// eunjeong quick -->      
