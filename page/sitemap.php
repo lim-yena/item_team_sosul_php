@@ -1,5 +1,7 @@
 
-<?php include_once("../layout/top.php"); ?>
+<?php 
+include_once("../config.php");
+include_once("../layout/top.php"); ?>
 
 <div class='vh-100'>
     <h2>사이트맵</h2>
