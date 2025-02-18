@@ -68,13 +68,15 @@
     <link rel="stylesheet" href="/css/eunjeong.min.css">
     <link rel="stylesheet" href="/css/chaeun.css">
 
+    <script src="/js/ej.js"></script>
+
 
 </head>
 <body> 
 
     <!-- eunjeong header -->
-    <header id="hd" class="d-flex white">
-        <div class="container_full d-flex jcb aic">
+    <header id="hd" class="d-flex white flex-wrap">
+        <div class="container_full d-flex jcb aic ej_innertop">
             <h1 class="order-1"><a href="/"><img src="//item-team-sosul.vercel.app/img/logo/logo.svg" alt=""></a></h1>
 
             <button class="Category-btn d-lg-none white bg-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#categoryMenu" aria-controls="categoryMenu">
@@ -118,23 +120,18 @@
                 </li>
             </ul>
         </div>
+        <?php 
+        if(defined('_INDEX_')) include_once(ROOT_DIR."/main/search.php");
+         ?>
     </header>
-    <div class="mo-search container_full d-lg-none d-flex jcb aic white_bg">
-        <button class="mo-search-btn container_full white_bg point_txt">
-            <svg xmlns="//www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                <path d="M15.4667 9.5625C15.4667 12.858 12.8077 15.525 9.53333 15.525C6.25896 15.525 3.6 12.858 3.6 9.5625C3.6 6.26698 6.25896 3.6 9.53333 3.6C12.8077 3.6 15.4667 6.26698 15.4667 9.5625Z" stroke="#3F422F" stroke-width="1.2"/>
-                <line y1="-0.6" x2="5.29153" y2="-0.6" transform="matrix(0.70553 0.70868 -0.70553 0.70868 13.2667 14.25)" stroke="#3F422F" stroke-width="1.2"/>
-            </svg>
-            어디로 떠나볼까요?
-        </button>
-    </div>    
+   
     <!--// eunjeong header -->
 
     <!-- eunjeong  mob-menu -->
 
     <div class="offcanvas offcanvas-start" tabindex="-1" id="categoryMenu" aria-labelledby="categoryMenuLabel">
-        <div class="offcanvas-header list_tit">
-            <h5 id="categoryMenuLabel">로그인해주세요</h5>
+        <div class="mob-top-text offcanvas-header">
+            <div class="mob_menu_text list_tit">로그인해주세요</div>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
 
@@ -142,7 +139,7 @@
             <ul class="list-group d-flex flex-wrap flex-row justify-content-around g-2">
                 <li class="list-group-item d-flex flex-column aic point_txt">
                     <div class="icon_area_ej d-flex aic jcc">
-                        <svg width="26" height="26" viewBox="0 0 27 26" fill="none" xmlns="//www.w3.org/2000/svg">
+                        <svg width="26" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M20.8676 8.68549C20.3491 7.16272 18.8737 6.11768 17.2686 6.11768C15.3843 6.11768 13.7493 7.61059 13.5001 9.45186C13.2608 7.61059 11.6158 6.11768 9.73161 6.11768C8.12651 6.11768 6.65103 7.16272 6.13261 8.68549C5.11572 11.6614 7.03984 14.4283 9.21319 16.2695C9.89112 16.8468 12.9518 19.4345 13.4602 19.8525C13.4702 19.8625 13.4901 19.8824 13.5001 19.8824C13.5001 19.8824 13.53 19.8625 13.54 19.8525C14.0484 19.4246 17.1091 16.8368 17.787 16.2695C19.9603 14.4283 21.8845 11.6614 20.8676 8.68549Z" stroke="#3F422F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
@@ -150,7 +147,7 @@
                 </li>
                 <li class="list-group-item d-flex flex-column aic point_txt">
                     <div class="icon_area_ej d-flex aic jcc">
-                        <svg width="26" height="26" viewBox="0 0 20 20" fill="none" xmlns="//www.w3.org/2000/svg">
+                        <svg width="26" height="26" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M16.9529 4.69562H4V16H16.9529V4.69562Z" stroke="#3F422F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M4 8.08698H16.9529" stroke="#3F422F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M7.5314 3V5.82609" stroke="#3F422F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -162,7 +159,7 @@
                 </li>
                 <li class="list-group-item d-flex flex-column aic point_txt">
                     <div class="icon_area_ej d-flex aic jcc">
-                        <svg xmlns="//www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 34 34" fill="none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 34 34" fill="none">
                             <path d="M12.8739 22.4333V28.6102" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M23.4783 16.3592C23.113 16.2306 22.7217 16.1534 22.3174 16.1534H12.3783C10.513 16.1534 9 17.6461 9 19.4863V28.7131H25.6957V19.4863C25.6957 18.0579 24.7696 16.8354 23.4783 16.3592Z" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M21.9261 22.4333V28.6102" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -173,7 +170,7 @@
                 </li>
                 <li class="list-group-item d-flex flex-column aic point_txt">
                     <div class="icon_area_ej d-flex aic jcc">
-                        <svg xmlns="//www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 34 34" fill="none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 34 34" fill="none">
                             <path d="M17.6025 16.8001C14.6904 16.8001 12.2705 14.9007 11.5459 12.3334H8.45605C4.9834 12.3334 2.16699 15.0317 2.16699 18.3588V18.9614C2.16699 22.2885 4.9834 24.9868 8.45605 24.9868L6.8291 29.8334L14.54 24.9868H16.8779C20.3506 24.9868 23.167 22.2885 23.167 18.9614V18.8304L19.9268 16.787H17.6025V16.8001Z" stroke="#3F422F" stroke-width="1.56" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M16.1072 17.312L12.2241 21.0291C12.0965 21.1512 11.8698 21.1512 11.7422 21.0291L9.9707 19.3333" stroke="#3F422F" stroke-width="1.56" stroke-miterlimit="10" stroke-linecap="round"/>
                             <path d="M26.1877 4.16663H17.785C14.3146 4.16663 11.5 6.86296 11.5 10.1876V10.7897C11.5 11.3394 11.5956 11.8499 11.7459 12.3603C12.4701 14.9258 14.8884 16.8237 17.7986 16.8237H20.135L23.3731 18.8656L27.8409 21.6666L26.215 16.8237C29.6854 16.8237 32.5 14.1274 32.5 10.8028V10.1876C32.4863 6.86296 29.6581 4.16663 26.1877 4.16663Z" stroke="#3F422F" stroke-width="1.56" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -184,32 +181,78 @@
                     <span>고객센터</span>
                 </li>
             </ul>
+            
+            <ul class="mob_container d-flex gray5_bg">
+                <li class="mob_notice aic d-flex sub_txt">
+                    <a class="apricot">HOT</a>
+                    <a href="" class="gray1">공지사항이 출력됩니다.</a>
+                </li>
+            </ul>
 
             <ul class="d-flex flex-column align-items-start gap-2 p-3 w-100">
-                <li class="list-group-text point_txt">예약하기</li>
+                <li class="list-group-text sub_txt gray3 ">예약하기</li>
                 <li class="container">
                     <div class="row g-2">
                         <div class="col-6">
-                            <a href="" class="d-block py-2">캠핑</a>
+                            <a href="" class="mob_menu d-block py-2 basic_txt ">캠핑</a>
                         </div>
                         <div class="col-6">
-                            <a href="" class="d-block py-2">글램핑</a>
+                            <a href="" class="mob_menu d-block py-2 basic_txt">글램핑</a>
                         </div>
                         <div class="col-6">
-                            <a href="" class="d-block py-2">카라반</a>
+                            <a href="" class="mob_menu d-block py-2 basic_txt">카라반</a>
                         </div>
                         <div class="col-6">
-                            <a href="" class="d-block py-2">차박</a>
+                            <a href="" class="mob_menu d-block py-2 basic_txt">차박</a>
                         </div>
                     </div>
                 </li>
             </ul>
-                <li class="list-group-item">테마별</li>
+            <hr class="my-3 border-secondary"> 
 
-                <li class="list-group-item">프로모션</li>
+            <ul class="d-flex flex-column align-items-start gap-2 p-3 w-100">
+                <li class="list-group-text sub_txt gray3">테마별</li>
+                <li class="container">
+                    <div class="row g-2">
+                        <div class="col-6">
+                            <a href="" class="mob_menu d-block py-2 basic_txt">키즈캠핑</a>
+                        </div>
+                        <div class="col-6">
+                            <a href="" class="mob_menu d-block py-2 basic_txt">반려견동반</a>
+                        </div>
+                        <div class="col-6">
+                            <a href="" class="mob_menu d-block py-2 basic_txt">이색체험</a>
+                        </div>
+                        <div class="col-6">
+                            <a href="" class="mob_menu d-block py-2 basic_txt">소슬단독스팟</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <hr class="my-3 border-secondary"> 
+
+            <ul class="d-flex flex-column align-items-start gap-2 p-3 w-100">
+                <li class="list-group-text sub_txt gray3">프로모션</li>
+                <li class="container">
+                    <div class="row g-2 panBlack">
+                        <div class="col-6">
+                            <a href="" class="mob_menu d-block py-2 basic_txt">이벤트</a>
+                        </div>
+                        <div class="col-6">
+                            <a href="" class="mob_menu d-block py-2 basic_txt">지금 할인중</a>
+                        </div>
+                        <div class="col-6">
+                            <a href="" class="mob_menu d-block py-2 basic_txt">신규오픈</a>
+                        </div>
+                        <div class="col-6">
+                            <a href="" class="mob_menu d-block py-2 basic_txt">마감임박</a>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
 
 
     <!--// eunjeong  mob-menu -->
+    <div class='ej_content'>

@@ -1,3 +1,4 @@
+</div>
     <!-- cha footer -->
     <footer class="footer">
         <div class="container">

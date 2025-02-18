@@ -1,5 +1,6 @@
 <?php 
-define('_INDEX_', true);
+define('_INDEX_', true); 
+include_once("./config.php");
 include_once("./layout/top.php");
 ?>
 
