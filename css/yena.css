@@ -19,9 +19,34 @@
   letter-spacing: -1px;
 }
 
-/* 소슬 탭 */
-.con_tab .con_tab {
+/* 소슬 지금여기 추가 */
+.slider {
+  overflow: hidden;
+}
+
+.tab_btn {
+  margin-bottom: 20px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.tab_btn li {
+  border-radius: 30px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  display: inline-block;
+  margin-right: 5px;
+}
+.tab_btn li.active {
+  background: rgb(63, 66, 47);
+  border: 1px solid;
+}
+.tab_btn li.active a {
+  color: #fff;
+}
+.tab_btn li a {
   display: block;
+  padding: 5px 25px;
+  font-size: 14px;
 }
 
 /* 소슬 띠배너 관련 스타일 */

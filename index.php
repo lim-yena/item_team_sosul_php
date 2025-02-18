@@ -31,7 +31,7 @@ include_once("./layout/top.php");
     <!--// jeaeun four -->
 
     <!-- yena four add -->
-    <div class="main_con main_con_four p100">
+    <div class="main_con main_con_four gray5_bg p100">
         <div class="container">
             <div class="tit">
                 <div class="point_txt organic d-lg-none">NOW HERE</div>
@@ -42,7 +42,7 @@ include_once("./layout/top.php");
             <button class="mo-all-btn point_txt gray3 d-lg-none">전체보기</button>
         </div>
     </div>            
-    <!--// yena four add  -->
+    <!--// yena four add -->
 
     <!-- yena four add -->
     <div class="main_con main_con_four p100">
@@ -56,7 +56,7 @@ include_once("./layout/top.php");
             <button class="mo-all-btn point_txt gray3 d-lg-none">전체보기</button>
         </div>
     </div>            
-    <!--// yena four add  -->
+    <!--// yena four add -->
 
     <!-- jeaeun three -->
     <div class="main_con main_con_three p100">

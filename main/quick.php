@@ -1,6 +1,6 @@
 <div class="quick-menu d-none d-lg-flex point_txt">
     <button class="quick-btn btn-reserve organic">
-        <svg xmlns="//www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
             <path d="M16.9529 4.69562H4V16H16.9529V4.69562Z" stroke="#3F422F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M4 8.08698H16.9529" stroke="#3F422F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M7.5314 3V5.82609" stroke="#3F422F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -10,7 +10,7 @@
         <span>예약확인</span>
     </button>
     <button class="quick-btn btn-chat organic">
-        <svg xmlns="//www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
             <path d="M17.6025 16.8001C14.6904 16.8001 12.2705 14.9007 11.5459 12.3334H8.45605C4.9834 12.3334 2.16699 15.0317 2.16699 18.3588V18.9614C2.16699 22.2885 4.9834 24.9868 8.45605 24.9868L6.8291 29.8334L14.54 24.9868H16.8779C20.3506 24.9868 23.167 22.2885 23.167 18.9614V18.8304L19.9268 16.787H17.6025V16.8001Z" stroke="#3F422F" stroke-width="1.56" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M16.1072 17.312L12.2241 21.0291C12.0965 21.1512 11.8698 21.1512 11.7422 21.0291L9.9707 19.3333" stroke="#3F422F" stroke-width="1.56" stroke-miterlimit="10" stroke-linecap="round"/>
             <path d="M26.1877 4.16663H17.785C14.3146 4.16663 11.5 6.86296 11.5 10.1876V10.7897C11.5 11.3394 11.5956 11.8499 11.7459 12.3603C12.4701 14.9258 14.8884 16.8237 17.7986 16.8237H20.135L23.3731 18.8656L27.8409 21.6666L26.215 16.8237C29.6854 16.8237 32.5 14.1274 32.5 10.8028V10.1876C32.4863 6.86296 29.6581 4.16663 26.1877 4.16663Z" stroke="#3F422F" stroke-width="1.56" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -20,7 +20,7 @@
         <span>고객센터</span>
     </button>
     <button class="quick-btn btn-log organic">
-        <svg xmlns="//www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
             <path d="M12.8739 22.4333V28.6102" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M23.4783 16.3592C23.113 16.2306 22.7217 16.1534 22.3174 16.1534H12.3783C10.513 16.1534 9 17.6461 9 19.4863V28.7131H25.6957V19.4863C25.6957 18.0579 24.7696 16.8354 23.4783 16.3592Z" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M21.9261 22.4333V28.6102" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -28,8 +28,8 @@
         </svg>
         <span>로그인</span>
     </button>
-    <button class="quick-btn btn-top organic white_bg">
-        <svg xmlns="//www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+    <button class="quick-btn btn-top organic organic_bg white">
+        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
             <path d="M7 22L17.0186 12" stroke="#fff" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
             <path d="M17.0186 12L27.0001 22" stroke="#fff" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
         </svg>
