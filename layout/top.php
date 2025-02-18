@@ -64,9 +64,11 @@
 
     <!-- 팀원들의 스타일 -->
     <link rel="stylesheet" href="/css/yena.min.css">
-    <link rel="stylesheet" href="/css/jaeeun.min.css">
+    <link rel="stylesheet" href="/css/soyoung.min.css">
     <link rel="stylesheet" href="/css/eunjeong.min.css">
-    <link rel="stylesheet" href="/css/chaeun.css">
+    <link rel="stylesheet" href="/css/hyuna.min.css">
+    <link rel="stylesheet" href="/css/jaeeun.min.css">
+    
 
     <script src="/js/ej.js"></script>
 
