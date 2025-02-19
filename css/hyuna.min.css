@@ -1,0 +1,1 @@
+.quick-menu{transform:translateX(100%);opacity:0;transition:transform .3s ease,opacity .3s ease}.quick-menu.show{transform:translateX(0);opacity:1}
