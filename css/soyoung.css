@@ -1,24 +1,117 @@
-.pop_box {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 300px;
-  padding: 20px;
-  background: white;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
-  z-index: 2;
-}
-.pop_box .popup-content {
-  text-align: center;
-  position: relative;
-}
-.pop_box .popup-content .close-btn {
-  position: absolute;
-  top: 5px;
-  right: 10px;
-  font-size: 20px;
-  cursor: pointer;
+@media (max-width: 991px) {
+  .modal-overlay_sy {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #F5F3F1;
+    z-index: 1050;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    overflow-y: auto;
+  }
+  .modal-content_sy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #2E2B28;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #D9D4CF;
+  }
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #2E2B28;
+  }
+  .search-box {
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #D9D4CF;
+    margin-top: 12px;
+  }
+  .search-box input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    outline: none;
+    color: #2E2B28;
+    text-align: center;
+  }
+  .tabs_sy {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    border-bottom: 1px solid #D9D4CF;
+    margin-top: 16px;
+  }
+  .tab-btn {
+    flex: 1;
+    text-align: center;
+    font-size: 16px;
+    padding: 12px 0;
+    color: #2E2B28;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+  }
+  .tab-btn.active {
+    font-weight: bold;
+    border-bottom: 2px solid #3D322C;
+    color: #3D322C;
+  }
+  .tab-content_sy {
+    display: none;
+    width: 100%;
+    max-width: 500px;
+    padding: 16px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #D9D4CF;
+    margin-top: 12px;
+  }
+  .calendar_sy {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #D9D4CF;
+    margin-top: 12px;
+    background: white;
+    text-align: center;
+  }
+  .calendar_sy input {
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    color: #2E2B28;
+  }
+  .search-btn_sy {
+    width: 100%;
+    max-width: 500px;
+    background: #3D322C;
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 16px;
+    font-weight: bold;
+  }
+  .search-btn_sy:hover {
+    background: #1f1a17;
+  }
 }

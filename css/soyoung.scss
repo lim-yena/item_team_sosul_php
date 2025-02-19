@@ -1,26 +1,144 @@
-.pop_box {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 300px;
-    padding: 20px;
-    background: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    z-index: 2;
-    
-    .popup-content {
-        text-align: center;
-        position: relative;
+// 🎨 색상 변수
+$primary-color: #3D322C;  // 버튼 & 활성 탭 색상
+$background-color: #F5F3F1;  // 전체 배경
+$border-color: #D9D4CF;  // 테두리 색상
+$text-color: #2E2B28;  // 기본 텍스트 색상
+$button-hover: darken($primary-color, 10%); // 버튼 호버 시 색상
 
-        .close-btn {
-            position: absolute;
-            top: 5px;
-            right: 10px;
-            font-size: 20px;
-            cursor: pointer;
-        }
+// 모바일에서만 적용
+@media (max-width: 991px) {
+  // 📌 모달창 스타일
+  .modal-overlay_sy {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: $background-color;
+    z-index: 1050;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    overflow-y: auto;
+  }
+
+  // 📌 검색창 헤더 스타일
+  .modal-content_sy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    font-size: 18px;
+    font-weight: bold;
+    color: $text-color;
+    padding-bottom: 12px;
+    border-bottom: 1px solid $border-color;
+  }
+
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: $text-color;
+  }
+
+  // 📌 검색 입력창 스타일
+  .search-box {
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid $border-color;
+    margin-top: 12px;
+
+    input {
+      width: 100%;
+      border: none;
+      background: transparent;
+      font-size: 16px;
+      outline: none;
+      color: $text-color;
+      text-align: center;
     }
+  }
+
+  // 📌 탭 버튼 스타일 (어디로 갈까요? / 언제 갈까요?)
+  .tabs_sy {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    border-bottom: 1px solid $border-color;
+    margin-top: 16px;
+  }
+
+  .tab-btn {
+    flex: 1;
+    text-align: center;
+    font-size: 16px;
+    padding: 12px 0;
+    color: $text-color;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+
+    &.active {
+      font-weight: bold;
+      border-bottom: 2px solid $primary-color;
+      color: $primary-color;
+    }
+  }
+
+  // 📌 탭 내용 영역
+  .tab-content_sy {
+    display: none;
+    width: 100%;
+    max-width: 500px;
+    padding: 16px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid $border-color;
+    margin-top: 12px;
+  }
+
+  // 📌 달력 스타일
+  .calendar_sy {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid $border-color;
+    margin-top: 12px;
+    background: white;
+    text-align: center;
+
+    input {
+      width: 100%;
+      border: none;
+      font-size: 16px;
+      color: $text-color;
+    }
+  }
+
+  // 📌 검색 버튼 스타일
+  .search-btn_sy {
+    width: 100%;
+    max-width: 500px;
+    background: $primary-color;
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 16px;
+    font-weight: bold;
+
+    &:hover {
+      background: $button-hover;
+    }
+  }
 }
