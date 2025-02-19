@@ -8,13 +8,14 @@ include_once("./layout/top.php");
     <?php include_once("./main/video.php"); ?>
     <!--// eunjeong video -->
 
-    <!-- eunjeong search -->
-    <?php include_once("./main/search.php"); ?>
-    <!--// eunjeong search -->
 
-    <!-- eunjeong quick -->
-    <?php include_once("./main/quick.php"); ?>
-    <!--// eunjeong quick -->      
+    <!-- soyoung 모바일 검색팝업 : index에만 노출 -->
+    <?php include_once("./main/popup_top.php"); ?> 
+    <!-- //soyoung 모바일 검색팝업 : index에만 노출 -->
+
+    <!-- hyuna  icon 바로가기 : index에만 노출 -->
+    <?php include_once("./main/main_center_icon.php"); ?> 
+    <!-- // hyuna  icon 바로가기 : index에만 노출 -->
 
     <!-- jeaeun four -->
     <div class="main_con main_con_four p100">
@@ -111,5 +112,7 @@ include_once("./layout/top.php");
     <!-- ej notice -->
     <?php include_once("./main/notice.php"); ?>
     <!-- ej notice -->
+
+    <?php include_once("./main/quick.php"); ?>
 
     <?php include_once("./layout/bottom.php"); ?>

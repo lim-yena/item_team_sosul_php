@@ -1,9 +1,6 @@
 
 
-//지금여기_tab
-document.addEventListener("DOMContentLoaded", function () {
-    // initTabs();
-});
+
 
 document.addEventListener("DOMContentLoaded", () => {
     const tabs = document.querySelectorAll(".tab_wrap .tab_btn > li a");
@@ -24,13 +21,24 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector(tabId).style.display = "block";
         document.querySelector(`.tab_wrap .tab_btn > li a[href="${tabId}"]`).parentElement.classList.add("active");
     }
-});
 
 
-//지금여기_silde
-document.addEventListener("DOMContentLoaded", function () {
+    //지금여기_silde
     initSlider();
 });
+
+// 메인 퀵메뉴
+window.addEventListener('scroll', function() {
+    const menu = document.querySelector('.quick-menu');
+    if (window.scrollY > 100) { // 100px 이상 스크롤되면 메뉴가 나타납니다
+        menu.classList.add('show');
+    } else {
+        menu.classList.remove('show');
+    }
+});
+//-- 메인 퀵메뉴
+
+
 function initSlider() {
     document.querySelectorAll(".slider").forEach(function (slider, index) {
         let swiper = undefined;
