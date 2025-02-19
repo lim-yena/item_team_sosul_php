@@ -35,7 +35,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- 텍스트 폰트 -->
-    <link href="//fonts.googleapis.com/css2?family=Suit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT.css" rel="stylesheet">
 
     <!-- font icon -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -79,7 +79,7 @@
     <!-- eunjeong header -->
     <header id="hd" class="d-flex white flex-wrap">
         <div class="container_full d-flex jcb aic ej_innertop">
-            <h1 class="order-1"><a href="/"><img src="//item-team-sosul.vercel.app/img/logo/logo.svg" alt=""></a></h1>
+            <h1 class="order-1"><a href="/" class ="main-logo"><img src="//item-team-sosul.vercel.app/img/logo/logo.svg" alt=""></a></h1>
 
             <button class="Category-btn d-lg-none white bg-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#categoryMenu" aria-controls="categoryMenu">
                 <svg xmlns="//www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 20 20" fill="none">
@@ -106,7 +106,7 @@
                             <path d="M13.4199 3V5.82609" stroke="#3F422F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M13.2458 10.5493L10.3019 13.3754L8.47086 11.806" stroke="#3F422F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                    <span class="d-none d-lg-inline">예약하기</span></a></li>
+                    <span class="d-none d-lg-inline">예약확인</span></a></li>
                 <li>
                     <a href="/page/login.php">
                         <svg xmlns="//www.w3.org/2000/svg" width="21" height="12" viewBox="0 0 21 12" fill="none">
@@ -125,6 +125,7 @@
         <?php 
         if(defined('_INDEX_')) include_once(ROOT_DIR."/main/search.php");
          ?>
+        
     </header>
    
     <!--// eunjeong header -->
@@ -139,7 +140,7 @@
 
         <div class="offcanvas-body">
             <ul class="list-group d-flex flex-wrap flex-row justify-content-around g-2">
-                <li class="list-group-item d-flex flex-column aic point_txt">
+                <li class="list-group-item d-flex flex-column aic basic_txt">
                     <div class="icon_area_ej d-flex aic jcc">
                         <svg width="26" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M20.8676 8.68549C20.3491 7.16272 18.8737 6.11768 17.2686 6.11768C15.3843 6.11768 13.7493 7.61059 13.5001 9.45186C13.2608 7.61059 11.6158 6.11768 9.73161 6.11768C8.12651 6.11768 6.65103 7.16272 6.13261 8.68549C5.11572 11.6614 7.03984 14.4283 9.21319 16.2695C9.89112 16.8468 12.9518 19.4345 13.4602 19.8525C13.4702 19.8625 13.4901 19.8824 13.5001 19.8824C13.5001 19.8824 13.53 19.8625 13.54 19.8525C14.0484 19.4246 17.1091 16.8368 17.787 16.2695C19.9603 14.4283 21.8845 11.6614 20.8676 8.68549Z" stroke="#3F422F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>

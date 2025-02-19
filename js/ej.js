@@ -61,10 +61,20 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
-
-
-
+document.addEventListener("DOMContentLoaded", function () {
+    const moSearch = document.querySelector('.mo-search');
+    const header = document.querySelector('#hd');
+    const headerHeight = header.offsetHeight; // 헤더의 높이
+  
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > headerHeight) {
+        moSearch.classList.add("scrolled");
+      } else {
+        moSearch.classList.remove("scrolled");
+      }
+    });
+  });
+  
 
 
 

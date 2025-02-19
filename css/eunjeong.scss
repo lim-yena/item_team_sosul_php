@@ -25,13 +25,40 @@ $border-color: #DDD;
 }
 
 #hd {
- 
- 
+
   position: fixed;
   left:0;
   top:0; right:0;
   z-index: 1000;
   background-color: white;
+
+  
+  .mo-search {
+    display: flex;
+    height: 2.5rem;
+    border-radius: 100px;
+    padding: 5px 10px;
+    border: 1px solid #DDD;
+    gap: 0.313rem;
+    margin-bottom: 10px;
+  }
+  
+  .mo-search.scrolled {
+    position: fixed;
+    height: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%; /* 원하는 크기로 조정 */
+    padding: 5px 15px;
+    z-index: 100000;
+  }
+  
+  .mo-search-btn{
+    color: #5e5e5e;
+    border: none;
+    font-weight: 500;
+    text-align: left;
+  }
  
   .ej_innertop{
     padding: 16px 0;
@@ -39,20 +66,47 @@ $border-color: #DDD;
     background-color: white;
     z-index: 1000;
     @media (max-width:990px) {
-      padding: 8px 0;
-      
+      padding: 8px 0;  
     }
 
+    // .mo-search {
+    //   position: fixed;
+    //   display: flex;
+    //   top: 50%;
+    //   width: 100%;
+    //   height: 3rem;
+    //   border-radius: 100px;
+    //   padding: 5px 10px;
+    //   border: 1px solid #DDD;
+    //   gap: 0.313rem;
+    //   margin-bottom: 10px;
+    // }
+    
+    // .mo-search.scrolled {
+    //   position: absolute;
+    //   top: 50px; /* 헤더 중앙에 고정 */
+    //   left: 50%;
+    //   transform: translateX(-50%);
+    //   width: auto; /* 원하는 크기로 조정 */
+    //   background: rgba(255, 255, 255, 0.9); /* 반투명 효과 */
+    //   padding: 5px 15px;
+    //   border-radius: 20px;
+    //   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    // }
+    
+    // .mo-search-btn{
+    //   width: 100%;
+    //   color: #777;
+    //   border: none;
+    //   font-weight: 500;
+    //   text-align: left;
+    // }
   }
-   
-
 
 
   .container {
     margin: 0 auto;    
     padding: 1.25rem 0; // 20px 0
-
-
   }
   
 .search-box,
@@ -104,6 +158,7 @@ $border-color: #DDD;
   }
 }
 }
+
 
 .down {
   #hd{
@@ -166,24 +221,37 @@ a {
   color: $primary-color;
 }
 
-.mo-search {
-  display: flex;
-  width: 100%;
-  height: 3rem;
-  border-radius: 100px;
-  padding: 5px 10px;
-  border: 1px solid #DDD;
-  gap: 0.313rem;
-  margin-bottom: 10px;
-}
+// .mo-search {
+//   position: absolute;
+//   display: flex;
+//   width: 100%;
+//   height: 3rem;
+//   border-radius: 100px;
+//   padding: 5px 10px;
+//   border: 1px solid #DDD;
+//   gap: 0.313rem;
+//   margin-bottom: 10px;
+// }
 
-.mo-search-btn{
-  width: 100%;
-  color: #777;
-  border: none;
-  font-weight: 500;
-  text-align: left;
-}
+// .mo-search.scrolled {
+//   position: fixed;
+//   top: 50px; /* 헤더 중앙에 고정 */
+//   left: 50%;
+//   transform: translateX(-50%);
+//   width: auto; /* 원하는 크기로 조정 */
+//   background: rgba(255, 255, 255, 0.9); /* 반투명 효과 */
+//   padding: 5px 15px;
+//   border-radius: 20px;
+//   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+// }
+
+// .mo-search-btn{
+//   width: 100%;
+//   color: #777;
+//   border: none;
+//   font-weight: 500;
+//   text-align: left;
+// }
 
 .offcanvas {
   width: 300px; }

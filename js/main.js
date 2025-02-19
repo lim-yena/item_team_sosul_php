@@ -2,7 +2,7 @@
 
 //지금여기_tab
 document.addEventListener("DOMContentLoaded", function () {
-    initTabs();
+    // initTabs();
 });
 
 document.addEventListener("DOMContentLoaded", () => {
