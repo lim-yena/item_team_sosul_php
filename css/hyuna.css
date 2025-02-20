@@ -7,3 +7,24 @@
   transform: translateX(0);
   opacity: 1;
 }
+
+.h_sosul_banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6f6f6;
+  width: 100%;
+  height: 188px;
+}
+.h_sosul_banner .coupon_text_small {
+  color: #656565;
+  font-size: 28px;
+  font-weight: 500;
+}
+.h_sosul_banner .coupon_text_large {
+  font-size: 42px;
+  font-weight: 800;
+}
+.h_sosul_banner .coupon_text_box {
+  position: absolute;
+}

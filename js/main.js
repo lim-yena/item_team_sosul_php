@@ -27,10 +27,15 @@ document.addEventListener("DOMContentLoaded", () => {
     initSlider();
 });
 
-// 메인 퀵메뉴
+// hyuna_메인 퀵메뉴 스크롤
 window.addEventListener('scroll', function() {
     const menu = document.querySelector('.quick-menu');
-    if (window.scrollY > 100) { // 100px 이상 스크롤되면 메뉴가 나타납니다
+    const footer = document.querySelector('footer');
+    const footerTop = footer.offsetTop;
+    const footerHeight = footer.offsetHeight;
+    const windowHeight = window.innerHeight;
+
+    if (window.scrollY > 100 && window.scrollY + windowHeight < footerTop) { // 100px 이상 , 푸터가 화면에 안보일때
         menu.classList.add('show');
     } else {
         menu.classList.remove('show');
