@@ -58,3 +58,19 @@ window.addEventListener("DOMContentLoaded", function(){
 
 
  })
+//  document.querySelectorAll('.tab-button_sy').forEach(button => {
+//     button.addEventListener('click', () => {
+//       // 모든 버튼에서 active 클래스를 제거
+//       document.querySelectorAll('.tab-button_sy').forEach(btn => btn.classList.remove('active'));
+      
+//       // 클릭된 버튼에 active 클래스 추가
+//       button.classList.add('active');
+      
+//       // 해당하는 콘텐츠 표시 (예시로 콘솔에 로그)
+//       const tab = button.getAttribute('data-tab');
+//       console.log(`선택된 탭: ${tab}`);
+      
+//       // 여기서 탭에 맞는 콘텐츠를 보여주면 됩니다
+//     });
+//   });
+  

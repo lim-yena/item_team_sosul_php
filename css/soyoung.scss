@@ -28,14 +28,23 @@ $button-hover: darken($primary-color, 10%); // 버튼 호버 시 색상
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 500px;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
     color: $text-color;
     padding-bottom: 12px;
-    border-bottom: 1px solid $border-color;
+    text-align: center;
   }
+  .syinput {
+    display: flex;
+    height: 2.5rem;
 
+    input {
+      width: 100%;
+      height: 100%;
+      border: 1px solid #d9d4cf;
+      border-radius: 6px;
+  }
+  }
   .close-btn {
     background: none;
     border: none;
@@ -43,11 +52,23 @@ $button-hover: darken($primary-color, 10%); // 버튼 호버 시 색상
     cursor: pointer;
     color: $text-color;
   }
+  
+  .syinput_2 {
+    display: flex;
+    height: 2.5rem;
+    margin-top: 25px;
 
+    input {
+      width: 100%;
+      height: 100%;
+  }
+  }
+  .where_sy{
+    border: 1px;
+  }
   // 📌 검색 입력창 스타일
   .search-box {
     width: 100%;
-    max-width: 500px;
     background: white;
     padding: 12px;
     border-radius: 8px;
@@ -58,7 +79,7 @@ $button-hover: darken($primary-color, 10%); // 버튼 호버 시 색상
       width: 100%;
       border: none;
       background: transparent;
-      font-size: 16px;
+      font-size: 14px;
       outline: none;
       color: $text-color;
       text-align: center;
@@ -69,16 +90,16 @@ $button-hover: darken($primary-color, 10%); // 버튼 호버 시 색상
   .tabs_sy {
     display: flex;
     width: 100%;
-    max-width: 500px;
-    border-bottom: 1px solid $border-color;
-    margin-top: 16px;
+    border: 1px solid #d9d4cf;
+    border-radius: 6px;
+
   }
 
   .tab-btn {
     flex: 1;
     text-align: center;
-    font-size: 16px;
-    padding: 12px 0;
+    font-size: 14px;
+    padding: 10px 0;
     color: $text-color;
     border: none;
     background: transparent;
@@ -87,8 +108,8 @@ $button-hover: darken($primary-color, 10%); // 버튼 호버 시 색상
 
     &.active {
       font-weight: bold;
-      border-bottom: 2px solid $primary-color;
-      color: $primary-color;
+      background-color: #3d322c;
+      color: white;
     }
   }
 
@@ -96,7 +117,6 @@ $button-hover: darken($primary-color, 10%); // 버튼 호버 시 색상
   .tab-content_sy {
     display: none;
     width: 100%;
-    max-width: 500px;
     padding: 16px;
     background: white;
     border-radius: 8px;
@@ -105,9 +125,12 @@ $button-hover: darken($primary-color, 10%); // 버튼 호버 시 색상
   }
 
   // 📌 달력 스타일
+  .sy_date{
+    display: none;
+  }
+
   .calendar_sy {
     width: 100%;
-    max-width: 500px;
     padding: 12px;
     border-radius: 8px;
     border: 1px solid $border-color;
@@ -118,19 +141,34 @@ $button-hover: darken($primary-color, 10%); // 버튼 호버 시 색상
     input {
       width: 100%;
       border: none;
-      font-size: 16px;
+      font-size: 14px;
       color: $text-color;
     }
   }
 
   // 📌 검색 버튼 스타일
+  .reset_sy{
+    background-color: white;
+    margin-top: 16px;
+    border: none;
+    border-radius: 6px;
+  }
+  .bottom_sy{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 16px;
+  }
   .search-btn_sy {
-    width: 100%;
-    max-width: 500px;
+    width: 80%;
     background: $primary-color;
     color: white;
     padding: 14px;
-    font-size: 16px;
+    font-size: 14px;
     border: none;
     border-radius: 6px;
     cursor: pointer;
@@ -139,6 +177,57 @@ $button-hover: darken($primary-color, 10%); // 버튼 호버 시 색상
 
     &:hover {
       background: $button-hover;
+    }
+  }
+}
+
+.tab-container_sy {
+  display: flex;
+  flex-direction: column;
+
+  .tabs_sy2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .tab-checkbox-label {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      width: 90px;
+      justify-content: center;
+
+      .tab-checkbox {
+        display: none; /* 기본 체크박스를 숨깁니다. */
+      }
+
+      .tab-checkbox + span {
+        color: #332E2A;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0.24px;
+        text-transform: uppercase;
+        padding: 2px 15px;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background-color: white;
+        border-radius: 12px;
+        display: flex;
+        cursor: pointer;
+
+        &:hover {
+          background: var(--New-group-Panton-Black-C, #332E2A);
+          color: var(--New-group-Ivory, #FAF5EE);
+        }
+      }
+
+      .tab-checkbox:checked + span {
+        background: var(--New-group-Panton-Black-C, #332E2A);
+        color: var(--New-group-Ivory, #FAF5EE);
+      }
     }
   }
 }
