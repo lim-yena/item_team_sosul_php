@@ -68,9 +68,7 @@
     <link rel="stylesheet" href="/css/eunjeong.min.css">
     <link rel="stylesheet" href="/css/hyuna.min.css">
     <link rel="stylesheet" href="/css/jaeeun.min.css">
-    
 
-    <script src="/js/ej.js"></script>
 
 
 </head>

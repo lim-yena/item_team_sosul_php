@@ -133,7 +133,8 @@
         
     <? } ?>
 
-<script src="/js/ej.js"></script>
+    <script src="/js/ej.js"></script>
+    <script src="/js/hyuna.js"></script>
         
 </body>
 </html>     
