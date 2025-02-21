@@ -58,19 +58,34 @@ window.addEventListener("DOMContentLoaded", function(){
 
 
  })
-//  document.querySelectorAll('.tab-button_sy').forEach(button => {
-//     button.addEventListener('click', () => {
-//       // 모든 버튼에서 active 클래스를 제거
-//       document.querySelectorAll('.tab-button_sy').forEach(btn => btn.classList.remove('active'));
-      
-//       // 클릭된 버튼에 active 클래스 추가
-//       button.classList.add('active');
-      
-//       // 해당하는 콘텐츠 표시 (예시로 콘솔에 로그)
-//       const tab = button.getAttribute('data-tab');
-//       console.log(`선택된 탭: ${tab}`);
-      
-//       // 여기서 탭에 맞는 콘텐츠를 보여주면 됩니다
-//     });
-//   });
-  
+
+ // 리셋 버튼 기능
+ document.addEventListener("DOMContentLoaded", function () {
+    const resetBtn = document.querySelector(".reset_sy");
+    if (resetBtn) {
+        resetBtn.addEventListener("click", function () {
+            document.querySelectorAll(".tabs_sy2 input[type='checkbox']").forEach(checkbox => {
+                checkbox.checked = false;
+            });
+        });
+    } else {
+        console.error("❌ .reset_sy 버튼을 찾을 수 없습니다!");
+    }
+});
+document.querySelectorAll(".tab-btn").forEach(button => {
+    button.addEventListener("click", function () {
+        let tabId = this.getAttribute("data-tab"); // 클릭한 버튼의 data-tab 값을 가져옴
+        
+        // 모든 탭 내용을 숨김
+        document.querySelectorAll(".tab-content_sy").forEach(tab => {
+            tab.style.display = "none";
+        });
+
+        // 클릭한 버튼과 연결된 콘텐츠만 보이게 설정
+        document.getElementById(tabId).style.display = "block";
+        
+        // 활성화된 탭 버튼 스타일 변경
+        document.querySelectorAll(".tab-btn").forEach(btn => btn.classList.remove("active"));
+        this.classList.add("active");
+    });
+});
