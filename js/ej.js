@@ -74,7 +74,26 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
-  
 
+  document.addEventListener("DOMContentLoaded", function () {
+    const openModalBtn = document.querySelector(".topwhere button"); // 지역 선택 버튼
+    const modal = document.querySelector(".modal"); // 모달
+    const closeModalBtn = document.querySelector(".modal .close"); // 닫기 버튼
 
+    // ✅ 모달 열기
+    openModalBtn.addEventListener("click", function () {
+        modal.style.display = "flex";
+    });
 
+    // ✅ 모달 닫기
+    closeModalBtn.addEventListener("click", function () {
+        modal.style.display = "none";
+    });
+
+    // ✅ 모달 바깥 클릭 시 닫기
+    window.addEventListener("click", function (event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+});
