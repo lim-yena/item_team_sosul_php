@@ -42,17 +42,25 @@
     <div class="modal-content">
         <span class="close">&times;</span>
         <h2 class="modal-text">어디로 갈까요?</h2>
-        <ul>
-            <li>서울</li>
-            <li>부산</li>
-            <li>대구</li>
-            <li>광주</li>
-            <li>제주</li>
-        </ul>
+            <button class= "modal-search-btn d-flex white_bg">
+                <svg xmlns="//www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M15.4667 9.5625C15.4667 12.858 12.8077 15.525 9.53333 15.525C6.25896 15.525 3.6 12.858 3.6 9.5625C3.6 6.26698 6.25896 3.6 9.53333 3.6C12.8077 3.6 15.4667 6.26698 15.4667 9.5625Z" stroke="#3F422F" stroke-width="1.2"/>
+                    <line y1="-0.6" x2="5.29153" y2="-0.6" transform="matrix(0.70553 0.70868 -0.70553 0.70868 13.2667 14.25)" stroke="#3F422F" stroke-width="1.2"/>
+                </svg>지역을 선택해보세요!
+            </button>
+        <div class="location-box">
+            <ul class ="location-chk">
+                <li>서울</li>
+                <li>부산</li>
+                <li>대구</li>
+                <li>광주</li>
+                <li>제주</li>
+            </ul>
+        </div>  
     </div>
 </div>
 
-<div class="mo-search container_full d-lg-none d-flex jcb aic white_bg  ">
+<div class="mo-search container_full d-lg-none d-flex jcb aic white_bg">
     <button class="mo-search-btn container_full white_bg point_txt">
         <svg xmlns="//www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
             <path d="M15.4667 9.5625C15.4667 12.858 12.8077 15.525 9.53333 15.525C6.25896 15.525 3.6 12.858 3.6 9.5625C3.6 6.26698 6.25896 3.6 9.53333 3.6C12.8077 3.6 15.4667 6.26698 15.4667 9.5625Z" stroke="#3F422F" stroke-width="1.2"/>

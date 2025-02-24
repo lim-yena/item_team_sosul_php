@@ -148,13 +148,24 @@ $border-color: #DDD;
 }
 
 .modal-text {
+  margin-bottom: 30px;
   font-weight: 800;
+  top: 44px;
 }
 
 .modal-content {
-  padding: 20px;
+  padding-top: 40px;
   text-align: center;
   color: black;
+
+  .modal-search-btn{
+    margin: 0 auto;
+    align-items: center;
+    width: 468px;
+    height: 40px;
+    padding: 5px 15px;
+    border-radius: 100px;
+    border: 1px solid #DDD;}
 }
 
 .close {
@@ -164,6 +175,23 @@ $border-color: #DDD;
   font-size: 30px;
   color: gray;
   cursor: pointer;
+}
+
+ button.modal-search-btn{
+  width: 468px;
+  height: 40px;
+  padding: 5px 15px;
+  border-radius: 100px;
+  border: 1px solid #DDD;
+}
+
+.location-box{
+  margin: 50px auto;
+  width: 930px;
+  height: 280px;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #DDD;
 }
 
 
@@ -289,7 +317,7 @@ a.list-group-reserve {
 .video-container {
   position: relative;
   max-width: 100%;
-  height: calc(100vh - 90px); 
+  height: calc(90vh - 90px); 
   margin: 0 auto;
   @extend .d-flex;
   justify-content: center;
