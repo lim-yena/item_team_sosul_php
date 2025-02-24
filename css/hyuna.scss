@@ -16,7 +16,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 50px;
+    padding: 40px 0;
+
+    li {
+        
+
+        
+        a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            font-size: 12px;
+            color: #777;
+
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
 }
 //--상단메인아이콘퀵메뉴
 

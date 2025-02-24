@@ -33,12 +33,13 @@ div, dl, ol, ul, li, h1, h2, h3, h4, h5, h6, p, button {padding: 0; margin: 0;}
 .container {max-width:var(--container, 1440px); margin:0 auto; padding:0; position:relative; width:100%;}
 
 /* font */
-.main_tit {font-size:var(--main_tit, 2.125rem);}
-.sub_tit {font-size:var(--sub_tit, 1.5rem);}
-.list_tit {font-size:var(--list_tit, 1.25rem);}
-.basic_txt {font-size:var(--basic_txt, 1rem);}
-.sub_txt {font-size:var(--basic_txt, 0.875rem);}
-.point_txt {font-size:var(--point_txt, 0.75rem);}
+
+.main_tit {font-size:var(--main_tit, 2.125rem);} /* 40px */
+.sub_tit {font-size:var(--sub_tit, 1.5rem);} /* 28px */
+.list_tit {font-size:var(--list_tit, 1.25rem);} /* 20px */
+.basic_txt {font-size:var(--basic_txt, 1rem);} /* 16px */
+.sub_txt {font-size:var(--basic_txt, 0.875rem);} /* 14px */
+.point_txt {font-size:var(--point_txt, 0.75rem);} /* 12px */
 
 /* color */
 .organic {color:var(--main_color, rgba(63, 66, 47, 1));}
