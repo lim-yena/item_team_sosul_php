@@ -33,59 +33,60 @@ window.addEventListener("DOMContentLoaded", function(){
 
     m_searchbtn.addEventListener("click", function(){
            popupdom.classList.remove("d-none");  
+           //팝업화면노출됨
+
+         
     })
     popupclosebtn.addEventListener("click", function(){
         popupdom.classList.add("d-none");  
     })
 
+  
+
+
+
+    console.log("DOM이 로드되었습니다.");  // DOM이 로드되었을 때 로그를 찍음
+    const resetBtn = document.querySelector(".bottom_sy .reset_sy"); // 리셋버튼
+    const allcheckedbtn = document.querySelectorAll(".tabs_sy2 input[type='checkbox']");
+
+    console.log(allcheckedbtn, allcheckedbtn.length, resetBtn)
+
+    resetBtn.addEventListener("click", function () {
+        allcheckedbtn.forEach((checkbox) =>{
+            checkbox.checked = false;
+        })
+        
+    });
+
+
+  
+    
+
+
     // 팝업내의 탭기능
-    const tabButtons = document.querySelectorAll(".tab-btn_sy");
+    const tabButtons = document.querySelectorAll(".tab-btn");
     const tabContents = document.querySelectorAll(".tab-content_sy");
 
     tabButtons.forEach(button => {
         button.addEventListener("click", function () {
-            let tabId = this.getAttribute("data-tab");
+            const tabId = this.dataset.tab; // 클릭한 버튼의 data-tab 값을 가져옴
+            //alert("#"+tabId);
+    
+            // 클릭한 버튼과 연결된 콘텐츠만 보이게 설정
+           tabContents.forEach(content => content.classList.remove("d-block"));
+           document.getElementById(tabId).classList.add("d-block");
 
-            // 모든 탭 버튼에서 active 제거 후 현재 버튼에 추가
-            tabButtons.forEach(btn => btn.classList.remove("active"));
-            this.classList.add("active");
-
-            // 모든 탭 내용 숨기고, 선택한 탭 내용만 표시
-            tabContents.forEach(content => content.style.display = "none");
-            document.getElementById(tabId).style.display = "block";
-        });
-    });
-
-
- })
-
- // 리셋 버튼 기능
- document.addEventListener("DOMContentLoaded", function () {
-    const resetBtn = document.querySelector(".reset_sy");
-    if (resetBtn) {
-        resetBtn.addEventListener("click", function () {
-            document.querySelectorAll(".tabs_sy2 input[type='checkbox']").forEach(checkbox => {
-                checkbox.checked = false;
-            });
-        });
-    } else {
-        console.error("❌ .reset_sy 버튼을 찾을 수 없습니다!");
-    }
-});
-document.querySelectorAll(".tab-btn").forEach(button => {
-    button.addEventListener("click", function () {
-        let tabId = this.getAttribute("data-tab"); // 클릭한 버튼의 data-tab 값을 가져옴
-        
-        // 모든 탭 내용을 숨김
-        document.querySelectorAll(".tab-content_sy").forEach(tab => {
-            tab.style.display = "none";
+         
+          
+           
+               
+            
+         
+            
+           // // 활성화된 탭 버튼 스타일 변경
+           tabButtons.forEach( btn => btn.classList.remove("active"));
+           this.classList.add("active");
         });
 
-        // 클릭한 버튼과 연결된 콘텐츠만 보이게 설정
-        document.getElementById(tabId).style.display = "block";
-        
-        // 활성화된 탭 버튼 스타일 변경
-        document.querySelectorAll(".tab-btn").forEach(btn => btn.classList.remove("active"));
-        this.classList.add("active");
     });
 });

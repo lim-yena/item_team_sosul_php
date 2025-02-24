@@ -92,14 +92,17 @@
     background-color: #3d322c;
     color: white;
   }
-  .tab-content_sy {
-    display: none;
+  .tab-content_sy,
+  .tab-tab_sy {
     width: 100%;
     padding: 16px;
     background: white;
     border-radius: 8px;
     border: 1px solid #D9D4CF;
     margin-top: 12px;
+  }
+  .tab-content_sy {
+    display: none;
   }
   .sy_date {
     display: none;
@@ -155,23 +158,24 @@
   display: flex;
   flex-direction: column;
 }
-.tab-container_sy .tabs_sy2 {
+.tab-container_sy .tabs_sy2, .tab-container_sy .tabs_sy2all {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin-top: 30px;
+  margin-top: 5px;
 }
-.tab-container_sy .tabs_sy2 .tab-checkbox-label {
+.tab-container_sy .tabs_sy2 .tab-checkbox-label, .tab-container_sy .tabs_sy2all .tab-checkbox-label {
   display: flex;
   align-items: center;
   cursor: pointer;
   width: 90px;
   justify-content: center;
+  margin-bottom: 9px;
 }
-.tab-container_sy .tabs_sy2 .tab-checkbox-label .tab-checkbox {
+.tab-container_sy .tabs_sy2 .tab-checkbox-label .tab-checkbox, .tab-container_sy .tabs_sy2all .tab-checkbox-label .tab-checkbox {
   display: none; /* 기본 체크박스를 숨깁니다. */
 }
-.tab-container_sy .tabs_sy2 .tab-checkbox-label .tab-checkbox + span {
+.tab-container_sy .tabs_sy2 .tab-checkbox-label .tab-checkbox + span, .tab-container_sy .tabs_sy2all .tab-checkbox-label .tab-checkbox + span {
   color: #332E2A;
   text-align: center;
   font-size: 14px;
@@ -188,11 +192,11 @@
   display: flex;
   cursor: pointer;
 }
-.tab-container_sy .tabs_sy2 .tab-checkbox-label .tab-checkbox + span:hover {
+.tab-container_sy .tabs_sy2 .tab-checkbox-label .tab-checkbox + span:hover, .tab-container_sy .tabs_sy2all .tab-checkbox-label .tab-checkbox + span:hover {
   background: var(--New-group-Panton-Black-C, #332E2A);
   color: var(--New-group-Ivory, #FAF5EE);
 }
-.tab-container_sy .tabs_sy2 .tab-checkbox-label .tab-checkbox:checked + span {
+.tab-container_sy .tabs_sy2 .tab-checkbox-label .tab-checkbox:checked + span, .tab-container_sy .tabs_sy2all .tab-checkbox-label .tab-checkbox:checked + span {
   background: var(--New-group-Panton-Black-C, #332E2A);
   color: var(--New-group-Ivory, #FAF5EE);
 }
