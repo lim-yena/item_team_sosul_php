@@ -124,6 +124,7 @@
   .rounded-input_sy {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    position: relative;
     width: 100%;
     padding-left: 30px;
     font-size: 14px; /* 텍스트 크기 설정 */
@@ -136,8 +137,9 @@
     transform: translateY(-50%); /* 세로 중앙 정렬 */
     width: 16px; /* 아이콘의 크기 */
     height: 16px; /* 아이콘의 크기 */
-    background: url("") no-repeat center center; /* SVG 아이콘을 배경으로 추가 */
-    background-size: contain; /* 아이콘이 적절히 크기 맞게 */
+    background: url("//item-team-sosul.vercel.app/img/icon/search.svg") no-repeat center center; /* SVG 아이콘을 배경으로 추가 */
+    background-size: contain;
+    border: 1px solid red;
   }
   .reset_sy {
     background-color: white;
