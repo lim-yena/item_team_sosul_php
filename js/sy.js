@@ -25,7 +25,6 @@ window.addEventListener("DOMContentLoaded", function(){
         allcheckedbtn.forEach((checkbox) =>{
             checkbox.checked = false;
         })
-        
     });
 
 
