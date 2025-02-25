@@ -11,9 +11,9 @@
     </div>
     <div class="tab-tab_sy">
         <div class='d-flex flex-column'>
-            <div class="syinput">
-                <input type="text" placeholder="어디로 떠나볼까요?">
-            </div>
+                <div class="syinput">
+                 <input type="text" class="rounded-input_sy" placeholder="어디로 떠나볼까요?">
+                </div>
         </div>
          <!-- 탭 메뉴 -->
         <div class="tabs_sy">
@@ -24,7 +24,7 @@
     <!-- 탭 내용 -->
     <div class="tab-content_sy d-block" id="tab1">
         <div class="syinput">
-            <input type="text" placeholder="지역을 검색해보세요">
+            <input type="text" class="rounded-input_sy" placeholder="지역을 검색해보세요">
         </div>
         <div class="tab-container_sy">
             <div class="tabs_sy2all">

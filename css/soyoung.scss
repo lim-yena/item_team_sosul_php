@@ -36,7 +36,10 @@ $button-hover: darken($primary-color, 10%); // 버튼 호버 시 색상
   }
   .syinput {
     display: flex;
-    height: 2.5rem;
+    height: 3rem;
+    position: relative; /* 아이콘을 위한 상대적 위치 */
+    width: 100%; /* 입력창의 넓이를 100%로 설정 (필요에 따라 변경) */
+  
 
     input {
       width: 100%;
@@ -91,9 +94,7 @@ $button-hover: darken($primary-color, 10%); // 버튼 호버 시 색상
   .tabs_sy {
     display: flex;
     width: 100%;
-    border: 1px solid #d9d4cf;
-    border-radius: 6px;
-
+    height: 3rem;
   }
 
   .tab-btn {
@@ -111,6 +112,8 @@ $button-hover: darken($primary-color, 10%); // 버튼 호버 시 색상
       font-weight: bold;
       background-color: #3d322c;
       color: white;
+      border-bottom-left-radius: 4px; 
+      border-bottom-right-radius: 4px; 
     }
   }
 
@@ -118,7 +121,6 @@ $button-hover: darken($primary-color, 10%); // 버튼 호버 시 색상
   .tab-content_sy ,
   .tab-tab_sy{
     width: 100%;
-    padding: 16px;
     background: white;
     border-radius: 8px;
     border: 1px solid $border-color;
@@ -130,9 +132,6 @@ $button-hover: darken($primary-color, 10%); // 버튼 호버 시 색상
   }
 
   // 📌 달력 스타일
-  .sy_date{
-    display: none;
-  }
 
   .calendar_sy {
     width: 100%;
@@ -151,6 +150,24 @@ $button-hover: darken($primary-color, 10%); // 버튼 호버 시 색상
     }
   }
 
+  .rounded-input_sy{
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px;
+    width: 100%;
+    padding-left: 30px; 
+    font-size: 14px; /* 텍스트 크기 설정 */
+    }
+    .rounded-input_sy::before {
+    content: ''; /* 가상 요소에 내용 추가 */
+    position: absolute;
+    left: 10px; /* 왼쪽에 위치 */
+    top: 50%;
+    transform: translateY(-50%); /* 세로 중앙 정렬 */
+    width: 16px; /* 아이콘의 크기 */
+    height: 16px; /* 아이콘의 크기 */
+    background: url('') no-repeat center center; /* SVG 아이콘을 배경으로 추가 */
+    background-size: contain; /* 아이콘이 적절히 크기 맞게 */
+    }
   // 📌 검색 버튼 스타일
   .reset_sy{
     background-color: white;
@@ -190,19 +207,22 @@ $button-hover: darken($primary-color, 10%); // 버튼 호버 시 색상
   display: flex;
   flex-direction: column;
 
+  .tabs_sy2all{
+    margin-top: 1.25rem;
+  }
+
   .tabs_sy2 , .tabs_sy2all {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin-top: 5px;
 
     .tab-checkbox-label {
       display: flex;
       align-items: center;
       cursor: pointer;
-      width: 90px;
+      width: 85px;
       justify-content: center;
-      margin-bottom: 9px;
+      margin-bottom: 20px;
 
       .tab-checkbox {
         display: none; /* 기본 체크박스를 숨깁니다. */
@@ -224,6 +244,7 @@ $button-hover: darken($primary-color, 10%); // 버튼 호버 시 색상
         border-radius: 12px;
         display: flex;
         cursor: pointer;
+        margin-bottom: 10px;
 
         &:hover {
           background: var(--New-group-Panton-Black-C, #332E2A);
