@@ -12,7 +12,7 @@
     </div>
     <div class="coupon_img_text">
         <a class="download_coupon">
-            <img src="//item-team-sosul.vercel.app/img/image/banner_coupon.svg" alt="첫예약할인쿠폰" >
+            <img src="//item-team-sosul.vercel.app/img/image/banner_coupon2.svg" alt="첫예약할인쿠폰" >
             <div class="coupon_text_box">
                 <span>첫예약할인쿠폰</span>
                 <p class="coupon_text">
