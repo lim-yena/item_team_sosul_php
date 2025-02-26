@@ -277,3 +277,33 @@ $button-hover: darken($primary-color, 10%); // 버튼 호버 시 색상
   }
 }
 }
+
+// 예약확인페이지
+.res_sy_textbox {
+  display: flex;
+  justify-content: space-between; // 요소 간 간격 균등 배분
+  gap: 20px; // 항목 간격 조정
+  padding: 10px 0;
+
+  .res_sy_text {
+      text-align: center;
+      min-width: 150px; // 최소 너비 설정
+
+      h5 {
+          margin-bottom: 5px;
+          font-size: 16px;
+          font-weight: bold;
+      }
+
+      p {
+          font-size: 14px;
+          color: #666;
+      }
+  }
+
+  // 반응형 - 작은 화면에서 세로 정렬
+  @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+  }
+}

@@ -232,3 +232,28 @@
     color: var(--New-group-Ivory, #FAF5EE);
   }
 }
+.res_sy_textbox {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 10px 0;
+}
+.res_sy_textbox .res_sy_text {
+  text-align: center;
+  min-width: 150px;
+}
+.res_sy_textbox .res_sy_text h5 {
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.res_sy_textbox .res_sy_text p {
+  font-size: 14px;
+  color: #666;
+}
+@media (max-width: 768px) {
+  .res_sy_textbox {
+    flex-direction: column;
+    align-items: center;
+  }
+}
