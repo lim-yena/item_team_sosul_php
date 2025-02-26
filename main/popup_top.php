@@ -22,9 +22,42 @@
         </div>
          <!-- 탭 메뉴 -->
         <div class="tabs_sy">
-                <button class="tab-btn active" data-tab="tab1" >어디로 갈까요?</button>
-                <button class="tab-btn" data-tab="tab2">언제 갈까요?</button>
+            <button class="tab-btn active" data-tab="tab1"> 어디로 갈까요?
+                <!-- 비활성화된 아이콘 -->
+                <svg class="icon-unselected_sy" xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                        <g id="top">
+                        <path id="Vector" d="M9.11768 0.941162L4.99239 5.05881" stroke="#3F422F" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round"/>
+                        <path id="Vector_2" d="M4.99243 5.05881L0.882425 0.941162" stroke="#3F422F" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round"/>
+                    </g>
+                </svg>
+                <!-- 활성화된 아이콘 -->
+                <svg class="icon-selected_sy" xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none" style="display: none;">
+                    <g id="top">
+                        <path id="Vector" d="M9.11768 0.941162L4.99239 5.05881" stroke="white" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round"/>
+                        <path id="Vector_2" d="M4.99243 5.05881L0.882425 0.941162" stroke="white" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round"/>
+                    </g>
+                </svg>
+            </button>
+
+            <button class="tab-btn" data-tab="tab2"> 언제 갈까요?
+                <!-- 비활성화된 아이콘 -->
+                <svg class="icon-unselected_sy" xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                        <g id="top">
+                        <path id="Vector" d="M9.11768 0.941162L4.99239 5.05881" stroke="#3F422F" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round"/>
+                        <path id="Vector_2" d="M4.99243 5.05881L0.882425 0.941162" stroke="#3F422F" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round"/>
+                    </g>
+                </svg>
+                <!-- 활성화된 아이콘 -->
+                <svg class="icon-selected_sy" xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none" style="display: none;">
+                    <g id="top">
+                        <path id="Vector" d="M9.11768 0.941162L4.99239 5.05881" stroke="white" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round"/>
+                        <path id="Vector_2" d="M4.99243 5.05881L0.882425 0.941162" stroke="white" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round"/>
+                    </g>
+                </svg>
+            </button>
         </div>
+
+
     </div>
     <!-- 탭 내용 -->
     <div class="tab-content_sy d-block" id="tab1">
