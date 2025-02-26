@@ -91,7 +91,7 @@
             </button> 
 
             <ul id="gnb" class="d-none d-lg-flex order-0 gap-3 organic w-0"> 
-                <li><a href="/page/reservation.php" class="text-nowrap">예약하기</a></li>
+                <li><a href="/product/list.php" class="text-nowrap">예약하기</a></li>
                 <li><a href="" class="text-nowrap">오직여기</a></li>
                 <li><a href="" class="text-nowrap">프로모션</a></li>
                 <li><a href="" class="text-nowrap">브랜드</a></li>
@@ -186,13 +186,14 @@
                 </li>
             </ul>
             
-            <ul class="mob_container d-flex gray5_bg">
-                <li class="mob_notice aic d-flex sub_txt">
-                    <a class="apricot">HOT</a>
-                    <a href="" class="gray1">공지사항이 출력됩니다.</a>
-                </li>
-            </ul>
-
+            <div class="notice-wrapper">
+                <ul class="mob_container gray5_bg">
+                    <li class="mob_notice"><a class="notice_tag apricot point_txt">HOT</a> <a href="#" class="gray1 sub_txt">첫 번째 공지사항입니다.</a></li>
+                    <li class="mob_notice"><a class="notice_tag apricot point_txt">NEW</a> <a href="#" class="gray1 sub_txt">3월 신규입점 캠핑장 공개 </a></li>
+                    <li class="mob_notice"><a class="notice_tag apricot point_txt">INFO</a> <a href="#" class="gray1 sub_txt">예약 시 주의하세요</a></li>
+                </ul>
+            </div>
+                    
             <ul class="d-flex flex-column align-items-start gap-2 p-3 w-100">
                 <li class="list-group-text sub_txt gray3 ">예약하기</li>
                 <li class="container">
@@ -260,3 +261,6 @@
 
     <!--// eunjeong  mob-menu -->
     <div class='ej_content'>
+
+
+
