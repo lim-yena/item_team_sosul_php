@@ -1,0 +1,569 @@
+// 🎨 색상 변수
+$primary-color: #3D322C;  // 버튼 & 활성 탭 색상
+$background-color: #F5F3F1;  // 전체 배경
+$border-color: #D9D4CF;  // 테두리 색상
+$text-color: #2E2B28;  // 기본 텍스트 색상
+$button-hover: darken($primary-color, 10%); // 버튼 호버 시 색상
+
+// 모바일에서만 적용
+@media (max-width: 991px) {
+  // 📌 모달창 스타일
+  .modal-overlay_sy {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: $background-color;
+    z-index: 1050;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    overflow-y: auto;
+  }
+
+  // 📌 검색창 헤더 스타일
+  .modal-content_sy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    color: $text-color;
+    padding-bottom: 12px;
+    text-align: center;
+  }
+  .syinput {
+    display: flex;
+    position: relative;
+    width: 100%;  /* 텍스트박스가 100% 가로로 확장되도록 */
+    height: 40px; /* 높이 설정 */
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 10px;  /* 아이콘을 왼쪽으로 10px */
+    top: 50%;    /* 세로 중앙에 위치 */
+    transform: translateY(-50%);  /* 정확한 세로 중앙 정렬 */
+    z-index: 1; /* 아이콘이 텍스트 입력창 위로 오도록 */
+  }
+  
+  .rounded-input_sy {
+    width: 100%; /* 텍스트 입력박스가 100% */
+    height: 40px; /* 텍스트박스 높이 */
+    z-index: 0; /* 텍스트 입력창이 아이콘 아래로 오지 않도록 */
+  }
+  
+  input {
+    width: 100%;
+    height: 3rem;
+    border: none;
+    background: transparent; /* 배경 투명 */
+    font-size: 14px;
+    color: #332E2A;
+    padding-left: 35px; /* 아이콘과 텍스트 간 여백 */
+    padding-right: 35px; /* 아이콘과 텍스트 간 여백 */
+    z-index: 0;
+  }
+  
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: $text-color;
+  }
+  
+  .syinput_2 {
+    display: flex;
+    height: 2.5rem;
+    margin-top: 25px;
+
+    input {
+      width: 100%;
+      height: 100%;
+  }
+  }
+
+  
+  .where_sy{
+    border: 1px;
+  }
+  // 📌 검색 입력창 스타일
+  .search-box_sy {
+    width: 100%;
+    background: white;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid $border-color;
+    margin-top: 12px;
+
+    input {
+      width: 100%;
+      border: none;
+      background: transparent;
+      font-size: 14px;
+      outline: none;
+      color: $text-color;
+      text-align: center;
+    }
+  }
+
+  // 📌 탭 버튼 스타일 (어디로 갈까요? / 언제 갈까요?)
+  .tabs_sy {
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    margin-top: 5px;
+  }
+
+  .tab-btn {
+    flex: 1;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px 0;
+    color: $text-color;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+
+    &.active {
+      font-weight: bold;
+      background-color: #3d322c;
+      color: white;
+      border-bottom-left-radius: 4px; 
+      border-bottom-right-radius: 4px; 
+    }
+  }
+
+  // 📌 탭 내용 영역
+  .tab-content_sy ,
+  .tab-tab_sy{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;;
+    
+  }
+  .tab-content_sy {
+    display: none;
+  }
+
+  // 📌 달력 스타일
+
+  .calendar_sy {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid $border-color;
+    margin-top: 12px;
+    background: white;
+    text-align: center;
+
+    input {
+      width: 100%;
+      border: none;
+      font-size: 14px;
+      color: $text-color;
+    }
+  }
+
+  .rounded-input_sy{
+    position: relative;
+    width: 100%;
+    padding-left: 40px; 
+    font-size: 14px; /* 텍스트 크기 설정 */
+    border: none;
+    border-bottom: 1px solid #ccc;
+    height: 45px;
+  }
+    
+  // 📌 검색 버튼 스타일
+  .reset_sy{
+    background-color: white;
+    margin-top: 16px;
+    border: none;
+    border-radius: 6px;
+  }
+  .bottom_sy{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 16px;
+  }
+  .search-btn_sy {
+    width: 80%;
+    background: $primary-color;
+    color: white;
+    padding: 14px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 16px;
+    font-weight: bold;
+
+    &:hover {
+      background: $button-hover;
+    }
+  }
+
+
+.tab-container_sy {
+  display: flex;
+  flex-direction: column;
+
+  .tabs_sy2all{
+    margin-top: 1.25rem;
+  }
+
+  .tabs_sy2 , .tabs_sy2all {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .tab-checkbox-label {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      width: 85px;
+      justify-content: center;
+      margin-bottom: 20px;
+
+      .tab-checkbox {
+        display: none; /* 기본 체크박스를 숨깁니다. */
+      }
+
+      .tab-checkbox + span {
+        color: #332E2A;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0.24px;
+        text-transform: uppercase;
+        padding: 2px 15px;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background-color: white;
+        border-radius: 12px;
+        display: flex;
+        cursor: pointer;
+        margin-bottom: 10px;
+
+        &:hover {
+          background: var(--New-group-Panton-Black-C, #332E2A);
+          color: var(--New-group-Ivory, #FAF5EE);
+        }
+      }
+
+      .tab-checkbox:checked + span {
+        background: var(--New-group-Panton-Black-C, #332E2A);
+        color: var(--New-group-Ivory, #FAF5EE);
+      }
+    }
+  }
+}
+}
+
+// 예약확인페이지
+
+  .reservation_sy {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 0;
+    border-bottom: 1px solid #ddd;
+    h4 {
+        font-weight: 800;
+    }
+    .res_sy_text_textbox {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        .res_sy_text {
+            display: flex;
+            justify-content: space-between;
+            h5 {
+                font-weight: 700;
+                width: 150px;
+                // flex: 1;
+                font-size: 16px;
+            }
+            p {
+                flex: 1;
+                font-size: 16px;
+            }
+        }
+    }
+  }
+
+  //캘린더
+  .syre_container{
+    display: flex;
+    padding: 30px 40px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 10px;
+    background: #FAFAFA;
+  }
+
+  //인원, 일정 선택
+  .re_container_sy{
+    display: flex;
+    height: 256px;
+    padding: 20px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    align-self: stretch;
+    border-radius: 10px;
+    border: 1px solid #DDD;
+  }
+  .checkinout_sy{
+      display: flex;
+      justify-content: space-around;
+      width: 55%;
+    }
+    .gn_sy{
+      margin-right: 5rem;
+    }
+ 
+  //객실선택
+  .roomsel_sy2{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 40px;
+    align-self: stretch;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .sy_roomsel_sy2toptext{
+    color: var(---, var(--New-group-Panton-Black-C, #332E2A));
+    color: var(---, var(--New-group-Panton-Black-C, #332E2A));
+
+    /* 작은글씨 설명/볼드 20px */
+    font-family: SUIT;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 20px; /* 100% */
+    letter-spacing: -0.4px;
+  }
+
+  .sy_imgtext{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+  }
+
+  .roomsel_sy{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    align-self: stretch;
+  }
+
+  .sy-image{
+    width: 400px;
+    height: 300px;
+  }
+
+  //객실선택 이미지
+  .roombt_sy2{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    margin-top: 2rem;
+  }
+
+  //가격 
+  .salebt_sy{
+    margin-left: 13rem;
+  }
+  .salebt2_sy{
+    display: flex;
+    padding: 10px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+    border-radius: 50px;
+    border: 1px solid #DDD;
+    color: var(--New-group-Light-Text, #777);
+    font-family: SUIT;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 114.286% */
+    letter-spacing: -0.28px;
+    background-color: white;
+  }
+
+  //가격 폰트
+  .sale_sy{
+    color: #D68B30;
+    font-family: SUIT;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 18px; /* 90% */
+    letter-spacing: -0.4px;
+  }
+  .price_sy{
+    color: #332E2A;
+    text-align: right;
+    font-family: SUIT;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 18px; /* 90% */
+    letter-spacing: -0.4px;
+  }
+  .saleall_sy{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+  }
+
+  //예약체크
+  .rescheck_sy1{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    align-self: stretch;
+  }
+  .rescheck_sy2{
+    margin-bottom: 2rem;
+  }
+  .rescheck_sy3{
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    gap: 10px;
+  }
+  
+  .rescheck_sy4{
+    display: flex;
+    padding: 15px 20px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 10px;
+    background: #FAFAFA;
+    margin-top: 20px;
+    color: var(---, var(--New-group-Light-Text, #777));
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: SUIT;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.32px;
+    text-align: center;
+  }
+
+  .rescheck_sy5{
+    display: flex;
+    padding: 15px 20px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 10px;
+    background: #FAFAFA;
+    margin-top: 20px;
+    color: #000;
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: SUIT;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.32px;
+  }
+  .rescheck_sy6{
+    margin-top: 20px;
+  }
+
+  .rc_sy1{
+    color: var(---, var(--New-group-Panton-Black-C, #332E2A));
+
+    /* 작은글씨 설명/볼드 20px */
+    font-family: SUIT;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 20px; /* 100% */
+    letter-spacing: -0.4px;
+  }
+  .rc_sy2{
+    color: var(---, var(--New-group-Light-Text, #777));
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: SUIT;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: -0.28px;
+      }
+
+    .sebt_sy{
+      background: var(--New-group-Organic, #3F422F);
+      color: var(--New-group-Ivory, #FAF5EE);
+      font-family: SUIT;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 20px; /* 125% */
+      letter-spacing: -0.32px;
+      width: 100%;
+      display: flex;
+      padding: 20px 0px;
+      justify-content: center;
+      align-items: center;
+      align-self: stretch;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .gn_sy2{
+      color: #000;
+      font-feature-settings: 'liga' off, 'clig' off;
+      font-family: SUIT;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px; /* 150% */
+      letter-spacing: -0.32px;
+    }
+
+    .gn_sy3{
+      color: var(---, var(--New-group-Panton-Black-C, #332E2A));
+      font-feature-settings: 'liga' off, 'clig' off;
+      font-family: SUIT;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px; /* 150% */
+      letter-spacing: -0.32px;
+    }
