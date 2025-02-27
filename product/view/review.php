@@ -58,7 +58,7 @@
     </ul>
     <div class="review_photoSome">
         <div class="basic_txt">포토리뷰</div>
-        <div class="d-flex photoSome_box">
+        <div class="photoSome_box">
             <a class="photo_some">
                 <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
                 <span class="photo_num sub_txt">1</span>
@@ -92,6 +92,171 @@
                 <span class="photo_num sub_txt">1 +</span>
             </a>
         </div>
+    </div>
+    <div class="review_all">
+        <div class="basic_txt d-flex review_all_tit">
+            <div>전체리뷰</div>
+            <div class="d-flex review_filter">
+                <a href="" class="sub_txt">최신순</a>
+                <a href="" class="sub_txt">추천순</a>
+                <a href="" class="sub_txt">평점 높은순</a>
+                <a href="" class="sub_txt">평점 낮은순</a>
+            </div>
+        </div>
+        <ul class="review_all_box">
+            <li class="review_all_in">
+                <div class="review_all_top d-flex">
+                    <div class="d-flex star_box">
+                        <i class="bi bi-star-fill apricot"></i>
+                        <i class="bi bi-star-fill apricot"></i>
+                        <i class="bi bi-star-fill apricot"></i>
+                        <i class="bi bi-star-fill apricot"></i>
+                        <i class="bi bi-star-fill apricot"></i>
+                    </div>
+                    <div class="d-flex review_all_btns">
+                        <a href="" class="edit sub_txt">수정</a>
+                        <a href="" class="delete sub_txt">삭제</a>
+                    </div>
+                </div>
+                <div class="review_all_btm">
+                    <div class="d-flex tit">
+                        <div class="bold">별명인지 아이디인지모르겠음 님의 리뷰</div>
+                        <p>25-02-20</p>
+                    </div>
+                    <div class="txt">
+                        아이들과 신나게 놀 수 있는 캠핑장!!!<br>
+                        가족캠핑하기 좋은곳이며 넓은 주차공간과 텐트마다 공간이 충분해서 대형텐트로 단체캠핑이 가능합니다.<br>
+                        <br>
+                        가족과 함께 즐겁고 행복한 캠핑이 될 수 있도록 노력하겠습니다.
+                    </div>
+                    <div class="photoSome_box">
+                        <a class="photo_some">
+                            <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                            <span class="photo_num sub_txt">1</span>
+                        </a>
+                        <a class="photo_some">
+                            <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                            <span class="photo_num sub_txt">1 +</span>
+                        </a>
+                        <a class="photo_some">
+                            <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                            <span class="photo_num sub_txt">1</span>
+                        </a>
+                        <a class="photo_some">
+                            <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                            <span class="photo_num sub_txt">1 +</span>
+                        </a>
+                        <a class="photo_some">
+                            <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                            <span class="photo_num sub_txt">1</span>
+                        </a>
+                    </div>
+                </div>
+            </li> 
+            <li class="review_all_in">
+                <div class="review_all_top d-flex">
+                    <div class="d-flex star_box">
+                        <i class="bi bi-star-fill apricot"></i>
+                        <i class="bi bi-star-fill apricot"></i>
+                        <i class="bi bi-star-fill apricot"></i>
+                        <i class="bi bi-star-fill apricot"></i>
+                        <i class="bi bi-star-fill apricot"></i>
+                    </div>
+                    <div class="d-flex review_all_btns">
+                        <a href="" class="edit sub_txt">수정</a>
+                        <a href="" class="delete sub_txt">삭제</a>
+                    </div>
+                </div>
+                <div class="review_all_btm">
+                    <div class="d-flex tit">
+                        <div class="bold">별명인지 아이디인지모르겠음 님의 리뷰</div>
+                        <p>25-02-20</p>
+                    </div>
+                    <div class="txt">
+                        아이들과 신나게 놀 수 있는 캠핑장!!!<br>
+                        가족캠핑하기 좋은곳이며 넓은 주차공간과 텐트마다 공간이 충분해서 대형텐트로 단체캠핑이 가능합니다.<br>
+                        <br>
+                        가족과 함께 즐겁고 행복한 캠핑이 될 수 있도록 노력하겠습니다.
+                    </div>
+                </div>
+            </li>
+            <li class="review_all_in">
+                <div class="review_all_top d-flex">
+                    <div class="d-flex star_box">
+                        <i class="bi bi-star-fill apricot"></i>
+                        <i class="bi bi-star-fill apricot"></i>
+                        <i class="bi bi-star-fill apricot"></i>
+                        <i class="bi bi-star-fill apricot"></i>
+                        <i class="bi bi-star-fill apricot"></i>
+                    </div>
+                    <div class="d-flex review_all_btns">
+                        <a href="" class="edit sub_txt">수정</a>
+                        <a href="" class="delete sub_txt">삭제</a>
+                    </div>
+                </div>
+                <div class="review_all_btm">
+                    <div class="d-flex tit">
+                        <div class="bold">별명인지 아이디인지모르겠음 님의 리뷰</div>
+                        <p>25-02-20</p>
+                    </div>
+                    <div class="txt">
+                        아이들과 신나게 놀 수 있는 캠핑장!!!<br>
+                        가족캠핑하기 좋은곳이며 넓은 주차공간과 텐트마다 공간이 충분해서 대형텐트로 단체캠핑이 가능합니다.<br>
+                        <br>
+                        가족과 함께 즐겁고 행복한 캠핑이 될 수 있도록 노력하겠습니다.
+                    </div>
+                    <div class="photoSome_box">
+                        <a class="photo_some">
+                            <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                            <span class="photo_num sub_txt">1</span>
+                        </a>
+                        <a class="photo_some">
+                            <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                            <span class="photo_num sub_txt">1 +</span>
+                        </a>
+                        <a class="photo_some">
+                            <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                            <span class="photo_num sub_txt">1</span>
+                        </a>
+                        <a class="photo_some">
+                            <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                            <span class="photo_num sub_txt">1 +</span>
+                        </a>
+                        <a class="photo_some">
+                            <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                            <span class="photo_num sub_txt">1</span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="review_all_in">
+                <div class="review_all_top d-flex">
+                    <div class="d-flex star_box">
+                        <i class="bi bi-star-fill apricot"></i>
+                        <i class="bi bi-star-fill apricot"></i>
+                        <i class="bi bi-star-fill apricot"></i>
+                        <i class="bi bi-star-fill apricot"></i>
+                        <i class="bi bi-star-fill apricot"></i>
+                    </div>
+                    <div class="d-flex review_all_btns">
+                        <a href="" class="edit sub_txt">수정</a>
+                        <a href="" class="delete sub_txt">삭제</a>
+                    </div>
+                </div>
+                <div class="review_all_btm">
+                    <div class="d-flex tit">
+                        <div class="bold">별명인지 아이디인지모르겠음 님의 리뷰</div>
+                        <p>25-02-20</p>
+                    </div>
+                    <div class="txt">
+                        아이들과 신나게 놀 수 있는 캠핑장!!!<br>
+                        가족캠핑하기 좋은곳이며 넓은 주차공간과 텐트마다 공간이 충분해서 대형텐트로 단체캠핑이 가능합니다.<br>
+                        <br>
+                        가족과 함께 즐겁고 행복한 캠핑이 될 수 있도록 노력하겠습니다.
+                    </div>
+                </div>
+            </li>   
+        </ul>
     </div>
 </div>
  

@@ -704,20 +704,37 @@
   padding: 40px 0;
 }
 .detail_conBox .list_tit {
-  padding-bottom: 40px;
   font-weight: 800;
 }
 .detail_conBox .basic_txt {
   padding-bottom: 20px;
   font-weight: bold;
 }
+.detail_conBox .review_all_tit {
+  justify-content: space-between;
+  align-items: center;
+}
+.detail_conBox .review_filter a {
+  padding: 5px;
+}
 
 .product_view_box {
   justify-content: space-between;
   gap: 60px;
 }
+@media (max-width: 991px) {
+  .product_view_box {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
 .product_view_box .product_view_left {
   max-width: 950px;
+}
+@media (max-width: 991px) {
+  .product_view_box .product_view_left {
+    width: 100%;
+  }
 }
 .product_view_box .product_view_right {
   width: 100%;
@@ -730,73 +747,20 @@
   top: 90px;
 }
 
-/* detail_review */
-.review_infoBox {
-  justify-content: space-between;
-  align-items: center;
-  gap: 25px;
-  text-align: center;
-}
-.review_infoBox li {
-  width: 100%;
-  background: #fafafa;
-  padding: 40px 0;
-  border-radius: 10px;
-}
-.review_infoBox .review_infoTit {
-  font-size: 1rem;
-  font-weight: 800;
-  padding-bottom: 15px;
-}
-.review_infoBox .review_infoIn {
-  margin: 0 auto;
-  height: 74px;
-  max-width: 160px;
+.photoSome_box {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-  justify-content: space-between;
-}
-.review_infoBox .review_infoIn .review_infoTxt {
-  font-size: 24px;
-  font-weight: 900;
-}
-.review_infoBox .review_infoIn .icon_area {
-  display: inline-block;
-  margin: 0 auto;
-}
-.review_infoBox .review_infoIn .star_box {
-  justify-content: center;
-  gap: 5px;
-}
-.review_infoBox .review_infoIn .star_box .bi-star-fill {
-  font-size: 20px;
-}
-.review_infoBox .review_infoIn .progress_box {
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  gap: 10px;
-}
-.review_infoBox .review_infoIn .progress_box .progressbar {
-  background-color: #E3D9CC;
-  border-radius: 10px;
-  display: flex;
-  align-items: flex-end;
-  height: 100%;
-}
-.review_infoBox .review_infoIn .progress_box .progressbar .progressbar_in {
-  background-color: #D68B30;
-  border-radius: 0 0 10px 10px;
-  width: 25px;
-  height: 50%;
-}
-
-.review_photoSome .photoSome_box {
   gap: 22px;
 }
-.review_photoSome .photoSome_box .photo_some {
-  display: block;
+@media (max-width: 991px) {
+  .photoSome_box {
+    display: block;
+    white-space: nowrap;
+    overflow-x: auto;
+    gap: 0;
+  }
+}
+.photoSome_box .photo_some {
+  display: inline-block;
   width: 100px;
   height: 100px;
   border-radius: 10px;
@@ -804,7 +768,7 @@
   position: relative;
   cursor: pointer;
 }
-.review_photoSome .photoSome_box .photo_some:last-of-type:after {
+.photoSome_box .photo_some:last-of-type:after {
   content: "더보기+";
   background: rgba(0, 0, 0, 0.5);
   top: 0;
@@ -817,11 +781,16 @@
   text-align: center;
   line-height: 100px;
 }
-.review_photoSome .photoSome_box .photo_some img {
+@media (max-width: 991px) {
+  .photoSome_box .photo_some {
+    margin-right: 10px;
+  }
+}
+.photoSome_box .photo_some img {
   width: auto;
   height: 100%;
 }
-.review_photoSome .photoSome_box .photo_some .photo_num {
+.photoSome_box .photo_some .photo_num {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -831,4 +800,122 @@
   font-weight: 800;
   width: 30px;
   text-align: center;
+}
+
+.star_box {
+  justify-content: center;
+  gap: 5px;
+}
+.star_box .bi-star-fill {
+  font-size: 20px;
+}
+
+/* detail_review */
+.detail_conBox {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.detail_conBox .review_infoBox {
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  text-align: center;
+}
+@media (max-width: 991px) {
+  .detail_conBox .review_infoBox {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.detail_conBox .review_infoBox li {
+  width: 100%;
+  background: #fafafa;
+  padding: 40px 0;
+  border-radius: 10px;
+}
+.detail_conBox .review_infoBox .review_infoTit {
+  font-size: 1rem;
+  font-weight: 800;
+  padding-bottom: 15px;
+}
+.detail_conBox .review_infoBox .review_infoIn {
+  margin: 0 auto;
+  height: 74px;
+  max-width: 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+}
+.detail_conBox .review_infoBox .review_infoIn .review_infoTxt {
+  font-size: 24px;
+  font-weight: 900;
+}
+.detail_conBox .review_infoBox .review_infoIn .icon_area {
+  display: inline-block;
+  margin: 0 auto;
+}
+.detail_conBox .review_infoBox .review_infoIn .progress_box {
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 10px;
+}
+.detail_conBox .review_infoBox .review_infoIn .progress_box .progressbar {
+  background-color: #E3D9CC;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+}
+.detail_conBox .review_infoBox .review_infoIn .progress_box .progressbar .progressbar_in {
+  background-color: #D68B30;
+  border-radius: 0 0 10px 10px;
+  width: 25px;
+  height: 50%;
+}
+.detail_conBox .review_all_box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.detail_conBox .review_all_box .review_all_in {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+.detail_conBox .review_all_box .review_all_in .review_all_top {
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.detail_conBox .review_all_box .review_all_in .review_all_top .review_all_btns a {
+  display: block;
+  padding: 5px;
+}
+.detail_conBox .review_all_box .review_all_in .review_all_top .review_all_btns a:hover {
+  color: #D68B30;
+}
+@media (max-width: 991px) {
+  .detail_conBox .review_all_box .review_all_in .review_all_btm .tit {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.detail_conBox .review_all_box .review_all_in .review_all_btm .tit .bold {
+  font-weight: 800;
+  padding-right: 10px;
+}
+@media (max-width: 991px) {
+  .detail_conBox .review_all_box .review_all_in .review_all_btm .tit .bold {
+    padding: 0 0 5px 0;
+  }
+}
+.detail_conBox .review_all_box .review_all_in .review_all_btm .txt {
+  padding: 10px 0;
+  color: #444;
+}
+.detail_conBox .review_all_box .review_all_in .review_all_btm .photo_num {
+  display: none;
 }
