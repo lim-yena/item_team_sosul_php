@@ -1,7 +1,7 @@
 <?php 
 define('_INDEX_', true); 
 include_once("./config.php");
-include_once("./layout/top.php");
+include_once(__DIR__."/layout/top.php");
 ?>
 
     <!-- eunjeong video -->
