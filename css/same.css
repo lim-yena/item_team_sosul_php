@@ -17,6 +17,7 @@
   --sub_tit: 1.5rem;
   --list_tit: 1.25rem;
   --basic_txt: 1rem;
+  --sub_txt: 0.875rem;
   --point_txt: 0.75rem;
   --basic_space: -0.1rem;
 }
@@ -24,6 +25,7 @@
 body {
   letter-spacing: var(--basic_space, -0.1rem);
   font-family: var(--font-family, "Suit", sans-serif);
+  line-height: normal;
 }
 
 div, dl, ol, ul, li, h1, h2, h3, h4, h5, h6, p, button {padding: 0; margin: 0;}
@@ -37,7 +39,7 @@ div, dl, ol, ul, li, h1, h2, h3, h4, h5, h6, p, button {padding: 0; margin: 0;}
 .sub_tit {font-size:var(--sub_tit, 1.5rem);}
 .list_tit {font-size:var(--list_tit, 1.25rem);}
 .basic_txt {font-size:var(--basic_txt, 1rem);}
-.sub_txt {font-size:var(--basic_txt, 0.875rem);}
+.sub_txt {font-size:var(--sub_txt, 0.875rem);}
 .point_txt {font-size:var(--point_txt, 0.75rem);}
 
 /* color */
@@ -69,6 +71,14 @@ div, dl, ol, ul, li, h1, h2, h3, h4, h5, h6, p, button {padding: 0; margin: 0;}
 .gray4_bg {background:var(--gray_4, rgba(221, 221, 221, 1));}
 .gray5_bg {background:var(--gray_5, rgba(246, 246, 246, 1));}
 .white_bg {background:var(--white, rgb(255, 255, 255));}
+
+/* width / height */
+.w-0 {
+  width: 0 !important;
+}
+.h-0 {
+  height: 0 !important;
+}
 
 .p100 {padding: 6.25rem 0;}
 
