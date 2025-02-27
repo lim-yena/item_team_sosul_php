@@ -283,6 +283,16 @@
   border: 1px solid #DDD;
 }
 
+.checkinout_sy {
+  display: flex;
+  justify-content: space-around;
+  width: 55%;
+}
+
+.gn_sy {
+  margin-right: 5rem;
+}
+
 .roomsel_sy2 {
   display: flex;
   align-items: center;
@@ -309,7 +319,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 10px;
+  gap: 3px;
 }
 
 .roomsel_sy {
@@ -323,4 +333,188 @@
 .sy-image {
   width: 400px;
   height: 300px;
+}
+
+.roombt_sy2 {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  margin-top: 2rem;
+}
+
+.salebt_sy {
+  margin-left: 13rem;
+}
+
+.salebt2_sy {
+  display: flex;
+  padding: 10px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex: 1 0 0;
+  border-radius: 50px;
+  border: 1px solid #DDD;
+  color: var(--New-group-Light-Text, #777);
+  font-family: SUIT;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 114.286% */
+  letter-spacing: -0.28px;
+  background-color: white;
+}
+
+.sale_sy {
+  color: #D68B30;
+  font-family: SUIT;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 18px; /* 90% */
+  letter-spacing: -0.4px;
+}
+
+.price_sy {
+  color: #332E2A;
+  text-align: right;
+  font-family: SUIT;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 18px; /* 90% */
+  letter-spacing: -0.4px;
+}
+
+.saleall_sy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+
+.rescheck_sy1 {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  align-self: stretch;
+}
+
+.rescheck_sy2 {
+  margin-bottom: 2rem;
+}
+
+.rescheck_sy3 {
+  display: flex;
+  align-items: flex-start;
+  align-self: stretch;
+  gap: 10px;
+}
+
+.rescheck_sy4 {
+  display: flex;
+  padding: 15px 20px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 10px;
+  background: #FAFAFA;
+  margin-top: 20px;
+  color: var(---, var(--New-group-Light-Text, #777));
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: SUIT;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.32px;
+  text-align: center;
+}
+
+.rescheck_sy5 {
+  display: flex;
+  padding: 15px 20px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 10px;
+  background: #FAFAFA;
+  margin-top: 20px;
+  color: #000;
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: SUIT;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.32px;
+}
+
+.rescheck_sy6 {
+  margin-top: 20px;
+}
+
+.rc_sy1 {
+  color: var(---, var(--New-group-Panton-Black-C, #332E2A));
+  /* 작은글씨 설명/볼드 20px */
+  font-family: SUIT;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 20px; /* 100% */
+  letter-spacing: -0.4px;
+}
+
+.rc_sy2 {
+  color: var(---, var(--New-group-Light-Text, #777));
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: SUIT;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: -0.28px;
+}
+
+.sebt_sy {
+  background: var(--New-group-Organic, #3F422F);
+  color: var(--New-group-Ivory, #FAF5EE);
+  font-family: SUIT;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 125% */
+  letter-spacing: -0.32px;
+  width: 100%;
+  display: flex;
+  padding: 20px 0px;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 5px;
+  border: none;
+}
+
+.gn_sy2 {
+  color: #000;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: SUIT;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.32px;
+}
+
+.gn_sy3 {
+  color: var(---, var(--New-group-Panton-Black-C, #332E2A));
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: SUIT;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.32px;
 }
