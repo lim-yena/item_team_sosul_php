@@ -1,12 +1,17 @@
 <?php 
 define('_INDEX_', true); 
 include_once("./config.php");
-include_once(__DIR__."/layout/top.php");
+include_once("./layout/top.php");
 ?>
 
     <!-- eunjeong video -->
     <?php include_once("./main/video.php"); ?>
     <!--// eunjeong video -->
+
+
+    <!-- hyuna main quickmenu -->
+    <?php include_once("./main/main_center_icon.php"); ?>
+    <!--// hyuna main quickmenu -->
 
 
     <!-- soyoung 모바일 검색팝업 : index에만 노출 -->
@@ -17,12 +22,16 @@ include_once(__DIR__."/layout/top.php");
     <?php include_once("./main/main_center_icon.php"); ?> 
     <!-- // hyuna  icon 바로가기 : index에만 노출 -->
 
+    <!-- jaeeun mobile bottom -->
+    <?php include_once("./main/mobile_bottom.php"); ?> 
+    <!-- //jaeeun mobile bottom -->
+
     <!-- jeaeun four -->
     <div class="main_con main_con_four p100">
         <div class="container">
             <div class="tit">
                 <div class="point_txt organic d-lg-none">NOW HERE</div>
-                <div class="main_tit panBlack">당신을 위한 추천,<br class="d-lg-none"> 지금 여기</div>
+                <div class="main_tit panBlack">고객님이 좋아할만한<br class="d-lg-none"> 테마별 픽은 여기</div>
                 <button class="all-btn point_txt gray3">전체보기</button>
             </div>
             <?php include_once("./main/slide_four.php"); ?>
@@ -36,7 +45,7 @@ include_once(__DIR__."/layout/top.php");
         <div class="container">
             <div class="tit">
                 <div class="point_txt organic d-lg-none">NOW HERE</div>
-                <div class="main_tit panBlack">당신을 위한 추천,<br class="d-lg-none"> 지금 여기2</div>
+                <div class="main_tit panBlack">당신을 위한 추천<br class="d-lg-none"> 지금 여기</div>
                 <button class="all-btn point_txt gray3">전체보기</button>
             </div>
             <?php include_once("./main/slide_four2.php"); ?>
@@ -50,7 +59,7 @@ include_once(__DIR__."/layout/top.php");
         <div class="container">
             <div class="tit">
                 <div class="point_txt organic d-lg-none">NOW HERE</div>
-                <div class="main_tit panBlack">당신을 위한 추천,<br class="d-lg-none"> 지금 여기3</div>
+                <div class="main_tit panBlack">지금 많이 검색하는<br class="d-lg-none"> 바로 여기</div>
                 <button class="all-btn point_txt gray3">전체보기</button>
             </div>
             <?php include_once("./main/slide_four3.php"); ?>
@@ -64,7 +73,7 @@ include_once(__DIR__."/layout/top.php");
         <div class="container">
             <div class="tit">
                 <div class="point_txt apricot d-lg-none">ONLY HERE</div>
-                <div class="main_tit panBlack">소슬에서만 만나는,<br class="d-lg-none"> 오직 여기</div>
+                <div class="main_tit panBlack">여기서만 만나는 단독 스팟<br class="d-lg-none"> 오직 여기</div>
                 <button class="all-btn point_txt gray3">전체보기</button>
             </div>
             <?php include_once("./main/slide_three.php"); ?>
