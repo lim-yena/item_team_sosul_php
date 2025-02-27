@@ -35,7 +35,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- 텍스트 폰트 -->
-    <link href="//fonts.googleapis.com/css2?family=Suit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT.css" rel="stylesheet">
 
     <!-- font icon -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -71,7 +71,8 @@
     
 
     <script src="/js/ej.js"></script>
-
+    <script src="/js/sy.js"></script>
+    <script src="/js/hyuna.js"></script>
 
 </head>
 <body> 
@@ -79,7 +80,7 @@
     <!-- eunjeong header -->
     <header id="hd" class="d-flex white flex-wrap">
         <div class="container_full d-flex jcb aic ej_innertop">
-            <h1 class="order-1"><a href="/"><img src="//item-team-sosul.vercel.app/img/logo/logo.svg" alt=""></a></h1>
+            <h1 class="order-1"><a href="/" class ="main-logo"><img src="//item-team-sosul.vercel.app/img/logo/logo.svg" alt=""></a></h1>
 
             <button class="Category-btn d-lg-none white bg-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#categoryMenu" aria-controls="categoryMenu">
                 <svg xmlns="//www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 20 20" fill="none">
@@ -89,14 +90,14 @@
                 </svg>
             </button> 
 
-            <ul id="gnb" class="d-none d-lg-flex order-0 gap-3 organic"> 
-                <li><a href="/page/reservation.php" class="text-nowrap">예약하기</a></li>
+            <ul id="gnb" class="d-none d-lg-flex order-0 gap-3 organic w-0"> 
+                <li><a href="/product/list.php" class="text-nowrap">예약하기</a></li>
                 <li><a href="" class="text-nowrap">오직여기</a></li>
                 <li><a href="" class="text-nowrap">프로모션</a></li>
                 <li><a href="" class="text-nowrap">브랜드</a></li>
             </ul>
 
-            <ul class="util d-flex order-2 text-nowrap aic gap-lg-5 gap-2 point_txt organic">
+            <ul class="util d-flex order-2 text-nowrap aic gap-lg-5 gap-2 point_txt organic w-0">
                 <li>
                     <a href="" class="text-nowrap">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="//www.w3.org/2000/svg">
@@ -106,7 +107,7 @@
                             <path d="M13.4199 3V5.82609" stroke="#3F422F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M13.2458 10.5493L10.3019 13.3754L8.47086 11.806" stroke="#3F422F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                    <span class="d-none d-lg-inline">예약하기</span></a></li>
+                    <span class="d-none d-lg-inline">예약확인</span></a></li>
                 <li>
                     <a href="/page/login.php">
                         <svg xmlns="//www.w3.org/2000/svg" width="21" height="12" viewBox="0 0 21 12" fill="none">
@@ -125,6 +126,7 @@
         <?php 
         if(defined('_INDEX_')) include_once(ROOT_DIR."/main/search.php");
          ?>
+        
     </header>
    
     <!--// eunjeong header -->
@@ -133,7 +135,7 @@
 
     <div class="offcanvas offcanvas-start" tabindex="-1" id="categoryMenu" aria-labelledby="categoryMenuLabel">
         <div class="mob-top-text offcanvas-header">
-            <div class="mob_menu_text list_tit">로그인해주세요</div>
+            <div class="mob_menu_text list_tit">안녕하세요<br> 로그인해주세요</div>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
 
@@ -184,13 +186,14 @@
                 </li>
             </ul>
             
-            <ul class="mob_container d-flex gray5_bg">
-                <li class="mob_notice aic d-flex sub_txt">
-                    <a class="apricot">HOT</a>
-                    <a href="" class="gray1">공지사항이 출력됩니다.</a>
-                </li>
-            </ul>
-
+            <div class="notice-wrapper">
+                <ul class="mob_container gray5_bg">
+                    <li class="mob_notice"><a class="notice_tag apricot point_txt">HOT</a> <a href="#" class="gray1 sub_txt">첫 번째 공지사항입니다.</a></li>
+                    <li class="mob_notice"><a class="notice_tag apricot point_txt">NEW</a> <a href="#" class="gray1 sub_txt">3월 신규입점 캠핑장 공개 </a></li>
+                    <li class="mob_notice"><a class="notice_tag apricot point_txt">INFO</a> <a href="#" class="gray1 sub_txt">예약 시 주의하세요</a></li>
+                </ul>
+            </div>
+                    
             <ul class="d-flex flex-column align-items-start gap-2 p-3 w-100">
                 <li class="list-group-text sub_txt gray3 ">예약하기</li>
                 <li class="container">
@@ -258,3 +261,6 @@
 
     <!--// eunjeong  mob-menu -->
     <div class='ej_content'>
+
+
+

@@ -1,29 +1,3 @@
-// function updateVideoSource() {
-//     const video = document.querySelector('.video-bg video'); // 특정 video 태그 선택
-//     const source = video.querySelector('source'); 
-
-//     // data 속성에서 영상 경로 가져오기
-//     const desktopSrc = video.dataset.srcDesktop;
-//     const mobileSrc = video.dataset.srcMobile;
-
-//     // 화면 크기에 따라 소스 변경
-//     source.src = window.innerWidth < 991 ? mobileSrc : desktopSrc;
-//     video.load(); // 새로운 영상 로드
-// }
-
-// window.addEventListener('resize', updateVideoSource);
-// window.addEventListener('load', updateVideoSource);
-
-/*
-window.addEventListener("DOMContentLoaded", () => {
-    const topHeight = document.querySelector("#hd").offsetHeight; 
-    const targetDom = document.querySelector(".ej_content");
-
-    if (targetDom) {
-        targetDom.style.paddingTop = `${topHeight}px`;
-    }
-});
-*/
 
 window.addEventListener("DOMContentLoaded", () => {
     // 픽스상단 높이만큼 아래 컨텐츠 상단여백 적용
@@ -61,11 +35,95 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const moSearch = document.querySelector('.mo-search');
+    const header = document.querySelector('#hd');
+    const headerHeight = header.offsetHeight; // 헤더의 높이
+  
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > headerHeight) {
+        moSearch.classList.add("scrolled");
+      } else {
+        moSearch.classList.remove("scrolled");
+      }
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const openModalBtn = document.querySelector(".topwhere button"); // 지역 선택 버튼
+    const modal = document.querySelector(".modal"); // 모달
+    const closeModalBtn = document.querySelector(".modal .close"); // 닫기 버튼
+
+    // ✅ 모달 열기
+    openModalBtn.addEventListener("click", function () {
+        modal.style.display = "flex";
+    });
+
+    // ✅ 모달 닫기
+    closeModalBtn.addEventListener("click", function () {
+        modal.style.display = "none";
+    });
+
+    // ✅ 모달 바깥 클릭 시 닫기
+    window.addEventListener("click", function (event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const items = document.querySelectorAll(".location-nm li, .location-chk li");
+    const resetButton = document.querySelector(".modal-btn-reset");
+
+    if (items.length > 0) {
+        items.forEach(item => {
+            item.addEventListener("click", function () {
+                this.classList.toggle("active");
+                console.log(`${this.textContent} 선택됨, 현재 클래스: ${this.classList}`);
+            });
+        });
+    } else {
+        console.error("선택할 요소가 없습니다.");
+    }
+
+    if (resetButton) {
+        resetButton.addEventListener("click", function () {
+            items.forEach(item => {
+                item.classList.remove("active");
+            });
+            console.log("모든 선택 초기화됨");
+        });
+    } else {
+        console.error("리셋 버튼을 찾을 수 없습니다.");
+    }
+});
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const noticeContainer = document.querySelector(".mob_container");
+    const notices = document.querySelectorAll(".mob_notice");
 
+    if (!noticeContainer || notices.length === 0) {
+        console.error("공지사항 컨테이너를 찾을 수 없습니다.");
+        return;
+    }
 
+    let index = 0;
 
+    function showNextNotice() {
+        index++;
+        if (index >= notices.length) {
+            index = 0;
+            noticeContainer.style.transition = "none"; // 애니메이션 제거 (순간 이동)
+            noticeContainer.style.transform = `translateY(0px)`;
+            setTimeout(() => {
+                noticeContainer.style.transition = "transform 0.5s ease-in-out"; // 애니메이션 다시 적용
+            }, 50);
+        } else {
+            noticeContainer.style.transform = `translateY(-${index * 30}px)`;
+        }
+    }
 
-
-
+    setInterval(showNextNotice, 3000);
+});
