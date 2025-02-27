@@ -50,60 +50,6 @@
 }
 
 /* 소슬 띠배너 관련 스타일 */
-<<<<<<< HEAD
-.sosul_banner {
-  padding: 40px 0;
-}
-.sosul_banner .sub_tit {
-  padding-bottom: 20px;
-  font-weight: 700;
-}
-.sosul_banner .same_btn {
-  background: #fff;
-  border: none;
-}
-.sosul_banner .same_btn:hover {
-  background: #000;
-  color: #fff;
-}
-.sosul_banner .text-center {
-  position: relative;
-  z-index: 1;
-}
-
-.sosul_banner.apricot_bg {
-  background: url("//item-team-sosul.vercel.app/img/image/banner.jpg") no-repeat center;
-  background-size: cover;
-  position: relative;
-}
-.sosul_banner.apricot_bg::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: rgb(214, 139, 48);
-  top: 0;
-  left: 0;
-  opacity: 0.85;
-}
-
-.sosul_banner.organic_bg {
-  background: url("//item-team-sosul.vercel.app/img/image/banner2.jpg") no-repeat center;
-  background-size: cover;
-  position: relative;
-}
-.sosul_banner.organic_bg::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: rgb(63, 66, 47);
-  top: 0;
-  left: 0;
-  opacity: 0.85;
-}
-
-=======
 /*
 .sosul_banner {
     padding:40px 0;
@@ -162,7 +108,6 @@
     }
 }
 */
->>>>>>> yena2
 /* 핫스팟 관련 스타일 */
 .hotspot .main_tit {
   text-align: center;
@@ -710,8 +655,6 @@
 }
 .footer .app_down .icon_area {
   margin-left: 0;
-<<<<<<< HEAD
-=======
 }
 
 .y_sosul_banner {
@@ -888,5 +831,4 @@
   font-weight: 800;
   width: 30px;
   text-align: center;
->>>>>>> yena2
 }

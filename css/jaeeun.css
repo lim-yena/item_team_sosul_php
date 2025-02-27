@@ -48,9 +48,11 @@
   display: flex;
   flex-direction: column;
   padding-top: 10px;
+  gap: 5px;
 }
 .main_con .con_txt .price {
   font-weight: 700;
+  padding-bottom: 5px;
 }
 @media (max-width: 480px) {
   .main_con .con_txt .price {
@@ -303,4 +305,88 @@
 .main_con_three .here-button-next::after,
 .main_con_three .here-button-prev::after {
   display: none;
+}
+
+.mobile_bottom {
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 10;
+  border-top: 1px solid #ddd;
+}
+.mobile_bottom a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  flex-direction: column;
+  width: 20%;
+  color: #aaa;
+}
+.mobile_bottom a:hover {
+  color: #3f422f;
+}
+.mobile_bottom a:hover svg line, .mobile_bottom a:hover svg path {
+  stroke: #3f422f;
+}
+
+.Login {
+  display: flex;
+  justify-content: center;
+  color: black;
+  padding: inherit;
+  margin-bottom: 50px;
+}
+
+.login {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 15%;
+}
+.login .sub0 {
+  display: flex;
+  justify-content: space-between;
+  margin-right: -30%;
+}
+.login .sub2 {
+  text-decoration: underline;
+}
+.login .input-group {
+  text-align: center;
+  color: #777777;
+}
+.login .input-group input {
+  width: 454px;
+  border-radius: 10px;
+  border: none;
+  background-color: #d9d9d9;
+  color: #777;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.login button.login-btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  background-color: #d9d9d9;
+  color: #777777;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.login button.login-btn:hover {
+  background-color: #D68B30;
+  color: #ffffff;
 }
