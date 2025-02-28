@@ -72,6 +72,7 @@
     <script src="/js/ej.js"></script>
     <script src="/js/sy.js"></script>
     <script src="/js/hyuna.js"></script>
+    <script src="/js/detail.js"></script>
 
 </head>
 <body> 

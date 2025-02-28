@@ -56,7 +56,7 @@
             </div>
         </li>
     </ul>
-    <div class="review_photoSome">
+    <div class="review_photoSome review_photoBox">
         <div class="basic_txt">포토리뷰</div>
         <div class="photoSome_box">
             <a class="photo_some">
@@ -258,5 +258,25 @@
             </li>   
         </ul>
     </div>
+</div>
+
+
+<div class="review_popup">
+    <div class="pop_box">
+        <div class="pop_tit d-flex">
+            <div class="list_tit">포토앨범</div>
+            <a class="pop_close">
+                <div class="close-svg">
+                    <svg xmlns="//www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 22 22" fill="none">
+                        <path d="M1 21L21 1M1 1L21 21" stroke="#3F422F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+            </a>
+        </div>
+        <div class="pop_body">
+            
+        </div>
+    </div>
+    <div class="pop_bg"></div>
 </div>
  

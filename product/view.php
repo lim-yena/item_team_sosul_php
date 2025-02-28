@@ -6,12 +6,12 @@ include_once(ROOT_DIR."/layout/top.php");
 ?>
 
 <div class="product_view">
-    <div class="maxW overflow-hidden">
+    <div class="">
         <!-- 상세 슬라이드 -->
-        <?php include_once("./view/visual.php"); ?>
-        <div class="d-flex product_view_box container">
+        <div class="maxW overflow-hidden"><?php include_once("./view/visual.php"); ?></div>
+        <div class="d-flex product_page_box container">
             <!--// 상세 슬라이드 -->
-            <div class="product_view_left">
+            <div class="product_page_left">
                 <!-- 상세 상단타이틀& 탭메뉴 -->
                 <?php include_once("./view/top.php"); ?>
                 <!--// 상세 상단타이틀& 탭메뉴 -->
@@ -40,7 +40,7 @@ include_once(ROOT_DIR."/layout/top.php");
                 <?php include_once("./view/review.php"); ?>
                 <!--// 상세 방문후기 -->
             </div>
-            <div class="product_view_right">
+            <div class="product_page_right">
                 <div class="sticky_box">
                     <!-- 오른쪽 슬라이드 -->
                     <?php include_once("./view/check.php"); ?>

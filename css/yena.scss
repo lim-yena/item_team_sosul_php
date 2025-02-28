@@ -772,7 +772,7 @@
     }
 
 }
-.product_view_box {
+.product_page_box {
     justify-content: space-between;
     gap: 60px;
     @media (max-width:991px) {
@@ -780,14 +780,14 @@
         flex-wrap: wrap;
     }
 
-    .product_view_left {
+    .product_page_left {
         max-width: 950px;
         @media (max-width:991px) {
             width:100%;
         }
     }
 
-    .product_view_right {
+    .product_page_right {
         width:100%;
         .sticky_box {
             border:1px solid #ddd;
@@ -967,8 +967,6 @@
                             padding:0 0 5px 0;
                         }
                     }
-                    
-    
                 }
                 .txt {
                     padding:10px 0;
@@ -978,6 +976,23 @@
                 .photo_num {
                     display:none;
                 }
+                .photoSome_box{
+                    &.resize {
+                        flex-direction: column;
+                        .photo_some {
+                            width:auto;
+                            height:auto;
+                        }
+                    }
+                    .photo_some {
+                        &:last-of-type:after {
+                            display: none;
+                        }
+                        
+                    }
+                }
+                
+                
             }
     
         }
@@ -986,4 +1001,47 @@
 }
 
 
+/* review_pop */
+.review_popup {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display:none;
+    z-index: 1;
 
+    .pop_box {
+        position: absolute;
+        max-width:800px;
+        height:600px;
+        top:0; bottom:0; left:0; right:0;
+        margin:auto;
+        z-index: 1;
+        background: #fff;
+        border-radius: 20px;
+
+        .pop_tit {
+            padding:20px;
+            border-bottom:1px solid #ddd;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+    }
+    .pop_bg {
+        background:rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top:0; left:0;
+        width:100%;
+        height:100%;
+    }
+}
+
+#hd{
+    z-index:1 !important;
+    .ej_innertop {
+        z-index:1 !important;
+    } 
+}
