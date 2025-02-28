@@ -320,7 +320,10 @@ $button-hover: darken($primary-color, 10%); // 버튼 호버 시 색상
     border-radius: 10px;
     background: #FAFAFA;
   }
-
+  .checkinout_sy{
+    display: flex;
+    flex-wrap: wrap;
+  }
   //인원, 일정 선택
   .re_container_sy{
     display: flex;
@@ -333,11 +336,6 @@ $button-hover: darken($primary-color, 10%); // 버튼 호버 시 색상
     border-radius: 10px;
     border: 1px solid #DDD;
   }
-  .checkinout_sy{
-      display: flex;
-      justify-content: space-around;
-      width: 55%;
-    }
     .gn_sy{
       margin-right: 5rem;
     }
@@ -456,6 +454,7 @@ $button-hover: darken($primary-color, 10%); // 버튼 호버 시 색상
   }
   .rescheck_sy3{
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-start;
     align-self: stretch;
     gap: 10px;

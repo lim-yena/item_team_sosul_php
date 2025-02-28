@@ -21,12 +21,6 @@
             <span class=gn_sy2>~&nbsp;&nbsp;&nbsp;&nbsp;퇴실</span> 
             <span class=gn_sy3>2025.12.21</span> <br/>
         </div>
-        <div class=rescheck_sy3>
-            <span class=gn_sy2>대인</span> 
-            <span class=gn_sy3>3 명</span> 
-            <span class=gn_sy2>소인</span> 
-            <span class=gn_sy3>2 명</span>
-        </div>
         <div class=rescheck_sy4>
             <span>사이트 요금</span> 
             <span>1명 추가 + 64,000원</span>
