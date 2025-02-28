@@ -387,7 +387,7 @@
     .sub0 { 
         display: flex;
         justify-content: space-between;
-        margin-right: -30%;
+        margin-right: -58%;
     }
     .sub2{
         text-decoration: underline;
@@ -398,7 +398,7 @@
     }
     .input-group input {
         width: 454px;
-        border-radius: 10px;
+        border-radius: 20px;
         border: none;
         background-color: #d9d9d9;
         color: #777;
@@ -424,4 +424,39 @@
         background-color: #D68B30;
         color: #ffffff;
     }
+    
+/* Hide default checkbox */
+input[type="checkbox"].custom-checkbox {
+    display: none;
+}
+
+/* Create custom checkbox */
+input[type="checkbox"].custom-checkbox + label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 20px;
+}
+
+/* Custom checkbox appearance */
+input[type="checkbox"].custom-checkbox + label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Change color when checked */
+input[type="checkbox"].custom-checkbox:checked + label::before {
+    background-color: #D68B30;  /* Change the background color */
+    border-color: #D68B30;     /* Change the border color */
+}
+
 }

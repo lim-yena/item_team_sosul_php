@@ -12,10 +12,15 @@ include_once(ROOT_DIR."/layout/top.php");
             <input type="text" id="username" name="username" required placeholder="아이디를 입력하세요.">
         </div>
         <div class="input-group basic_txt">
-            <input type="password" id="password" name="password" required placeholder="비밀번호를 입력하세요.">
+            <input type="password" id="password" name="password" required placeholder="비밀번호를 입력하세요."
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,32}"
+            title="비밀번호는 8~32자이며, 대문자, 소문자, 숫자를 포함해야 합니다.">
         </div>
         <div class="sub0">   
-            <p class="sub1 basic_txt"><a href="#">로그인 유지</a><p>
+            <p class="sub1 basic_txt">
+                <input type="checkbox" id="remember" name="remember" class="custom-checkbox">
+                <label for="remember">로그인 유지</label>
+            </p>
             <p class="sub2 basic_txt"><a href="#">비밀번호 재설정</a><p>
         </div>
         <button type="submit" class="login-btn list_tit">로그인</button>
