@@ -11,7 +11,7 @@
         <p class="coupon_text_large">첫 예약 누구나 즉시할인!</p>
     </div>
     <div class="coupon_img_text">
-        <a class="download_coupon">
+        <a class="download_coupon " onClick='alert("쿠폰이 다운로드되었습니다!");' href="#none">
             <img src="//item-team-sosul.vercel.app/img/image/banner_coupon2.svg" alt="첫예약할인쿠폰" >
             <div class="coupon_text_box">
                 <span>첫예약할인쿠폰</span>

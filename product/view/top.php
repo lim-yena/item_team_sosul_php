@@ -14,11 +14,17 @@
             <a href=""><img src="//item-team-sosul.vercel.app/img/icon/detail_share.svg" alt="공유하기"></a>
         </div>
     </div>
-    <nav class="h_view_top_tabbuttons">
-        <button class="tab-btn active" data-tab="tab1">시설소개</button>
+    <nav class="h_view_top_tab">
+        <!-- <button class="tab-btn" data-tab="tab1">시설소개</button>
         <button class="tab-btn" data-tab="tab2">운영정책</button>
         <button class="tab-btn" data-tab="tab3">시설/환경</button>
         <button class="tab-btn" data-tab="tab4">배치도</button>
         <button class="tab-btn" data-tab="tab5">예약안내</button>
-        <button class="tab-btn" data-tab="tab6">방문후기</button>
+        <button class="tab-btn" data-tab="tab6">방문후기</button> -->
+        <a href="" class="tab">시설소개</a>
+        <a href="" class="tab">운영정책</a>
+        <a href="" class="tab">시설/환경</a>
+        <a href="" class="tab">배치도</a>
+        <a href="" class="tab">예약안내</a>
+        <a href="" class="tab">방문후기</a>
     </nav>
