@@ -5,7 +5,7 @@ include_once(ROOT_DIR."/layout/top.php");
 ?>
 
 <div class="product_pay">
-    <div class="maxW overflow-hidden">
+    <div class="d-flex product_page_box container">
         <div class="product_pay_left">
             <!-- 결제하기 예약자정보 -->
             <?php include_once("./pay/top.php"); ?>

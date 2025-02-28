@@ -9,10 +9,6 @@ window.addEventListener("DOMContentLoaded", function() {
     const resetBtn = document.querySelector(".bottom_sy .reset_sy"); // 리셋 버튼
     const allcheckedbtn = document.querySelectorAll(".tabs_sy2 input[type='checkbox'], .tabs_sy2all input[type='checkbox']");
 
-    const checkin = document.querySelector("#checkin").value;
-    const finallycheckin = document.querySelector("#finallycheckin");
-    console.log(checkin)
-
     function activateTab(button) {
         // 모든 탭 버튼 초기화
         tabButtons.forEach(btn => {
