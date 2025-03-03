@@ -787,7 +787,7 @@
   }
 }
 .photoSome_box .photo_some img {
-  width: auto;
+  width: 100%;
   height: 100%;
 }
 .photoSome_box .photo_some .photo_num {
@@ -880,53 +880,55 @@
   flex-direction: column;
   gap: 20px;
 }
-.detail_conBox .review_all_box .review_all_in {
+
+.review_all_in {
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 10px;
 }
-.detail_conBox .review_all_box .review_all_in .review_all_top {
+.review_all_in .review_all_top {
   align-items: center;
   justify-content: space-between;
   padding-bottom: 10px;
 }
-.detail_conBox .review_all_box .review_all_in .review_all_top .review_all_btns a {
+.review_all_in .review_all_top .review_all_btns a {
   display: block;
   padding: 5px;
+  cursor: pointer;
 }
-.detail_conBox .review_all_box .review_all_in .review_all_top .review_all_btns a:hover {
+.review_all_in .review_all_top .review_all_btns a:hover {
   color: #D68B30;
 }
 @media (max-width: 991px) {
-  .detail_conBox .review_all_box .review_all_in .review_all_btm .tit {
+  .review_all_in .review_all_btm .tit {
     flex-direction: column;
     width: 100%;
   }
 }
-.detail_conBox .review_all_box .review_all_in .review_all_btm .tit .bold {
+.review_all_in .review_all_btm .tit .bold {
   font-weight: 800;
   padding-right: 10px;
 }
 @media (max-width: 991px) {
-  .detail_conBox .review_all_box .review_all_in .review_all_btm .tit .bold {
+  .review_all_in .review_all_btm .tit .bold {
     padding: 0 0 5px 0;
   }
 }
-.detail_conBox .review_all_box .review_all_in .review_all_btm .txt {
+.review_all_in .review_all_btm .txt {
   padding: 10px 0;
   color: #444;
 }
-.detail_conBox .review_all_box .review_all_in .review_all_btm .photo_num {
+.review_all_in .review_all_btm .photo_num {
   display: none;
 }
-.detail_conBox .review_all_box .review_all_in .review_all_btm .photoSome_box.resize {
+.review_all_in .review_all_btm .photoSome_box.resize {
   flex-direction: column;
 }
-.detail_conBox .review_all_box .review_all_in .review_all_btm .photoSome_box.resize .photo_some {
+.review_all_in .review_all_btm .photoSome_box.resize .photo_some {
   width: auto;
   height: auto;
 }
-.detail_conBox .review_all_box .review_all_in .review_all_btm .photoSome_box .photo_some:last-of-type:after {
+.review_all_in .review_all_btm .photoSome_box .photo_some:last-of-type:after {
   display: none;
 }
 
@@ -938,12 +940,13 @@
   width: 100%;
   height: 100%;
   display: none;
-  z-index: 1;
+  z-index: 2;
 }
 .review_popup .pop_box {
   position: absolute;
   max-width: 800px;
-  height: 600px;
+  max-height: -moz-min-content;
+  max-height: min-content;
   top: 0;
   bottom: 0;
   left: 0;
@@ -952,12 +955,150 @@
   z-index: 1;
   background: #fff;
   border-radius: 20px;
+  overflow: hidden;
+}
+@media (max-width: 991px) {
+  .review_popup .pop_box {
+    max-width: none;
+    max-height: none;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+  }
 }
 .review_popup .pop_box .pop_tit {
   padding: 20px;
-  border-bottom: 1px solid #ddd;
   justify-content: space-between;
   align-items: center;
+}
+.review_popup .pop_box .pop_tit .pop_close {
+  padding: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+.review_popup .pop_box .pop_tit .list_tit {
+  font-weight: 800;
+  align-items: center;
+  gap: 10px;
+}
+.review_popup .pop_box .pop_body {
+  padding: 0 20px 20px 20px;
+  overflow-y: auto;
+  max-height: 510px;
+}
+@media (max-width: 991px) {
+  .review_popup .pop_box .pop_body {
+    max-height: calc(85vh - 100px);
+  }
+}
+.review_popup .pop_box .pop_body .photoSome_box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+@media (max-width: 991px) {
+  .review_popup .pop_box .pop_body .photoSome_box {
+    white-space: initial;
+    justify-content: center;
+  }
+}
+.review_popup .pop_box .pop_body .photoSome_box .photo_some {
+  margin-right: 0;
+}
+.review_popup .pop_box .pop_body .photoSome_box .photo_some:last-of-type::after {
+  display: none;
+}
+.review_popup .pop_list.change {
+  display: none;
+}
+.review_popup .pop_view {
+  display: none;
+}
+.review_popup .pop_view.change {
+  display: block;
+}
+.review_popup .pop_view .photoBox {
+  gap: 20px;
+}
+@media (max-width: 991px) {
+  .review_popup .pop_view .photoBox {
+    flex-direction: column;
+  }
+}
+.review_popup .pop_view .photoBox .sameImg {
+  width: 50%;
+}
+@media (max-width: 991px) {
+  .review_popup .pop_view .photoBox .sameImg {
+    width: 100%;
+  }
+}
+.review_popup .pop_view .photoBox .sameImg img {
+  width: 100%;
+}
+.review_popup .pop_view .photoBox_txtBox {
+  width: 50%;
+}
+@media (max-width: 991px) {
+  .review_popup .pop_view .photoBox_txtBox {
+    width: 100%;
+  }
+}
+.review_popup .pop_view .photoBox_txtBox .review_all_in {
+  padding: 0;
+  border: none;
+}
+.review_popup .pop_view .photoBox_txtBox .review_all_in .tit {
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #ddd;
+}
+.review_popup .pop_view .photoBox_txtBox .review_all_in .txt {
+  padding: 20px 0 40px;
+}
+.review_popup .pop_view .photoBox_txtBox .review_all_in .photoSome_box {
+  justify-content: flex-start;
+}
+.review_popup .pop_view .photoBox_txtBox .review_all_in .photoSome_box .photo_review_some {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.review_popup .pop_view .photoBox_txtBox .review_all_in .photoSome_box .photo_review_some img {
+  width: 100%;
+  height: 100%;
+}
+.review_popup .pop_view .photo-button-next,
+.review_popup .pop_view .photo-button-prev {
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 0.625rem;
+  position: fixed;
+  top: 50%;
+}
+@media (max-width: 991px) {
+  .review_popup .pop_view .photo-button-next,
+  .review_popup .pop_view .photo-button-prev {
+    display: none;
+  }
+}
+.review_popup .pop_view .photo-button-next {
+  background: url("https://item-team-sosul.vercel.app/img/icon/arrow_right.svg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  left: 50%;
+  transform: translateY(-50%) translateX(700%);
+}
+.review_popup .pop_view .photo-button-prev {
+  background: url("https://item-team-sosul.vercel.app/img/icon/arrow_left.svg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-right: -0.313rem;
+  right: 50%;
+  transform: translateY(-50%) translateX(-700%);
 }
 .review_popup .pop_bg {
   background: rgba(0, 0, 0, 0.5);
@@ -968,9 +1109,386 @@
   height: 100%;
 }
 
+.paging {
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+.paging .prev {
+  gap: 10px;
+  display: flex;
+}
+.paging .number {
+  gap: 10px;
+}
+.paging .number .num {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: block;
+}
+.paging .number .num.active {
+  border: 1px solid transparent;
+  background: #3F422F;
+  color: #fff;
+}
+.paging .next {
+  gap: 10px;
+  display: flex;
+}
+
 #hd {
-  z-index: 1 !important;
+  z-index: 2 !important;
 }
 #hd .ej_innertop {
+  z-index: 2 !important;
+}
+
+#hd .search-box, #hd .search-container, .h.swiper-container .h_swiper-page {
   z-index: 1 !important;
+}
+
+.h_view_top_tab {
+  position: sticky;
+  top: 80px;
+  background: #fff;
+  z-index: 1;
+}
+
+/* 서브페이지 */
+.product_list {
+  padding: 40px 0 100px;
+}
+.product_list .h_main_quickmenu {
+  border-bottom: 1px solid #ddd;
+}
+.product_list .sub_filter .sub_filter_in {
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  padding: 5px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.product_list .sub_filter .sub_filter_in .icon_box {
+  align-items: center;
+  display: flex;
+  gap: 5px;
+  padding: 5px 0;
+  justify-content: center;
+  width: 33%;
+  font-size: 14px;
+}
+.product_list .sub_filter .sub_filter_in .icon_box:nth-of-type(-n+2) {
+  border-right: 1px solid #ddd;
+}
+.product_list .sub_filter .sub_filter_in .search_icon {
+  background: #3F422F;
+  border-radius: 100px;
+  width: 34px;
+  height: 34px;
+  line-height: 30px;
+  text-align: center;
+}
+.product_list .filter_box {
+  display: flex;
+  padding: 40px 0 20px;
+  gap: 10px;
+  align-items: center;
+  position: relative;
+}
+@media (max-width: 991px) {
+  .product_list .filter_box {
+    white-space: nowrap;
+    overflow-x: auto;
+  }
+}
+.product_list .filter_box .filter_btn {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: #777;
+  font-size: 14px;
+  align-items: center;
+  position: relative;
+}
+.product_list .filter_box .filter_icon {
+  padding-left: 44px;
+}
+.product_list .filter_box .filter_icon::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url("https://item-team-sosul.vercel.app/img/icon/filter.svg") no-repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 15px;
+}
+.product_list .filter_box .filter_option {
+  position: absolute;
+  width: 300px;
+  border: 1px solid #ddd;
+  background: #fff;
+  padding: 20px;
+  z-index: 1;
+  border-radius: 10px;
+  top: 100%;
+  left: 0;
+}
+.product_list .filter_box .filter_option .filter_option_top {
+  position: relative;
+  text-align: center;
+  font-weight: 800;
+  padding-bottom: 10px;
+}
+.product_list .filter_box .filter_option .filter_option_top .reset {
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+  width: 30px;
+  height: 30px;
+}
+.product_list .filter_box .filter_option .filter_option_top .reset svg {
+  width: 100%;
+  height: 100%;
+}
+.product_list .filter_box .filter_option .filter_option_btm .filter_area {
+  gap: 10px;
+  padding-bottom: 20px;
+}
+.product_list .filter_box .filter_option .filter_option_btm .filter_area .filter_stit {
+  font-size: 14px;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+.product_list .filter_box .filter_option .filter_option_btm .filter_area .filter_input {
+  width: 50%;
+  gap: 20px;
+}
+.product_list .filter_box .filter_option .filter_option_btm .filter_area .filter_input .same_box {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #fff;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+.product_list .filter_box .filter_option .filter_option_btm .filter_area .filter_input .same_box input {
+  width: 100%;
+  border: none;
+  text-align: right;
+}
+.product_list .filter_box .filter_option .filter_option_btm .filter_area .filter_input .same_box input:focus {
+  outline: none;
+}
+.product_list .filter_box .filter_option .filter_option_btm .middle {
+  position: relative;
+}
+.product_list .filter_box .filter_option .filter_option_btm .middle .multi-range-slider {
+  position: relative;
+}
+.product_list .filter_box .filter_option .filter_option_btm .middle .multi-range-slider .slider {
+  position: relative;
+  z-index: 1;
+  height: 6px;
+  overflow: initial;
+}
+.product_list .filter_box .filter_option .filter_option_btm .middle .multi-range-slider .slider .track {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+  background-color: #cecfc6;
+}
+.product_list .filter_box .filter_option .filter_option_btm .middle .multi-range-slider .slider .range {
+  position: absolute;
+  z-index: 2;
+  left: 25%;
+  right: 25%;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+  background-color: #3f422f;
+}
+.product_list .filter_box .filter_option .filter_option_btm .middle .multi-range-slider .slider .thumb {
+  position: absolute;
+  z-index: 3;
+  width: 14px;
+  height: 14px;
+  background-color: #3f422f;
+  border-radius: 50%;
+}
+.product_list .filter_box .filter_option .filter_option_btm .middle .multi-range-slider .slider .thumb.left {
+  left: 25%;
+  transform: translate(-10px, -4px);
+}
+.product_list .filter_box .filter_option .filter_option_btm .middle .multi-range-slider .slider .thumb.right {
+  right: 25%;
+  transform: translate(10px, -4px);
+}
+.product_list .filter_box .filter_option .filter_option_btm .middle .multi-range-slider input[type=range] {
+  position: absolute;
+  pointer-events: none;
+  -webkit-appearance: none;
+  z-index: 2;
+  height: 6px;
+  width: 100%;
+  opacity: 0;
+}
+.product_list .filter_box .filter_option .filter_option_btm .middle .multi-range-slider input[type=range]::-webkit-slider-thumb {
+  pointer-events: all;
+  width: 30px;
+  height: 30px;
+  border-radius: 0;
+  border: 0 none;
+  background-color: red;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+.product_list .filter_box .reset_icon {
+  height: 40px;
+  width: 40px;
+}
+.product_list .filter_box .reset_icon::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url("https://item-team-sosul.vercel.app/img/icon/reset_btn.svg") no-repeat center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+.product_list .sub_con_box {
+  flex-wrap: wrap;
+}
+.product_list .sub_con_box .con_box {
+  width: 23.5%;
+  margin-right: 2%;
+  margin-bottom: 40px;
+}
+.product_list .sub_con_box .con_box:nth-of-type(4n) {
+  margin-right: 0;
+}
+@media (max-width: 991px) {
+  .product_list .sub_con_box .con_box {
+    width: 49%;
+  }
+  .product_list .sub_con_box .con_box:nth-of-type(2n) {
+    margin-right: 0;
+  }
+}
+.product_list .sub_con_box .con_img_box {
+  display: block;
+  max-height: 220px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.product_list .sub_con_box .con_img_box img {
+  width: 100%;
+}
+@media (max-width: 991px) {
+  .product_list .sub_con_box .con_img_box {
+    max-height: 300px;
+  }
+}
+.product_list .sub_con_box .con_txt {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  gap: 5px;
+}
+.product_list .sub_con_box .con_txt .price {
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+@media (max-width: 480px) {
+  .product_list .sub_con_box .con_txt .price {
+    font-size: 16px;
+  }
+}
+.product_list .sub_con_box .con_txt .percent {
+  margin-right: 5px;
+  color: #6c7734;
+}
+.product_list .sub_con_box .con_txt .won {
+  text-decoration: line-through;
+}
+.product_list .sub_con_box .con_txt .check_btn {
+  max-width: 100px;
+  border: 1px solid #ddd;
+  background: #fff;
+  color: #777;
+  padding: 5px 0;
+  text-align: center;
+  border-radius: 100px;
+  margin-top: 20px;
+}
+.product_list .number .num {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 10px;
+}
+@media (max-width: 991px) {
+  .product_list .number .num:nth-of-type(n+3) {
+    display: none;
+  }
+}
+
+/* 좋아요 */
+.con_box {
+  position: relative;
+}
+.con_box .btn_like {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+@media (max-width: 991px) {
+  .con_box .btn_like {
+    top: 5px;
+    right: 5px;
+  }
+}
+
+.btn_like {
+  width: 34px;
+  height: 34px;
+  background: url("//item-team-sosul.vercel.app/img/icon/like_basic.svg") no-repeat center;
+  background-size: contain;
+  cursor: pointer;
+  border: 0;
+  display: block;
+}
+.btn_like.on {
+  background: url("//item-team-sosul.vercel.app/img/icon/like_hover.svg") no-repeat center;
+  background-size: contain;
+  animation: beating 0.5s 1 alternate;
+}
+@keyframes beating {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.25);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

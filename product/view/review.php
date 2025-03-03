@@ -114,8 +114,8 @@
                         <i class="bi bi-star-fill apricot"></i>
                     </div>
                     <div class="d-flex review_all_btns">
-                        <a href="" class="edit sub_txt">수정</a>
-                        <a href="" class="delete sub_txt">삭제</a>
+                        <a class="edit sub_txt">수정</a>
+                        <a class="delete sub_txt">삭제</a>
                     </div>
                 </div>
                 <div class="review_all_btm">
@@ -163,8 +163,8 @@
                         <i class="bi bi-star-fill apricot"></i>
                     </div>
                     <div class="d-flex review_all_btns">
-                        <a href="" class="edit sub_txt">수정</a>
-                        <a href="" class="delete sub_txt">삭제</a>
+                        <a class="edit sub_txt">수정</a>
+                        <a class="delete sub_txt">삭제</a>
                     </div>
                 </div>
                 <div class="review_all_btm">
@@ -190,8 +190,8 @@
                         <i class="bi bi-star-fill apricot"></i>
                     </div>
                     <div class="d-flex review_all_btns">
-                        <a href="" class="edit sub_txt">수정</a>
-                        <a href="" class="delete sub_txt">삭제</a>
+                        <a class="edit sub_txt">수정</a>
+                        <a class="delete sub_txt">삭제</a>
                     </div>
                 </div>
                 <div class="review_all_btm">
@@ -239,8 +239,8 @@
                         <i class="bi bi-star-fill apricot"></i>
                     </div>
                     <div class="d-flex review_all_btns">
-                        <a href="" class="edit sub_txt">수정</a>
-                        <a href="" class="delete sub_txt">삭제</a>
+                        <a class="edit sub_txt">수정</a>
+                        <a class="delete sub_txt">삭제</a>
                     </div>
                 </div>
                 <div class="review_all_btm">
@@ -257,12 +257,57 @@
                 </div>
             </li>   
         </ul>
+        <div class="paging d-flex">
+            <div class="prev">
+                <a href="">
+                    <svg width="40" height="40" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.5" y="0.5" width="59" height="59" rx="9.5" fill="white" stroke="#DDDDDD"/>
+                        <path d="M38 40L28 29.9814" stroke="#3F422F" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                        <path d="M28 29.9814L38 19.9999" stroke="#3F422F" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                        <path d="M30 40L20 29.9814" stroke="#3F422F" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                        <path d="M20 29.9814L30 19.9999" stroke="#3F422F" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                    </svg>
+                </a>
+                <a href="">
+                    <svg width="40" height="40" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.5" y="0.5" width="59" height="59" rx="9.5" fill="white" stroke="#DDDDDD"/>
+                        <path d="M34 40L24 29.9814" stroke="#3F422F" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                        <path d="M24 29.9814L34 19.9999" stroke="#3F422F" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="number d-flex">
+                <a href="" class="num active">1</a>
+                <a href="" class="num">2</a>
+                <a href="" class="num">3</a>
+                <a href="" class="num">4</a>
+                <a href="" class="num">5</a>
+            </div>
+            <div class="next">
+                <a href="">
+                    <svg width="40" height="40" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.5" y="0.5" width="59" height="59" rx="9.5" fill="white" stroke="#DDDDDD"/>
+                        <path d="M26 20L36 30.0186" stroke="#3F422F" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                        <path d="M36 30.0186L26 40.0001" stroke="#3F422F" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                    </svg>
+                </a>
+                <a href="">
+                    <svg width="40" height="40" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.5" y="0.5" width="59" height="59" rx="9.5" fill="white" stroke="#DDDDDD"/>
+                        <path d="M22 20L32 30.0186" stroke="#3F422F" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                        <path d="M32 30.0186L22 40.0001" stroke="#3F422F" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                        <path d="M30 20L40 30.0186" stroke="#3F422F" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                        <path d="M40 30.0186L30 40.0001" stroke="#3F422F" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
     </div>
 </div>
 
 
 <div class="review_popup">
-    <div class="pop_box">
+    <div class="pop_box pop_list">
         <div class="pop_tit d-flex">
             <div class="list_tit">포토앨범</div>
             <a class="pop_close">
@@ -274,7 +319,265 @@
             </a>
         </div>
         <div class="pop_body">
-            
+            <div class="photoSome_box">  
+                <a class="photo_some">
+                    <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                    <span class="photo_num sub_txt">1</span>
+                </a>
+                <a class="photo_some">
+                    <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                    <span class="photo_num sub_txt">1</span>
+                </a>
+                <a class="photo_some">
+                    <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                    <span class="photo_num sub_txt">1</span>
+                </a>
+                <a class="photo_some">
+                    <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                    <span class="photo_num sub_txt">1</span>
+                </a>
+                <a class="photo_some">
+                    <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                    <span class="photo_num sub_txt">1</span>
+                </a>  
+                <a class="photo_some">
+                    <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                    <span class="photo_num sub_txt">1</span>
+                </a>
+                <a class="photo_some">
+                    <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                    <span class="photo_num sub_txt">1</span>
+                </a>
+                <a class="photo_some">
+                    <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                    <span class="photo_num sub_txt">1</span>
+                </a>
+                <a class="photo_some">
+                    <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                    <span class="photo_num sub_txt">1</span>
+                </a>
+                <a class="photo_some">
+                    <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                    <span class="photo_num sub_txt">1</span>
+                </a>
+                <a class="photo_some">
+                    <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                    <span class="photo_num sub_txt">1</span>
+                </a>
+                <a class="photo_some">
+                    <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                    <span class="photo_num sub_txt">1</span>
+                </a>
+                <a class="photo_some">
+                    <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                    <span class="photo_num sub_txt">1</span>
+                </a>
+                <a class="photo_some">
+                    <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                    <span class="photo_num sub_txt">1</span>
+                </a>  
+                <a class="photo_some">
+                    <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                    <span class="photo_num sub_txt">1</span>
+                </a>
+                <a class="photo_some">
+                    <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                    <span class="photo_num sub_txt">1</span>
+                </a>
+                <a class="photo_some">
+                    <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                    <span class="photo_num sub_txt">1</span>
+                </a>
+                <a class="photo_some">
+                    <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                    <span class="photo_num sub_txt">1</span>
+                </a>
+                <a class="photo_some">
+                    <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                    <span class="photo_num sub_txt">1</span>
+                </a>  
+                <a class="photo_some">
+                    <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                    <span class="photo_num sub_txt">1</span>
+                </a>
+                <a class="photo_some">
+                    <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                    <span class="photo_num sub_txt">1</span>
+                </a>
+                <a class="photo_some">
+                    <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                    <span class="photo_num sub_txt">1</span>
+                </a>
+                <a class="photo_some">
+                    <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                    <span class="photo_num sub_txt">1</span>
+                </a>
+                <a class="photo_some">
+                    <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                    <span class="photo_num sub_txt">1</span>
+                </a>  
+                <a class="photo_some">
+                    <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                    <span class="photo_num sub_txt">1</span>
+                </a>
+                <a class="photo_some">
+                    <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                    <span class="photo_num sub_txt">1</span>
+                </a>
+                <a class="photo_some">
+                    <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                    <span class="photo_num sub_txt">1</span>
+                </a>
+                <a class="photo_some">
+                    <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                    <span class="photo_num sub_txt">1</span>
+                </a>
+                <a class="photo_some">
+                    <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                    <span class="photo_num sub_txt">1</span>
+                </a>
+                <a class="photo_some">
+                    <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                    <span class="photo_num sub_txt">1</span>
+                </a>
+            </div>        
+        </div>
+    </div>
+    <div class="pop_box pop_view">
+        <div class="pop_tit d-flex">
+            <div class="list_tit d-flex">
+                <a class="backMove">
+                    <svg width="35" height="35" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.5" y="0.5" width="59" height="59" rx="9.5" fill="white" stroke="#DDDDDD"/>
+                        <path d="M34 40L24 29.9814" stroke="#3F422F" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                        <path d="M24 29.9814L34 19.9999" stroke="#3F422F" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                    </svg>
+                </a>
+                <span>포토리뷰</span>
+            </div>
+            <a class="pop_close">
+                <div class="close-svg">
+                    <svg xmlns="//www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 22 22" fill="none">
+                        <path d="M1 21L21 1M1 1L21 21" stroke="#3F422F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+            </a>
+        </div>
+        <div class="pop_body">
+            <div class="swiper popreviewswiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="d-flex photoBox">
+                            <div class="sameImg">
+                                <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                            </div>
+                            <div class="photoBox_txtBox">
+                                <div class="review_all_in">
+                                    <div class="review_all_top d-flex">
+                                        <div class="d-flex star_box">
+                                            <i class="bi bi-star-fill apricot"></i>
+                                            <i class="bi bi-star-fill apricot"></i>
+                                            <i class="bi bi-star-fill apricot"></i>
+                                            <i class="bi bi-star-fill apricot"></i>
+                                            <i class="bi bi-star-fill apricot"></i>
+                                        </div>
+                                    </div>
+                                    <div class="review_all_btm">
+                                        <div class="d-flex tit">
+                                            <div class="bold">별명인지 아이디인지모르겠음 님의 리뷰</div>
+                                            <p>25-02-20</p>
+                                        </div>
+                                        <div class="txt">
+                                            아이들과 신나게 놀 수 있는 캠핑장!!!<br>
+                                            가족캠핑하기 좋은곳이며 넓은 주차공간과 텐트마다 공간이 충분해서 대형텐트로 단체캠핑이 가능합니다.<br>
+                                            <br>
+                                            가족과 함께 즐겁고 행복한 캠핑이 될 수 있도록 노력하겠습니다.
+                                        </div>
+                                        <div class="photoSome_box">
+                                            <a class="photo_review_some">
+                                                <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                                                <span class="photo_num sub_txt">1</span>
+                                            </a>
+                                            <a class="photo_review_some">
+                                                <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                                                <span class="photo_num sub_txt">1 +</span>
+                                            </a>
+                                            <a class="photo_review_some">
+                                                <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                                                <span class="photo_num sub_txt">1</span>
+                                            </a>
+                                            <a class="photo_review_some">
+                                                <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                                                <span class="photo_num sub_txt">1 +</span>
+                                            </a>
+                                            <a class="photo_review_some">
+                                                <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                                                <span class="photo_num sub_txt">1</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="d-flex photoBox">
+                            <div class="sameImg">
+                                <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                            </div>
+                            <div class="photoBox_txtBox">
+                                <div class="review_all_in">
+                                    <div class="review_all_top d-flex">
+                                        <div class="d-flex star_box">
+                                            <i class="bi bi-star-fill apricot"></i>
+                                            <i class="bi bi-star-fill apricot"></i>
+                                            <i class="bi bi-star-fill apricot"></i>
+                                            <i class="bi bi-star-fill apricot"></i>
+                                            <i class="bi bi-star-fill apricot"></i>
+                                        </div>
+                                    </div>
+                                    <div class="review_all_btm">
+                                        <div class="d-flex tit">
+                                            <div class="bold">별명인지 아이디인지모르겠음 님의 리뷰</div>
+                                            <p>25-02-20</p>
+                                        </div>
+                                        <div class="txt">
+                                            아이들과 신나게 놀 수 있는 캠핑장!!!<br>
+                                            가족캠핑하기 좋은곳이며 넓은 주차공간과 텐트마다 공간이 충분해서 대형텐트로 단체캠핑이 가능합니다.<br>
+                                            <br>
+                                            가족과 함께 즐겁고 행복한 캠핑이 될 수 있도록 노력하겠습니다.
+                                        </div>
+                                        <div class="photoSome_box">
+                                            <a class="photo_review_some">
+                                                <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                                                <span class="photo_num sub_txt">1</span>
+                                            </a>
+                                            <a class="photo_review_some">
+                                                <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                                                <span class="photo_num sub_txt">1 +</span>
+                                            </a>
+                                            <a class="photo_review_some">
+                                                <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                                                <span class="photo_num sub_txt">1</span>
+                                            </a>
+                                            <a class="photo_review_some">
+                                                <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                                                <span class="photo_num sub_txt">1 +</span>
+                                            </a>
+                                            <a class="photo_review_some">
+                                                <img src="//item-team-sosul.vercel.app/img/image/detail_img_3.jpg" alt="포토리뷰1">
+                                                <span class="photo_num sub_txt">1</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-button-next"></div>
+                <div class="photo-button-prev"></div>
+            </div>
         </div>
     </div>
     <div class="pop_bg"></div>

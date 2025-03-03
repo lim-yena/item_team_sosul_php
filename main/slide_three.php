@@ -4,6 +4,7 @@
             <div class="swiper-slide">
                 <div class="con_box">
                     <div class="con_img_box"><img src="//item-team-sosul.vercel.app/img/image/image1.jpg" alt="캠핑장" class="con_img" /></div>
+                    <button class="btn_like"></button>
                     <div class="con_txt">
                         <div class="location point_txt apricot">지역</div>
                         <div class="camping basic_txt camping">캠핑장 이름</div>
@@ -27,6 +28,7 @@
             <div class="swiper-slide">
                 <div class="con_box">
                     <div class="con_img_box"><img src="//item-team-sosul.vercel.app/img/image/image5.jpg" alt="캠핑장" class="con_img" /></div>
+                    <button class="btn_like"></button>
                     <div class="con_txt">
                         <div class="location point_txt apricot">지역</div>
                         <div class="camping basic_txt camping">캠핑장 이름</div>
@@ -49,6 +51,7 @@
             <div class="swiper-slide">
                 <div class="con_box">
                     <div class="con_img_box"><img src="//item-team-sosul.vercel.app/img/image/image6.jpg" alt="캠핑장" class="con_img" /></div>
+                    <button class="btn_like"></button>
                     <div class="con_txt">
                         <div class="location point_txt apricot">지역</div>
                         <div class="camping basic_txt camping">캠핑장 이름</div>
@@ -71,6 +74,7 @@
             <div class="swiper-slide">
                 <div class="con_box">
                     <div class="con_img_box"><img src="//item-team-sosul.vercel.app/img/image/image7.jpg" alt="캠핑장" class="con_img" /></div>
+                    <button class="btn_like"></button>
                     <div class="con_txt">
                         <div class="location point_txt apricot">지역</div>
                         <div class="camping basic_txt camping">캠핑장 이름</div>
@@ -103,6 +107,7 @@
             <div class="swiper-slide">
                 <div class="con_box">
                     <div class="con_img_box"><img src="//item-team-sosul.vercel.app/img/image/image1.jpg" alt="캠핑장" class="con_img" /></div>
+                    <button class="btn_like"></button>
                     <div class="con_txt">
                         <div class="location point_txt apricot">지역</div>
                         <div class="camping basic_txt">캠핑장 이름</div>
@@ -125,6 +130,7 @@
             <div class="swiper-slide">
                 <div class="con_box">
                     <div class="con_img_box"><img src="//item-team-sosul.vercel.app/img/image/image1.jpg" alt="캠핑장" class="con_img" /></div>
+                    <button class="btn_like"></button>
                     <div class="con_txt">
                         <div class="location point_txt apricot">지역</div>
                         <div class="camping basic_txt">캠핑장 이름</div>
@@ -152,6 +158,7 @@
             <div class="swiper-slide">
                 <div class="con_box">
                     <div class="con_img_box"><img src="//item-team-sosul.vercel.app/img/image/image1.jpg" alt="캠핑장" class="con_img" /></div>
+                    <button class="btn_like"></button>
                     <div class="con_txt">
                         <div class="location point_txt apricot">지역</div>
                         <div class="camping basic_txt">캠핑장 이름</div>
@@ -174,6 +181,7 @@
             <div class="swiper-slide">
                 <div class="con_box">
                     <div class="con_img_box"><img src="//item-team-sosul.vercel.app/img/image/image1.jpg" alt="캠핑장" class="con_img" /></div>
+                    <button class="btn_like"></button>
                     <div class="con_txt">
                         <div class="location point_txt apricot">지역</div>
                         <div class="camping basic_txt">캠핑장 이름</div>
@@ -196,6 +204,7 @@
             <div class="swiper-slide">
                 <div class="con_box">
                     <div class="con_img_box"><img src="//item-team-sosul.vercel.app/img/image/image1.jpg" alt="캠핑장" class="con_img" /></div>
+                    <button class="btn_like"></button>
                     <div class="con_txt">
                         <div class="location point_txt apricot">지역</div>
                         <div class="camping basic_txt">캠핑장 이름</div>
@@ -218,6 +227,7 @@
             <div class="swiper-slide">
                 <div class="con_box">
                     <div class="con_img_box"><img src="//item-team-sosul.vercel.app/img/image/image1.jpg" alt="캠핑장" class="con_img" /></div>
+                    <button class="btn_like"></button>
                     <div class="con_txt">
                         <div class="location point_txt apricot">지역</div>
                         <div class="camping basic_txt">캠핑장 이름</div>
