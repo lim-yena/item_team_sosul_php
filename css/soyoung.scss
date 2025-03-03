@@ -318,7 +318,6 @@ $button-hover: darken($primary-color, 10%); // 버튼 호버 시 색상
     align-self: stretch;
     border-radius: 10px;
     background: #FAFAFA;
-    margin-top: 20px;
     margin-bottom: 20px;
   }
   .checkinout_sy{
@@ -625,4 +624,106 @@ $button-hover: darken($primary-color, 10%); // 버튼 호버 시 색상
       font-weight: 500;
       line-height: 24px; /* 150% */
       letter-spacing: -0.32px;
+      border: none;
+      background-color: #fafafa;
     }
+
+    .site_sy{
+      display: flex;
+      width: 951px;
+      align-items: flex-start;
+      align-content: flex-start;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+
+    .siteC_sy{
+      display: flex;
+      width: 222px;
+      height: 130px;
+      padding: 10px 30px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+      border-radius: 5px;
+      border: 1px solid #DDD;
+      color: #777;
+      font-family: SUIT;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16px; /* 114.286% */
+      letter-spacing: -0.28px;
+    }
+
+    .sitefont_sy{
+      color: #000;
+      font-family: SUIT;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 20px; /* 100% */
+      letter-spacing: -0.4px;
+    }
+
+    .add_sy{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 30px;
+    }
+
+    .addsy_font{
+    color: #000;
+    font-family: SUIT;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 125% */
+    letter-spacing: -0.32px;
+    }
+    .addsy_bt{
+      color: #777;
+      text-align: center;
+      font-family: SUIT;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+    }
+    .addsy_container{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px;
+    }
+// 버튼 스타일링
+.btnminu_sy, .btnplus_sy{
+  background: transparent;   // 버튼 배경을 투명하게 설정
+  border: none;              // 버튼의 기본 테두리 없애기
+  padding: 5px;              // 버튼 내부에 여백 추가
+
+  // 아이콘에 추가 스타일
+  svg {
+    width: 10px;
+    height: 10px;
+  }
+  &:hover {
+    opacity: 0.8;          // 버튼에 마우스를 올렸을 때 투명도 변경
+  }
+  &:active {
+    opacity: 0.3;          // 버튼 클릭 시 약간의 효과
+  }
+}
+
+.borderbt_sy{
+  border-bottom: 1px solid #ddd;
+  padding: 40px 0;
+}
+.add_bottom_sy{
+  padding: 40px 0 100px;
+}
+.padding_sy{
+  padding: 40px 0;
+}

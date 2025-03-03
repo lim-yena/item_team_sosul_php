@@ -26,8 +26,10 @@
 
 
 <!-- 캘린더이미지 -->
-<div class="re_container_sy">
-    캘린더 이미지
+<div class="padding_sy">
+    <div class="re_container_sy">
+        캘린더 이미지
+    </div>
 </div>
 <!-- 일정/인원 선택 -->
 <div class="syre_container">
