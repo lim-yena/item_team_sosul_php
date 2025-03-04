@@ -40,7 +40,7 @@
             <span class="gn_sy3 checkout_jw">2025.12.21</span>
         </div>
         <div class="clock_sy">
-            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="27" viewBox="0 0 26 27" fill="none">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="27" viewBox="0 0 26 27" fill="none" class="iconmg_sy">
                 <g id="Group">
                 <path id="Vector" d="M13.0001 22.3494C17.6458 22.3494 21.4119 18.5833 21.4119 13.9376C21.4119 9.29195 17.6458 5.52588 13.0001 5.52588C8.35445 5.52588 4.58838 9.29195 4.58838 13.9376C4.58838 18.5833 8.35445 22.3494 13.0001 22.3494Z" stroke="#3F422F" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                 <path id="Vector_2" d="M13 8.37598V13.9379" stroke="#3F422F" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -60,7 +60,7 @@
         <div class="sy_imgtext">
             <span class="sy_roomsel_sy2toptext basic_txt">카라반 1호</span><br>
             <span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="27" viewBox="0 0 26 27" fill="none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="27" viewBox="0 0 26 27" fill="none" class="ic_sy">
                     <g id="Group">
                     <path id="Vector" d="M13.0001 22.3494C17.6458 22.3494 21.4119 18.5833 21.4119 13.9376C21.4119 9.29195 17.6458 5.52588 13.0001 5.52588C8.35445 5.52588 4.58838 9.29195 4.58838 13.9376C4.58838 18.5833 8.35445 22.3494 13.0001 22.3494Z" stroke="#3F422F" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                     <path id="Vector_2" d="M13 8.37598V13.9379" stroke="#3F422F" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -70,16 +70,16 @@
             </span>
             <br>
             <span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none" class="ms_sy">
                     <g id="message">
                     <path id="Vector" d="M15.4707 1.29053H2.5295C2.21748 1.29053 1.91824 1.41448 1.69761 1.63511C1.47698 1.85574 1.35303 2.15498 1.35303 2.467V12.467C1.35303 12.779 1.47698 13.0783 1.69761 13.2989C1.91824 13.5195 2.21748 13.6435 2.5295 13.6435H4.88244V16.5846L8.55303 13.6435H15.4707C15.7827 13.6435 16.0819 13.5195 16.3026 13.2989C16.5232 13.0783 16.6471 12.779 16.6471 12.467V2.467C16.6471 2.15498 16.5232 1.85574 16.3026 1.63511C16.0819 1.41448 15.7827 1.29053 15.4707 1.29053Z" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </g>
                 </svg> 침구류,식기류, tv, 냉장고, 전자렌지, 밥솥, 세면도구 구비되어있음. 
                 <br>
-                &nbsp;&nbsp;&nbsp;*(단 세면도구, 타올은 챙겨오세요)
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*(단 세면도구, 타올은 챙겨오세요)
             </span> <br>
             <span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="27" viewBox="0 0 26 27" fill="none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="27" viewBox="0 0 26 27" fill="none" class="hu_sy">
                     <g id="login">
                     <path id="Vector" d="M9.84473 18.0923V22.8158" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path id="Vector_2" d="M17.9539 13.4475C17.6747 13.3491 17.3754 13.29 17.0662 13.29H9.4657C8.03936 13.29 6.88232 14.4316 6.88232 15.8388V22.8946H19.6496V15.8388C19.6496 14.7465 18.9414 13.8116 17.9539 13.4475Z" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -90,7 +90,7 @@
             </span>
             <br>
             <span> 
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none" class="ten_sy">
                     <g id="car">
                     <path id="Vector" d="M8.8833 12.9521V16.5572" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path id="Vector_2" d="M11.2866 0.935547L1.07227 16.5574H16.6941L6.47983 0.935547" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -113,7 +113,7 @@
         <div class="sy_imgtext">
             <span class="sy_roomsel_sy2toptext basic_txt">카라반 2호</span><br>
             <span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="27" viewBox="0 0 26 27" fill="none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="27" viewBox="0 0 26 27" fill="none" class="ic_sy">
                     <g id="Group">
                     <path id="Vector" d="M13.0001 22.3494C17.6458 22.3494 21.4119 18.5833 21.4119 13.9376C21.4119 9.29195 17.6458 5.52588 13.0001 5.52588C8.35445 5.52588 4.58838 9.29195 4.58838 13.9376C4.58838 18.5833 8.35445 22.3494 13.0001 22.3494Z" stroke="#3F422F" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                     <path id="Vector_2" d="M13 8.37598V13.9379" stroke="#3F422F" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -123,16 +123,16 @@
             </span>
             <br>
             <span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none" class="ms_sy">
                     <g id="message">
                     <path id="Vector" d="M15.4707 1.29053H2.5295C2.21748 1.29053 1.91824 1.41448 1.69761 1.63511C1.47698 1.85574 1.35303 2.15498 1.35303 2.467V12.467C1.35303 12.779 1.47698 13.0783 1.69761 13.2989C1.91824 13.5195 2.21748 13.6435 2.5295 13.6435H4.88244V16.5846L8.55303 13.6435H15.4707C15.7827 13.6435 16.0819 13.5195 16.3026 13.2989C16.5232 13.0783 16.6471 12.779 16.6471 12.467V2.467C16.6471 2.15498 16.5232 1.85574 16.3026 1.63511C16.0819 1.41448 15.7827 1.29053 15.4707 1.29053Z" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </g>
                 </svg> 침구류,식기류, tv, 냉장고, 전자렌지, 밥솥, 세면도구 구비되어있음. 
                 <br>
-                &nbsp;&nbsp;&nbsp;*(단 세면도구, 타올은 챙겨오세요)
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*(단 세면도구, 타올은 챙겨오세요)
             </span> <br>
             <span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="27" viewBox="0 0 26 27" fill="none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="27" viewBox="0 0 26 27" fill="none" class="hu_sy">
                     <g id="login">
                     <path id="Vector" d="M9.84473 18.0923V22.8158" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path id="Vector_2" d="M17.9539 13.4475C17.6747 13.3491 17.3754 13.29 17.0662 13.29H9.4657C8.03936 13.29 6.88232 14.4316 6.88232 15.8388V22.8946H19.6496V15.8388C19.6496 14.7465 18.9414 13.8116 17.9539 13.4475Z" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -143,7 +143,7 @@
             </span>
             <br>
             <span> 
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none" class="ten_sy">
                     <g id="car">
                     <path id="Vector" d="M8.8833 12.9521V16.5572" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path id="Vector_2" d="M11.2866 0.935547L1.07227 16.5574H16.6941L6.47983 0.935547" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -166,7 +166,7 @@
         <div class="sy_imgtext">
             <span class="sy_roomsel_sy2toptext basic_txt">카라반 3호</span><br>
             <span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="27" viewBox="0 0 26 27" fill="none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="27" viewBox="0 0 26 27" fill="none" class="ic_sy">
                     <g id="Group">
                     <path id="Vector" d="M13.0001 22.3494C17.6458 22.3494 21.4119 18.5833 21.4119 13.9376C21.4119 9.29195 17.6458 5.52588 13.0001 5.52588C8.35445 5.52588 4.58838 9.29195 4.58838 13.9376C4.58838 18.5833 8.35445 22.3494 13.0001 22.3494Z" stroke="#3F422F" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                     <path id="Vector_2" d="M13 8.37598V13.9379" stroke="#3F422F" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -176,16 +176,16 @@
             </span>
             <br>
             <span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none" class="ms_sy">
                     <g id="message">
                     <path id="Vector" d="M15.4707 1.29053H2.5295C2.21748 1.29053 1.91824 1.41448 1.69761 1.63511C1.47698 1.85574 1.35303 2.15498 1.35303 2.467V12.467C1.35303 12.779 1.47698 13.0783 1.69761 13.2989C1.91824 13.5195 2.21748 13.6435 2.5295 13.6435H4.88244V16.5846L8.55303 13.6435H15.4707C15.7827 13.6435 16.0819 13.5195 16.3026 13.2989C16.5232 13.0783 16.6471 12.779 16.6471 12.467V2.467C16.6471 2.15498 16.5232 1.85574 16.3026 1.63511C16.0819 1.41448 15.7827 1.29053 15.4707 1.29053Z" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </g>
                 </svg> 침구류,식기류, tv, 냉장고, 전자렌지, 밥솥, 세면도구 구비되어있음. 
                 <br>
-                &nbsp;&nbsp;&nbsp;*(단 세면도구, 타올은 챙겨오세요)
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*(단 세면도구, 타올은 챙겨오세요)
             </span> <br>
             <span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="27" viewBox="0 0 26 27" fill="none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="27" viewBox="0 0 26 27" fill="none" class="hu_sy">
                     <g id="login">
                     <path id="Vector" d="M9.84473 18.0923V22.8158" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path id="Vector_2" d="M17.9539 13.4475C17.6747 13.3491 17.3754 13.29 17.0662 13.29H9.4657C8.03936 13.29 6.88232 14.4316 6.88232 15.8388V22.8946H19.6496V15.8388C19.6496 14.7465 18.9414 13.8116 17.9539 13.4475Z" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -196,7 +196,7 @@
             </span>
             <br>
             <span> 
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none" class="ten_sy">
                     <g id="car">
                     <path id="Vector" d="M8.8833 12.9521V16.5572" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path id="Vector_2" d="M11.2866 0.935547L1.07227 16.5574H16.6941L6.47983 0.935547" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -213,5 +213,5 @@
                 </div>
             </div>
         </div>  
-    </div>          
+    </div>     
 </div>

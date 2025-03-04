@@ -5,8 +5,10 @@
     <div class=rescheck_sy>
         <div class=rescheck_sy1>
             <img src="//item-team-sosul.vercel.app/img/image/image 2.png" alt="">
-            <span class=rc_sy1>카라반 1호</span><br>
-            <span class=rc_sy2>성인 2명, 미성년2인</span>
+            <div class="rcall_sy">
+                <span class=rc_sy1>카라반 1호</span>
+                <span class=rc_sy2>성인 2명, 미성년2인</span>
+            </div>
         </div>
         <div class=rescheck_sy2>
             <div class="roombt_sy2">

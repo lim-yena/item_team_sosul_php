@@ -318,7 +318,7 @@ $button-hover: darken($primary-color, 10%); // 버튼 호버 시 색상
     align-self: stretch;
     border-radius: 10px;
     background: #FAFAFA;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
   .checkinout_sy{
     display: flex;
@@ -349,9 +349,6 @@ $button-hover: darken($primary-color, 10%); // 버튼 호버 시 색상
     }
     #jw{
       display: none;
-    }
-    .rescheck_sy3{
-      width: 7rem;
     }
     .checkin_jw, .checkout_jw{
       display: flex;
@@ -396,14 +393,13 @@ $button-hover: darken($primary-color, 10%); // 버튼 호버 시 색상
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 3px;
   }
 
   .roomsel_sy{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 20px;
+    gap: 2.5rem;
     align-self: stretch;
   }
   @media (max-width: 991px) {
@@ -412,7 +408,7 @@ $button-hover: darken($primary-color, 10%); // 버튼 호버 시 색상
       justify-content: space-around;
     }
     .roomsel_sy{
-      gap: 20px;
+      gap: 2.5rem;
     }
     .sysel_h4{
       margin-left: 2rem !important;
@@ -461,7 +457,6 @@ $button-hover: darken($primary-color, 10%); // 버튼 호버 시 색상
     justify-content: center;
     align-items: center;
     gap: 10px;
-    flex: 1 0 0;
     border-radius: 50px;
     border: 1px solid #DDD;
     color: var(--New-group-Light-Text, #777);
@@ -473,7 +468,25 @@ $button-hover: darken($primary-color, 10%); // 버튼 호버 시 색상
     letter-spacing: -0.28px;
     background-color: white;
   }
+  .salebt_sy {
+    .salebt2_sy {
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
 
+        &:hover {
+          background-color: #f5f5f5;  // 진한 색으로 변경 (색은 원하는 대로 조정 가능)
+        }
+    }
+    .selted_sy{
+      background-color: #332E2A !important;
+      color: white !important;
+      width: 113px;;
+    }
+}
+  .rcall_sy{
+    display: flex !important;
+    flex-direction: column !important;
+  }
   //가격 폰트
   .sale_sy{
     color: #D68B30;
@@ -516,7 +529,7 @@ $button-hover: darken($primary-color, 10%); // 버튼 호버 시 색상
     flex-wrap: wrap;
     align-items: flex-start;
     align-self: stretch;
-    gap: 10px;
+    gap: 12px;
   }
   
   .rescheck_sy4{
@@ -624,8 +637,6 @@ $button-hover: darken($primary-color, 10%); // 버튼 호버 시 색상
       font-weight: 500;
       line-height: 24px; /* 150% */
       letter-spacing: -0.32px;
-      border: none;
-      background-color: #fafafa;
     }
 
     .site_sy{
@@ -726,4 +737,34 @@ $button-hover: darken($primary-color, 10%); // 버튼 호버 시 색상
 }
 .padding_sy{
   padding: 40px 0;
+}
+
+.selsy{
+  font-family: SUIT;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  border: none;
+  background-color: #fafafa;
+  letter-spacing: 15px;
+}
+.iconmg_sy{
+  margin: 0 4px 4px 4px;
+}
+.ic_sy{
+  margin-bottom: 4px;    
+  margin-left: 2px;
+  }
+
+.ms_sy{
+    margin-left: 5px;
+    margin-right: 4px;
+}
+
+.hu_sy{
+  margin-bottom: 5px;
+}
+.ten_sy{
+margin: 0 2px 5px 6px;
 }
