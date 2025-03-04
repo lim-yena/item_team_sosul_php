@@ -59,10 +59,12 @@
         }
         a:hover svg > path,
         a:hover svg > circle,
-        a:hover svg > ellipse,
-        a:hover svg > path > fill {
+        a:hover svg > ellipse {
             stroke: var(--sub_apricot);
         }
+        // a:hover svg > path {
+        //     fill: var(--sub_apricot);
+        // }
         
         
     }
@@ -185,7 +187,7 @@
             width: 100%;  /* 이미지 너비를 100%로 설정 */
             height: 100%;  /* 이미지 높이를 100%로 설정 */
             object-fit: cover;  /* 이미지를 잘리지 않게 비율에 맞게 꽉 채우기 */
-            border-radius: 10px;
+            border-radius: 20px;
             padding: 0 10px;
           }
     }
@@ -372,6 +374,7 @@
         .h_policy_text {
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
             h5 {
                 font-weight: 700;
                 width: 150px;
@@ -443,15 +446,20 @@
 //write_top
 .h_write_top {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 40px 5px;
     border-bottom: 1px solid #ddd;
+    @media (max-width: 991px) {
+        flex-direction: column-reverse;
+    }
     h3 {
         font-weight: 700;
     }
     .h_write_top_iconbox {
         display: flex;
         gap: 10px;
+        justify-content: flex-end;
     }
 }
 //--write_top
@@ -471,6 +479,11 @@
         flex-direction: column;
         .h_write_info_text {
             display: flex;
+            flex-wrap: wrap;
+            @media (max-width: 430px) {
+                flex-direction: column
+            }
+
             h5 {
                 width: 150px;
                 font-size: 16px;
