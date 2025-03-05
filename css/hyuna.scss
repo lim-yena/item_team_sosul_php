@@ -23,7 +23,6 @@
 .h_main_quickmenu {
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 50px;
     padding: 40px 0;
 
@@ -35,6 +34,8 @@
             gap: 5px;
             font-size: 13px;
             color: #777;
+            text-align: center;
+            word-break: keep-all;
 
             img {
                 width: 50px;
