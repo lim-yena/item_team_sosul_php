@@ -27,10 +27,34 @@
 
 <!-- 캘린더이미지 -->
 <div class="padding_sy">
-    <div class="re_container_sy">
-        캘린더 이미지
+        <div class="calendar_container">
+            <button class="left_button white_bg"> &lt; </button>
+
+            <div class="calendar_wrapper">
+                <!-- 현재 달 달력 -->
+                <table class="calendar black" id="calendar_current">
+                    <thead>
+                        <tr>
+                            <th class="title basic_txt organic" id="title_current">2025년 2월</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+
+                <!-- 다음 달 달력 -->
+                <table class="calendar black" id="calendar_next">
+                    <thead>
+                        <tr>
+                            <th class="title basic_txt organic" id="title_next">2025년 3월</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <button class="right_button white_bg"> &gt; </button>
+        </div>
     </div>
-</div>
+
 <!-- 일정/인원 선택 -->
 <div class="syre_container">
     <div class="checkinout_sy">
