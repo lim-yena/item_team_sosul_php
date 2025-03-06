@@ -1,6 +1,6 @@
 
 <!-- 모달창 -->
-<div class="modal-overlay_sy position-fixed start-0 top-0 h-100 bg-white w-100 d-none" id="modal">
+<div class="modal-overlay_sy position-fixed start-0 top-0 h-100 bg-white w-100 d-none" id="modal_sy">
     <!-- 검색창 -->
     
    
@@ -10,7 +10,7 @@
             <button class="close-btn" id="closeModal">&times;</button>
     </div>
     <div class="tab-tab_sy">
-        <div class='d-flex flex-column'>
+        <div class="d-flex flex-column syinput">
             <div class="syinput">
                 <svg class="search-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
                     <path d="M15.4667 9.5625C15.4667 12.858 12.8077 15.525 9.53333 15.525C6.25896 15.525 3.6 12.858 3.6 9.5625C3.6 6.26698 6.25896 3.6 9.53333 3.6C12.8077 3.6 15.4667 6.26698 15.4667 9.5625Z" stroke="#3F422F" stroke-width="1.2"/>

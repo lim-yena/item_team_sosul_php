@@ -13,6 +13,9 @@
     padding: 16px;
     overflow-y: auto;
   }
+  #modal_sy {
+    display: block;
+  }
   .modal-content_sy {
     display: flex;
     justify-content: space-between;
@@ -21,7 +24,7 @@
     font-size: 14px;
     font-weight: bold;
     color: #2E2B28;
-    padding-bottom: 12px;
+    padding-bottom: 7px;
     text-align: center;
   }
   .syinput {
@@ -113,16 +116,18 @@
     font-weight: bold;
     background-color: #3d322c;
     color: white;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
   }
   .tab-content_sy,
   .tab-tab_sy {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 30px;
     align-self: stretch;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    margin-top: 15px;
   }
   .tab-content_sy {
     display: none;
@@ -144,12 +149,14 @@
   }
   .rounded-input_sy {
     position: relative;
-    width: 100%;
+    width: 100% !important;
     padding-left: 40px;
     font-size: 14px; /* 텍스트 크기 설정 */
     border: none;
     border-bottom: 1px solid #ccc;
     height: 45px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
   }
   .reset_sy {
     background-color: white;
@@ -192,13 +199,12 @@
   .tab-container_sy .tabs_sy2, .tab-container_sy .tabs_sy2all {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
   .tab-container_sy .tabs_sy2 .tab-checkbox-label, .tab-container_sy .tabs_sy2all .tab-checkbox-label {
     display: flex;
     align-items: center;
     cursor: pointer;
-    width: 85px;
+    width: 25%;
     justify-content: center;
     margin-bottom: 20px;
   }
@@ -230,6 +236,11 @@
   .tab-container_sy .tabs_sy2 .tab-checkbox-label .tab-checkbox:checked + span, .tab-container_sy .tabs_sy2all .tab-checkbox-label .tab-checkbox:checked + span {
     background: var(--New-group-Panton-Black-C, #332E2A);
     color: var(--New-group-Ivory, #FAF5EE);
+  }
+}
+@media (min-width: 992px) {
+  #modal_sy {
+    display: none !important;
   }
 }
 .reservation_sy {
@@ -428,7 +439,8 @@
 .salebt_sy .selted_sy {
   background-color: #332E2A !important;
   color: white !important;
-  width: 113px;
+  width: 100%;
+  padding: 10px 36px;
 }
 
 .rcall_sy {
@@ -476,7 +488,6 @@
 }
 
 .rescheck_sy3 {
-  display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   align-self: stretch;
@@ -578,6 +589,7 @@
   font-weight: 700;
   line-height: 24px; /* 150% */
   letter-spacing: -0.32px;
+  margin: 12px;
 }
 
 .gn_sy3 {

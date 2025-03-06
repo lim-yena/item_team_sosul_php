@@ -22,6 +22,10 @@ $button-hover: darken($primary-color, 10%); // 버튼 호버 시 색상
     overflow-y: auto;
   }
 
+  #modal_sy {
+    display: block; // 991px 이하에서는 보이게 설정
+  }
+
   // 📌 검색창 헤더 스타일
   .modal-content_sy {
     display: flex;
@@ -31,7 +35,7 @@ $button-hover: darken($primary-color, 10%); // 버튼 호버 시 색상
     font-size: 14px;
     font-weight: bold;
     color: $text-color;
-    padding-bottom: 12px;
+    padding-bottom: 7px;
     text-align: center;
   }
   .syinput {
@@ -137,8 +141,8 @@ $button-hover: darken($primary-color, 10%); // 버튼 호버 시 색상
       font-weight: bold;
       background-color: #3d322c;
       color: white;
-      border-bottom-left-radius: 4px; 
-      border-bottom-right-radius: 4px; 
+      border-bottom-left-radius: 7px; 
+      border-bottom-right-radius: 7px; 
     }
   }
 
@@ -148,9 +152,10 @@ $button-hover: darken($primary-color, 10%); // 버튼 호버 시 색상
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 30px;
     align-self: stretch;;
-    
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    margin-top: 15px;
   }
   .tab-content_sy {
     display: none;
@@ -177,12 +182,14 @@ $button-hover: darken($primary-color, 10%); // 버튼 호버 시 색상
 
   .rounded-input_sy{
     position: relative;
-    width: 100%;
+    width: 100% !important;
     padding-left: 40px; 
     font-size: 14px; /* 텍스트 크기 설정 */
     border: none;
     border-bottom: 1px solid #ccc;
     height: 45px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
   }
     
   // 📌 검색 버튼 스타일
@@ -231,13 +238,12 @@ $button-hover: darken($primary-color, 10%); // 버튼 호버 시 색상
   .tabs_sy2 , .tabs_sy2all {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 
     .tab-checkbox-label {
       display: flex;
       align-items: center;
       cursor: pointer;
-      width: 85px;
+      width: 25%;
       justify-content: center;
       margin-bottom: 20px;
 
@@ -276,6 +282,12 @@ $button-hover: darken($primary-color, 10%); // 버튼 호버 시 색상
     }
   }
 }
+}
+// 992px 이상일 때 모달 숨기기
+@media (min-width: 992px) {
+  #modal_sy {
+    display: none !important;
+  }
 }
 
 // 예약확인페이지
@@ -480,7 +492,8 @@ $button-hover: darken($primary-color, 10%); // 버튼 호버 시 색상
     .selted_sy{
       background-color: #332E2A !important;
       color: white !important;
-      width: 113px;;
+      width: 100%;
+      padding: 10px 36px;
     }
 }
   .rcall_sy{
@@ -525,7 +538,6 @@ $button-hover: darken($primary-color, 10%); // 버튼 호버 시 색상
     margin-bottom: 2rem;
   }
   .rescheck_sy3{
-    display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     align-self: stretch;
@@ -626,6 +638,7 @@ $button-hover: darken($primary-color, 10%); // 버튼 호버 시 색상
       font-weight: 700;
       line-height: 24px; /* 150% */
       letter-spacing: -0.32px;
+      margin: 12px;
     }
 
     .gn_sy3{

@@ -1,13 +1,27 @@
 window.addEventListener("DOMContentLoaded", function() {
     // 모바일 검색 팝업 출력
-    const popupclosebtn = document.querySelector("#closeModal");
-    const popupdom = document.querySelector("#modal");
-    const m_searchbtn = document.querySelector(".mo-search-btn");
+    //const popupclosebtn = document.querySelector("#closeModal");
+    //const popupdom = document.querySelector("#modal_sy");
+    //const m_searchbtn = document.querySelector(".mo-search-btn");
 
-    const tabButtons = document.querySelectorAll(".tab-btn");
-    const tabContents = document.querySelectorAll(".tab-content_sy");
-    const resetBtn = document.querySelector(".bottom_sy .reset_sy"); // 리셋 버튼
-    const allcheckedbtn = document.querySelectorAll(".tabs_sy2 input[type='checkbox'], .tabs_sy2all input[type='checkbox']");
+    //const tabButtons = document.querySelectorAll(".tab-btn");
+    //const tabContents = document.querySelectorAll(".tab-content_sy");
+   // const resetBtn = document.querySelector(".bottom_sy .reset_sy"); // 리셋 버튼    
+   // const allcheckedbtn = document.querySelectorAll(".tabs_sy2 input[type='checkbox'], .tabs_sy2all input[type='checkbox']");
+
+
+    // 객체가 존재하면 해당 요소를 저장, 없으면 null 처리
+    const popupclosebtn = document.querySelector("#closeModal") || null;
+    const popupdom = document.querySelector("#modal_sy") || null;
+    const m_searchbtn = document.querySelector(".mo-search-btn") || null;
+
+    const tabButtons = document.querySelectorAll(".tab-btn").length > 0 ? document.querySelectorAll(".tab-btn") : null;
+    const tabContents = document.querySelectorAll(".tab-content_sy").length > 0 ? document.querySelectorAll(".tab-content_sy") : null;
+    const resetBtn = document.querySelector(".bottom_sy .reset_sy") || null;
+    const allcheckedbtn = document.querySelectorAll(".tabs_sy2 input[type='checkbox'], .tabs_sy2all input[type='checkbox']").length > 0 
+        ? document.querySelectorAll(".tabs_sy2 input[type='checkbox'], .tabs_sy2all input[type='checkbox']") 
+        : null;
+
 
     // 탭 활성화 함수
     function activateTab(button) {
@@ -27,39 +41,39 @@ window.addEventListener("DOMContentLoaded", function() {
     }
 
     // m_searchbtn 클릭 시 팝업 활성화
-    // m_searchbtn.addEventListener("click", function() {
-    //     popupdom.classList.remove("d-none");  
+    m_searchbtn?.addEventListener("click", function() {
+        popupdom.classList.remove("d-none");  
 
-    //     // **모달이 열릴 때 첫 번째 탭 자동 활성화**
-    //     activateTab(tabButtons[0]);
-    //     document.getElementById(tabButtons[0].dataset.tab).classList.add("d-block");
-    // });
+        // **모달이 열릴 때 첫 번째 탭 자동 활성화**
+        activateTab(tabButtons[0]);
+        document.getElementById(tabButtons[0].dataset.tab).classList.add("d-block");
+    });
 
     // 팝업 닫기 버튼
-    // popupclosebtn.addEventListener("click", function() {
-    //     popupdom.classList.add("d-none");  
-    // });
+    popupclosebtn?.addEventListener("click", function() {
+        popupdom.classList.add("d-none");  
+    });
 
     // 탭 버튼 클릭 이벤트
-    // tabButtons.forEach(button => {
-    //     button.addEventListener("click", function () {
-    //         // 모든 탭 콘텐츠 숨기기
-    //         tabContents.forEach(content => content.classList.remove("d-block"));
+    tabButtons?.forEach(button => {
+        button.addEventListener("click", function () {
+            // 모든 탭 콘텐츠 숨기기
+            tabContents.forEach(content => content.classList.remove("d-block"));
 
-    //         // 선택한 탭 콘텐츠 보이기
-    //         document.getElementById(this.dataset.tab).classList.add("d-block");
+            // 선택한 탭 콘텐츠 보이기
+            document.getElementById(this.dataset.tab).classList.add("d-block");
 
-    //         // 탭 버튼 활성화 처리
-    //         activateTab(this);
-    //     });
-    // });
+            // 탭 버튼 활성화 처리
+            activateTab(this);
+        });
+    });
 
-    // 리셋 버튼 클릭 시 체크박스 초기화
-    // resetBtn.addEventListener("click", function () {
-    //     allcheckedbtn.forEach(checkbox => {
-    //         checkbox.checked = false;
-    //     });
-    // });
+    // // 리셋 버튼 클릭 시 체크박스 초기화
+     resetBtn?.addEventListener("click", function () {
+         allcheckedbtn.forEach(checkbox => {
+             checkbox.checked = false;
+         });
+     });
 
     // 선택된 버튼 상태를 처리할 함수
     const selectButtons = document.querySelectorAll(".salebt2_sy");
@@ -151,4 +165,5 @@ window.addEventListener("DOMContentLoaded", function() {
         count2++;  // 숫자 증가
         countDisplay2.textContent = count2;  // 화면에 숫자 업데이트
     });
+    
 });
